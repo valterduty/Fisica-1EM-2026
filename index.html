@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Física 1º EM</title>
+</head>
+<body>
+    <h1>Física 1º EM</h1>
+    <p>3º Bimestre - 2026</p>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02 — O Papel do Impulso na Colisão</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --azul-escuro: #1e3a5f;
+            --azul-medio: #2563eb;
+            --azul-claro: #dbeafe;
+            --verde-escuro: #065f46;
+            --verde-medio: #10b981;
+            --verde-claro: #d1fae5;
+            --laranja-escuro: #92400e;
+            --laranja-medio: #f59e0b;
+            --laranja-claro: #fffbeb;
+            --vermelho-escuro: #b91c1c;
+            --vermelho-medio: #ef4444;
+            --vermelho-claro: #fef2f2;
+            --cinza-texto: #374151;
+            --cinza-suave: #f3f4f6;
+            --sombra-suave: 0 4px 12px rgba(0,0,0,0.06);
+            --sombra-media: 0 6px 20px rgba(0,0,0,0.1);
+            --raio-borda: 14px;
+            --transicao: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%);
+            color: var(--cinza-texto);
+            line-height: 1.75;
+            padding: 2rem 1.2rem;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 2.5rem 2rem;
+            background: linear-gradient(135deg, var(--azul-escuro) 0%, var(--azul-medio) 100%);
+            color: white;
+            border-radius: var(--raio-borda);
+            box-shadow: var(--sombra-media);
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%; right: -5%;
+            width: 300px; height: 300px;
+            background: rgba(255,255,255,0.06);
+            border-radius: 50%;
+        }
+
+        h1 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+            line-height: 1.4;
+        }
+
+        .subtitulo-cabecalho {
+            font-weight: 300;
+            font-size: 1.05rem;
+            margin-top: 0.6rem;
+            opacity: 0.9;
+        }
+
+        section {
+            background: white;
+            border-radius: var(--raio-borda);
+            padding: 2.2rem;
+            margin-bottom: 2.2rem;
+            box-shadow: var(--sombra-suave);
+            transition: var(--transicao);
+        }
+
+        section:hover {
+            box-shadow: var(--sombra-media);
+            transform: translateY(-2px);
+        }
+
+        h2 {
+            font-size: 1.45rem;
+            color: var(--azul-escuro);
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-bottom: 1.4rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 2px solid var(--azul-claro);
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            color: var(--verde-escuro);
+            margin: 1.6rem 0 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.02rem;
+        }
+
+        .formula-destaque {
+            background: linear-gradient(120deg, var(--azul-claro), #eff6ff);
+            border-left: 5px solid var(--azul-medio);
+            padding: 1.6rem;
+            border-radius: 0 12px 12px 0;
+            margin: 1.4rem 0;
+            box-shadow: inset 0 0 0 1px rgba(37,99,235,0.08);
+        }
+
+        .formula {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.7rem;
+            font-weight: 600;
+            color: var(--azul-escuro);
+            text-align: center;
+            padding: 1rem;
+            margin: 0.8rem 0;
+            background: white;
+            border-radius: 10px;
+            letter-spacing: 1px;
+        }
+
+        .lista-definicoes {
+            margin: 1rem 0 0 1.8rem;
+        }
+
+        .lista-definicoes li {
+            margin-bottom: 0.5rem;
+        }
+
+        .caixa-observacao {
+            background: linear-gradient(120deg, var(--laranja-claro), #fff7ed);
+            border-left: 5px solid var(--laranja-medio);
+            padding: 1.4rem;
+            border-radius: 0 12px 12px 0;
+            margin: 1.4rem 0;
+        }
+
+        .caixa-passo {
+            background: var(--cinza-suave);
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 1.4rem 1.6rem;
+            margin: 1.2rem 0;
+            transition: var(--transicao);
+        }
+
+        .caixa-passo:hover {
+            border-color: var(--verde-medio);
+            background: #f9fffc;
+        }
+
+        .rotulo-passo {
+            display: inline-block;
+            background: linear-gradient(90deg, var(--verde-medio), #34d399);
+            color: white;
+            font-weight: 600;
+            padding: 0.25rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 0.7rem;
+        }
+
+        .comentario {
+            font-style: italic;
+            color: #6b7280;
+            margin-top: 0.6rem;
+            padding-left: 0.8rem;
+            border-left: 3px solid #d1d5db;
+        }
+
+        .caixa-interpretacao {
+            background: linear-gradient(120deg, var(--verde-claro), #ecfdf5);
+            border-left: 5px solid var(--verde-medio);
+            padding: 1.6rem;
+            border-radius: 0 12px 12px 0;
+            margin-top: 1.4rem;
+        }
+
+        ul, ol {
+            margin-left: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.45rem;
+        }
+
+        .svg-wrapper {
+            display: flex;
+            justify-content: center;
+            margin: 1.8rem 0 1rem;
+        }
+
+        svg {
+            filter: drop-shadow(0 3px 8px rgba(0,0,0,0.07));
+        }
+
+        .destaque-final {
+            background: linear-gradient(135deg, #fef3c7, #fef9c3);
+            border: 2px dashed #f59e0b;
+            border-radius: 12px;
+            padding: 1.4rem;
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .destaque-final .formula {
+            background: white;
+            font-size: 2rem;
+            color: var(--laranja-escuro);
+        }
+
+        @media (max-width: 640px) {
+            h1 { font-size: 1.45rem; }
+            section { padding: 1.4rem; }
+            .formula { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>⚡ Aula 02 — Quando Parar Faz a Diferença<br>O Papel do Impulso na Colisão</h1>
+        <div class="subtitulo-cabecalho">Quantidade de Movimento • Impulso • Teorema do Impulso</div>
+    </header>
+
+    <!-- SEÇÃO 1: Quantidade de Movimento -->
+    <section>
+        <h2>📐 Quantidade de Movimento</h2>
+        <p>A <strong>quantidade de movimento</strong> (ou momento linear) é a grandeza física que mede o estado de movimento de um corpo. Ela depende de duas propriedades: a <em>massa</em> do objeto e a sua <em>velocidade</em>.</p>
+
+        <div class="formula-destaque">
+            <p><strong>Expressão matemática:</strong></p>
+            <div class="formula">Q = m ⋅ v</div>
+            <ul class="lista-definicoes">
+                <li><strong>Q</strong> → Quantidade de movimento → quilograma-metro por segundo (kg·m/s)</li>
+                <li><strong>m</strong> → Massa → quilograma (kg)</li>
+                <li><strong>v</strong> → Velocidade → metro por segundo (m/s)</li>
+            </ul>
+        </div>
+
+        <p>Existem apenas <strong>duas variáveis</strong> na fórmula:</p>
+        <ul>
+            <li>✅ Massa</li>
+            <li>✅ Velocidade</li>
+        </ul>
+        <p>Isso significa que, se a massa dobra → a quantidade de movimento dobra. Se a velocidade dobra → a quantidade de movimento também dobra.</p>
+
+        <div class="caixa-observacao">
+            <h3>💡 Importante: Grandeza Vetorial</h3>
+            <p>A quantidade de movimento possui <strong>módulo, direção e sentido</strong> — assim como a velocidade. O vetor quantidade de movimento <strong>sempre aponta na mesma direção e sentido da velocidade</strong> do corpo.</p>
+        </div>
+
+        <div class="svg-wrapper">
+            <svg width="360" height="170" viewBox="0 0 360 170" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="fundoVetor" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#f0f9ff"/>
+                        <stop offset="100%" stop-color="#e0f2fe"/>
+                    </linearGradient>
+                    <linearGradient id="bolaAzul" x1="30%" y1="30%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#60a5fa"/>
+                        <stop offset="100%" stop-color="#2563eb"/>
+                    </linearGradient>
+                    <marker id="setaV" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                        <polygon points="0,0 10,5 0,10" fill="#dc2626"/>
+                    </marker>
+                    <marker id="setaQ" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                        <polygon points="0,0 10,5 0,10" fill="#059669"/>
+                    </marker>
+                </defs>
+                <rect x="10" y="10" width="340" height="150" rx="14" fill="url(#fundoVetor)" stroke="#bae6fd" stroke-width="1.5"/>
+                <text x="25" y="38" font-family="Poppins,Arial" font-size="15" fill="#0c4a6e" font-weight="600">Vetor Q segue a velocidade v</text>
+                <circle cx="70" cy="100" r="26" fill="url(#bolaAzul)"/>
+                <text x="62" y="106" font-family="Poppins" font-size="14" fill="white" font-weight="600">m</text>
+                <line x1="96" y1="92" x2="200" y2="92" stroke="#dc2626" stroke-width="3.5" marker-end="url(#setaV)"/>
+                <text x="140" y="82" font-size="13" fill="#b91c1c" font-weight="500">v (velocidade)</text>
+                <line x1="70" y1="114" x2="220" y2="114" stroke="#059669" stroke-width="3.5" marker-end="url(#setaQ)"/>
+                <text x="145" y="138" font-size="13" fill="#047857" font-weight="500">Q = m·v (mesma direção e sentido)</text>
+            </svg>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 2: Impulso -->
+    <section>
+        <h2>💪 Impulso de uma Força Constante</h2>
+        <p>O <strong>impulso</strong> representa o efeito de uma força aplicada durante um intervalo de tempo. Quanto maior a força ou quanto mais tempo ela atua, maior o impulso produzido.</p>
+
+        <div class="formula-destaque">
+            <div class="formula">I = F ⋅ Δt</div>
+            <ul class="lista-definicoes">
+                <li><strong>I</strong> → Impulso → newton-segundo (N·s)</li>
+                <li><strong>F</strong> → Força constante → newton (N)</li>
+                <li><strong>Δt</strong> → Intervalo de tempo → segundo (s)</li>
+            </ul>
+        </div>
+
+        <div class="svg-wrapper">
+            <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="fundoImp" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#f0fdf4"/>
+                        <stop offset="100%" stop-color="#dcfce7"/>
+                    </linearGradient>
+                    <linearGradient id="areaImp" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#86efac" stop-opacity="0.6"/>
+                        <stop offset="100%" stop-color="#4ade80" stop-opacity="0.6"/>
+                    </linearGradient>
+                    <marker id="setaF" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                        <polygon points="0,0 10,5 0,10" fill="#dc2626"/>
+                    </marker>
+                </defs>
+                <rect x="10" y="10" width="380" height="180" rx="14" fill="url(#fundoImp)" stroke="#bbf7d0" stroke-width="1.5"/>
+                <text x="85" y="38" font-family="Poppins" font-size="15" fill="#065f46" font-weight="600">Impulso = Força × Tempo de Aplicação</text>
+                <line x1="60" y1="160" x2="340" y2="160" stroke="#374151" stroke-width="2.5"/>
+                <line x1="60" y1="160" x2="60" y2="55" stroke="#374151" stroke-width="2.5"/>
+                <text x="345" y="165" font-size="13" fill="#4b5563">Δt</text>
+                <text x="35" y="70" font-size="13" fill="#4b5563">F</text>
+                <rect x="60" y="80" width="240" height="80" fill="url(#areaImp)" rx="4"/>
+                <line x1="60" y1="80" x2="300" y2="80" stroke="#16a34a" stroke-width="3"/>
+                <text x="150" y="128" font-family="JetBrains Mono" font-size="18" fill="#15803d" font-weight="600">I = F · Δt</text>
+                <line x1="110" y1="105" x2="200" y2="105" stroke="#dc2626" stroke-width="3" marker-end="url(#setaF)"/>
+                <text x="130" y="95" font-size="12" fill="#b91c1c">Força aplicada</text>
+            </svg>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 3: Teorema do Impulso -->
+    <section>
+        <h2>🧠 Teorema do Impulso</h2>
+        <p>O resultado mais importante desta aula: o impulso produzido por uma força resultante é <strong>exatamente igual à variação da quantidade de movimento</strong> do corpo.</p>
+
+        <h3>📝 Construção Passo a Passo</h3>
+
+        <div class="caixa-passo">
+            <span class="rotulo-passo">Passo 1 — Definição de impulso</span>
+            <p>Começamos pela própria definição:</p>
+            <div class="formula" style="font-size:1.4rem">I = F ⋅ Δt</div>
+        </div>
+
+        <div class="caixa-passo">
+            <span class="rotulo-passo">Passo 2 — Substituindo pela 2ª Lei de Newton</span>
+            <p>Sabemos que: <strong>F = m ⋅ a</strong></p>
+            <p>Substituindo a força:</p>
+            <div class="formula" style="font-size:1.4rem">I = (m ⋅ a) ⋅ Δt</div>
+            <p class="comentario">Apenas trocamos a força pela sua expressão na Segunda Lei de Newton.</p>
+        </div>
+
+        <div class="caixa-passo">
+            <span class="rotulo-passo">Passo 3 — Aceleração e variação de velocidade</span>
+            <p>Usamos: <strong>a = Δv ÷ Δt</strong></p>
+            <p>Substituindo a aceleração:</p>
+            <div class="formula" style="font-size:1.4rem">I = m ⋅ (Δv ÷ Δt) ⋅ Δt</div>
+            <p class="comentario">O Δt aparece em cima e embaixo → eles se cancelam!</p>
+        </div>
+
+        <div class="caixa-passo">
+            <span class="rotulo-passo">Passo 4 — Resultado Final ✅</span>
+            <p>Cancelando o tempo, resta:</p>
+            <div class="formula" style="font-size:1.4rem">I = m ⋅ Δv</div>
+            <p>Como <strong>Δv = v<sub>final</sub> − v<sub>inicial</sub></strong> e <strong>Q = m·v</strong>, temos:</p>
+            <div class="formula" style="font-size:1.4rem">I = Q<sub>final</sub> − Q<sub>inicial</sub> = ΔQ</div>
+        </div>
+
+        <div class="destaque-final">
+            <p style="font-weight:600; color:#92400e; margin-bottom:0.4rem;">🎯 TEOREMA DO IMPULSO</p>
+            <div class="formula">I = ΔQ</div>
+            <p style="margin-top:0.6rem; color:#78350f;">O impulso aplicado = variação da quantidade de movimento</p>
+        </div>
+
+        <div class="svg-wrapper">
+            <svg width="440" height="200" viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="caixaI" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#93c5fd"/>
+                        <stop offset="100%" stop-color="#3b82f6"/>
+                    </linearGradient>
+                    <linearGradient id="caixaQ" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#86efac"/>
+                        <stop offset="100%" stop-color="#22c55e"/>
+                    </linearGradient>
+                    <marker id="setaIgual" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                        <polygon points="0,0 10,5 0,10" fill="#1f2937"/>
+                    </marker>
+                </defs>
+                <rect x="10" y="10" width="420" height="180" rx="14" fill="#f8fafc" stroke="#e5e7eb" stroke-width="1.5"/>
+                <text x="135" y="42" font-family="Poppins" font-size="17" fill="#1e40af" font-weight="700">I = ΔQ — O Teorema</text>
+                <rect x="35" y="60" width="130" height="80" rx="12" fill="url(#caixaI)"/>
+                <text x="98" y="112" font-family="JetBrains Mono" font-size="28" fill="white" text-anchor="middle" font-weight="700">I</text>
+                <text x="55" y="155" font-size="12" fill="#1e3a8a" font-weight="500">Impulso aplicado</text>
+                <path d="M175,100 L235,100" stroke="#1f2937" stroke-width="3.5" marker-end="url(#setaIgual)"/>
+                <text x="185" y="90" font-size="13" fill="#4b5563" font-weight="500">é igual a</text>
+                <rect x="255" y="60" width="150" height="80" rx="12" fill="url(#caixaQ)"/>
+                <text x="330" y="112" font-family="JetBrains Mono" font-size="28" fill="white" text-anchor="middle" font-weight="700">ΔQ</text>
+                <text x="270" y="155" font-size="12" fill="#166534" font-weight="500">Variação do movimento</text>
+            </svg>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 4: Interpretação Física -->
+    <section>
+        <h2>📖 Interpretação Física</h2>
+        <div class="caixa-interpretacao">
+            <p style="font-size:1.08rem;">O impulso funciona como uma <strong>transferência de movimento</strong> entre o agente que aplica a força e o corpo.</p>
+            <ul style="margin-top:0.8rem;">
+                <li>✅ Quanto <strong>maior</strong> o impulso → <strong>maior</strong> a alteração do movimento.</li>
+                <li>🟢 Impulso <strong>positivo</strong> → a velocidade <strong>aumenta</strong>.</li>
+                <li>🟠 Impulso <strong>negativo</strong> → a velocidade <strong>diminui</strong>.</li>
+                <li>🔴 Impulso <strong>contrário ao movimento</strong> → pode reduzir a velocidade até o corpo <strong>parar</strong>.</li>
+            </ul>
+        </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01: Potência Média ou Instantânea — Qual é a Diferença?</title>
+    <style>
+        :root {
+            --cor-primaria: #1e40af;
+            --cor-secundaria: #3b82f6;
+            --cor-destaque: #f59e0b;
+            --cor-sucesso: #10b981;
+            --cor-perigo: #ef4444;
+            --cor-fundo: #f8fafc;
+            --cor-fundo-card: #ffffff;
+            --cor-texto: #1e293b;
+            --cor-texto-claro: #64748b;
+            --borda-suave: 12px;
+            --sombra-leve: 0 4px 12px rgba(0,0,0,0.06);
+            --sombra-card: 0 8px 24px rgba(30, 64, 175, 0.08);
+            --transicao: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Inter', Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            color: var(--cor-texto);
+            line-height: 1.7;
+            padding: 2rem 1.2rem;
+            max-width: 960px;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-secundaria) 100%);
+            color: white;
+            padding: 2.5rem 2rem;
+            border-radius: var(--borda-suave);
+            text-align: center;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 30px rgba(30, 64, 175, 0.25);
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.6rem;
+            letter-spacing: 0.3px;
+        }
+
+        header p {
+            font-size: 1.15rem;
+            opacity: 0.92;
+        }
+
+        section {
+            background: var(--cor-fundo-card);
+            padding: 2rem;
+            border-radius: var(--borda-suave);
+            margin-bottom: 2rem;
+            box-shadow: var(--sombra-card);
+            transition: var(--transicao);
+            animation: fadeInUp 0.7s ease-out;
+        }
+
+        section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(30, 64, 175, 0.12);
+        }
+
+        h2 {
+            color: var(--cor-primaria);
+            font-size: 1.45rem;
+            margin-bottom: 1.4rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 3px solid transparent;
+            border-image: linear-gradient(90deg, var(--cor-secundaria), transparent) 1;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        h3 {
+            color: var(--cor-secundaria);
+            font-size: 1.15rem;
+            margin: 1.6rem 0 0.9rem;
+        }
+
+        p {
+            margin-bottom: 1.1rem;
+            color: var(--cor-texto);
+            font-size: 1.02rem;
+        }
+
+        .definicao-box {
+            background: linear-gradient(120deg, #eff6ff, #dbeafe);
+            border-left: 5px solid var(--cor-secundaria);
+            padding: 1.4rem 1.6rem;
+            border-radius: 0 var(--borda-suave) var(--borda-suave) 0;
+            margin: 1.5rem 0;
+            box-shadow: var(--sombra-leve);
+        }
+
+        .regra-lista {
+            list-style: none;
+            padding-left: 0.4rem;
+            margin-top: 0.8rem;
+        }
+
+        .regra-lista li {
+            position: relative;
+            padding-left: 2.4rem;
+            margin-bottom: 0.7rem;
+            font-weight: 500;
+        }
+
+        .regra-lista li::before {
+            content: "⚡";
+            position: absolute;
+            left: 0.2rem;
+            top: -0.1rem;
+            font-size: 1.1rem;
+        }
+
+        .formula {
+            background: linear-gradient(180deg, #fefce8, #fffbeb);
+            border: 2px solid #fef3c7;
+            border-radius: var(--borda-suave);
+            padding: 1.4rem;
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 1.5rem 0;
+            font-family: 'Times New Roman', 'Georgia', serif;
+            color: #92400e;
+            box-shadow: inset 0 2px 6px rgba(245, 158, 11, 0.08);
+        }
+
+        .unidade-box {
+            background: linear-gradient(120deg, #fffbeb, #fef3c7);
+            border-left: 5px solid var(--cor-destaque);
+            padding: 1.4rem 1.6rem;
+            border-radius: 0 var(--borda-suave) var(--borda-suave) 0;
+            margin: 1.5rem 0;
+        }
+
+        .esquema-container {
+            background: linear-gradient(180deg, #fafafa, #f8fafc);
+            border: 2px solid #e2e8f0;
+            border-radius: var(--borda-suave);
+            padding: 1.8rem 1.2rem;
+            margin: 1.8rem 0;
+            box-shadow: var(--sombra-leve);
+        }
+
+        .esquema-container h3 {
+            text-align: center;
+            margin-top: 0;
+            color: var(--cor-primaria);
+        }
+
+        svg {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .tabela-resumo {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 2rem 0;
+            border-radius: var(--borda-suave);
+            overflow: hidden;
+            box-shadow: var(--sombra-leve);
+        }
+
+        .tabela-resumo th {
+            background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+            color: white;
+            padding: 1.2rem;
+            text-align: left;
+            font-size: 1.05rem;
+        }
+
+        .tabela-resumo td {
+            padding: 1.1rem 1.2rem;
+            border-bottom: 1px solid #f1f5f9;
+            background-color: white;
+            transition: background 0.2s;
+        }
+
+        .tabela-resumo tr:hover td {
+            background-color: #eff6ff;
+        }
+
+        .tabela-resumo tr:last-child td {
+            border-bottom: none;
+        }
+
+        .exemplo-box {
+            background: linear-gradient(120deg, #f0fdf4, #dcfce7);
+            border-left: 5px solid var(--cor-sucesso);
+            padding: 1.4rem 1.6rem;
+            border-radius: 0 var(--borda-suave) var(--borda-suave) 0;
+            margin: 1.8rem 0 0.5rem;
+        }
+
+        .destaque {
+            font-weight: 700;
+            color: var(--cor-primaria);
+        }
+
+        ul.lista-dados {
+            margin: 1rem 0 1rem 1.8rem;
+        }
+
+        ul.lista-dados li {
+            margin-bottom: 0.5rem;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(25px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 640px) {
+            header h1 { font-size: 1.5rem; }
+            section { padding: 1.4rem 1.2rem; }
+            .formula { font-size: 1.15rem; padding: 1rem; }
+            .tabela-resumo th, .tabela-resumo td { padding: 0.8rem; font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>⚡ Aula 01: Potência Média ou Instantânea</h1>
+        <p>Entenda de uma vez por todas qual é a diferença entre elas</p>
+    </header>
+
+    <section>
+        <h2>🔋 Potência</h2>
+
+        <h3>O que é Potência?</h3>
+        <p>A potência é a grandeza física que mede a <strong>rapidez</strong> com que um trabalho é realizado ou uma energia é transferida.</p>
+
+        <div class="definicao-box">
+            <strong>📌 Regra geral:</strong>
+            <ul class="regra-lista">
+                <li>Quanto <span class="destaque">menos tempo</span> para realizar a mesma tarefa → <span class="destaque">maior a potência</span>.</li>
+                <li>Quanto <span class="destaque">mais energia</span> transformada no mesmo tempo → <span class="destaque">maior a potência</span>.</li>
+            </ul>
+        </div>
+
+        <div class="esquema-container">
+            <h3>📐 Fórmula Fundamental</h3>
+            <svg width="620" height="220" viewBox="0 0 620 220" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="fundoCard" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#eff6ff"/>
+                        <stop offset="100%" stop-color="#dbeafe"/>
+                    </linearGradient>
+                    <linearGradient id="blocoE" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#93c5fd"/>
+                        <stop offset="100%" stop-color="#3b82f6"/>
+                    </linearGradient>
+                    <linearGradient id="blocoP" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#fef08a"/>
+                        <stop offset="100%" stop-color="#facc15"/>
+                    </linearGradient>
+                    <marker id="setaAzul" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                        <path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/>
+                    </marker>
+                    <marker id="setaVerde" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                        <path d="M0 0 L10 5 L0 10 z" fill="#16a34a"/>
+                    </marker>
+                </defs>
+
+                <rect x="10" y="10" width="600" height="200" rx="14" fill="url(#fundoCard)" stroke="#bfdbfe" stroke-width="2"/>
+
+                <rect x="40" y="65" width="140" height="80" rx="10" fill="url(#blocoE)" stroke="#1d4ed8" stroke-width="2.5"/>
+                <text x="110" y="98" text-anchor="middle" font-size="20" font-weight="bold" fill="#1e3a8a">Energia (E)</text>
+                <text x="110" y="125" text-anchor="middle" font-size="13" fill="#1e40af">ou Trabalho (τ)</text>
+
+                <text x="210" y="118" font-size="40" font-weight="bold" fill="#1e40af">÷</text>
+
+                <rect x="260" y="65" width="140" height="80" rx="10" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2.5"/>
+                <text x="330" y="98" text-anchor="middle" font-size="20" font-weight="bold" fill="#1e3a8a">Tempo (Δt)</text>
+                <text x="330" y="125" text-anchor="middle" font-size="13" fill="#1e40af">intervalo de tempo</text>
+
+                <text x="430" y="118" font-size="40" font-weight="bold" fill="#1e40af">=</text>
+
+                <rect x="470" y="65" width="120" height="80" rx="10" fill="url(#blocoP)" stroke="#ca8a04" stroke-width="2.5"/>
+                <text x="530" y="112" text-anchor="middle" font-size="22" font-weight="bold" fill="#854d0e">Potência (P)</text>
+
+                <path d="M 95 152 Q 95 182 155 182" stroke="#dc2626" stroke-width="3.5" fill="none" marker-end="url(#setaAzul)"/>
+                <text x="125" y="198" text-anchor="middle" font-size="12.5" font-weight="500" fill="#b91c1c">↑ Mais energia → Mais potência</text>
+
+                <path d="M 325 152 Q 325 182 265 182" stroke="#16a34a" stroke-width="3.5" fill="none" marker-end="url(#setaVerde)"/>
+                <text x="295" y="198" text-anchor="middle" font-size="12.5" font-weight="500" fill="#15803d">↓ Menos tempo → Mais potência</text>
+            </svg>
+        </div>
+    </section>
+
+    <section>
+        <h2>📊 Potência Média</h2>
+        <p>A potência média é a <strong>razão</strong> entre o trabalho realizado (ou a energia transferida) e o intervalo de tempo gasto.</p>
+        <p>Usamos a potência média quando queremos saber o comportamento <strong>ao longo de um intervalo maior de tempo</strong>.</p>
+
+        <div class="formula">
+            P<sub>média</sub> = E / Δt &nbsp;&nbsp; ou &nbsp;&nbsp; P<sub>média</sub> = τ / Δt
+        </div>
+
+        <p>Como o trabalho τ corresponde à energia transferida, ambas as fórmulas são equivalentes.</p>
+
+        <div class="unidade-box">
+            <strong>📏 Unidade de Medida — Sistema Internacional (SI):</strong>
+            <br><br>
+            <strong>1 Watt (W) = 1 Joule por segundo (J/s)</strong>
+            <br>Significa que 1 Joule de energia é transformada a cada 1 segundo.
+            <br><br>
+            Também usamos: <strong>1 kW = 1.000 W</strong> e <strong>1 MW = 1.000.000 W</strong>.
+        </div>
+
+        <p>A potência é chamada de <em>média</em> porque considera <strong>toda</strong> a energia transferida no período. Se a potência varia durante o processo, o valor instantâneo pode ser bem diferente da média.</p>
+    </section>
+
+    <section>
+        <h2>🚀 Potência, Força e Velocidade</h2>
+        <p>Quando um corpo se move com velocidade constante e a força atua na mesma direção do movimento, podemos relacionar diretamente potência, força e velocidade.</p>
+
+        <div class="esquema-container">
+            <h3>🔗 Relação: P = F × v</h3>
+            <svg width="620" height="240" viewBox="0 0 620 240" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="carroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#3b82f6"/>
+                        <stop offset="100%" stop-color="#1d4ed8"/>
+                    </linearGradient>
+                    <linearGradient id="eqBox" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#fef9c3"/>
+                        <stop offset="100%" stop-color="#fef08a"/>
+                    </linearGradient>
+                    <marker id="setaVermelha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                        <path d="M0 0 L10 5 L0 10 z" fill="#ef4444"/>
+                    </marker>
+                    <marker id="setaVerdeF" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                        <path d="M0 0 L10 5 L0 10 z" fill="#22c55e"/>
+                    </marker>
+                </defs>
+
+                <rect x="10" y="10" width="600" height="220" rx="14" fill="#fafafa" stroke="#e5e7eb" stroke-width="2"/>
+
+                <rect x="60" y="95" width="90" height="55" rx="8" fill="url(#carroGrad)" stroke="#1e40af" stroke-width="2.5" filter="drop-shadow(2px 3px 2px rgba(0,0,0,0.1))"/>
+                <text x="105" y="128" text-anchor="middle" fill="white" font-size="15" font-weight="bold">Corpo</text>
+
+                <path d="M 150 122 L 260 122" stroke="#ef4444" stroke-width="5" marker-end="url(#setaVermelha)"/>
+                <text x="205" y="110" text-anchor="middle" fill="#dc2626" font-size="14" font-weight="bold">Força (F)</text>
+
+                <path d="M 60 165 L 260 165" stroke="#22c55e" stroke-width="5" marker-end="url(#setaVerdeF)"/>
+                <text x="160" y="188" text-anchor="middle" fill="#16a34a" font-size="14" font-weight="bold">Velocidade (v)</text>
+
+                <rect x="340" y="75" width="240" height="90" rx="10" fill="url(#eqBox)" stroke="#eab308" stroke-width="2.5"/>
+                <text x="460" y="120" text-anchor="middle" font-size="30" font-weight="bold" fill="#854d0e">P = F × v</text>
+                <text x="460" y="148" text-anchor="middle" font-size="13" fill="#a16207">Força multiplicada pela velocidade</text>
+
+                <text x="350" y="215" font-size="13" fill="#475569">↑ Força aumenta → Potência aumenta &nbsp;|&nbsp; ↑ Velocidade aumenta → Potência aumenta</text>
+            </svg>
+        </div>
+
+        <p>Onde:</p>
+        <ul class="lista-dados">
+            <li><strong>P</strong> → Potência, em Watts (W)</li>
+            <li><strong>F</strong> → Força aplicada, em Newtons (N)</li>
+            <li><strong>v</strong> → Velocidade, em metros por segundo (m/s)</li>
+        </ul>
+        <p>✅ Quanto maior a força ou a velocidade, maior será a potência desenvolvida.</p>
+    </section>
+
+    <section>
+        <h2>⚡ Potência Instantânea</h2>
+        <p>Já a potência instantânea representa o valor da potência em <strong>um instante específico</strong>, quando o intervalo de tempo Δt é praticamente zero.</p>
+        <p>Para calculá-la, usamos a <strong>velocidade instantânea</strong> no lugar da velocidade média.</p>
+
+        <div class="esquema-container">
+            <h3>📈 Comparação: Média × Instantânea</h3>
+            <svg width="620" height="300" viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grafFundo" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#f0f9ff"/>
+                        <stop offset="100%" stop-color="#e0f2fe"/>
+                    </linearGradient>
+                    <linearGradient id="curvaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#f97316"/>
+                        <stop offset="100%" stop-color="#ef4444"/>
+                    </linearGradient>
+                </defs>
+
+                <rect x="10" y="10" width="600" height="280" rx="14" fill="url(#grafFundo)" stroke="#bae6fd" stroke-width="2"/>
+
+                <line x1="70" y1="240" x2="570" y2="240" stroke="#334155" stroke-width="2.5"/>
+                <line x1="70" y1="40" x2="70" y2="240" stroke="#334155" stroke-width="2.5"/>
+
+                <text x="585" y="248" text-anchor="middle" font-size="14" fill="#475569">Tempo →</text>
+                <text x="35" y="45" text-anchor="middle" transform="rotate(-90, 35, 140)" font-size="14" fill="#475569">Potência →</text>
+
+                <path d="M 70 190 
+                         C 130 200, 180 110, 250 90 
+                         C 320 70, 360 35, 400 55 
+                         C 440 75, 500 170, 570 180" 
+                      stroke="url(#curvaGrad)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+                <line x1="70" y1="140" x2="570" y2="140" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="10,5"/>
+
+                <line x1="370" y1="40" x2="370" y2="240" stroke="#22c55e" stroke-width="2.5" stroke-dasharray="5,5"/>
+                <circle cx="370" cy="48" r="8" fill="#22c55e" stroke="#15803d" stroke-width="2.5"/>
+
+                <rect x="300" y="250" width="140" height="22" rx="6" fill="#dcfce7" stroke="#bbf7d0"/>
+                <text x="370" y="265" text-anchor="middle" font-size="12" fill="#166534">Δt → 0 (instante)</text>
+
+                <text x="490" y="100" font-size="14" font-weight="bold" fill="#2563eb">—— Média (constante)</text>
+                <text x="490" y="125" font-size="14" font-weight="bold" fill="#f97316">─── Instantânea (varia)</text>
+                <text x="385" y="45" font-size="12" font-weight="600" fill="#166534">Valor exato</text>
+            </svg>
+        </div>
+
+        <div class="exemplo-box">
+            <strong>🚗 Exemplo prático:</strong>
+            <br><br>
+            A potência <strong>média</strong> de um carro durante uma viagem de 1 hora é de <strong>30 kW</strong>.
+            <br>
+            No entanto, no momento em que ele acelera para ultrapassar outro veículo, a potência <strong>instantânea</strong> pode chegar a <strong>70 kW</strong> — bem acima da média!
+        </div>
+    </section>
+
+    <section>
+        <h2>📋 Resumo Comparativo</h2>
+
+        <table class="tabela-resumo">
+            <thead>
+                <tr>
+                    <th style="width: 50%;">📊 Potência Média</th>
+                    <th style="width: 50%;">⚡ Potência Instantânea</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Considera um <strong>intervalo maior</strong> de tempo</td>
+                    <td>Considera <strong>um instante exato</strong> (Δt → 0)</td>
+                </tr>
+                <tr>
+                    <td>Depende da <strong>velocidade média</strong></td>
+                    <td>Depende da <strong>velocidade instantânea</strong></td>
+                </tr>
+                <tr>
+                    <td>Mostra o <strong>desempenho geral</strong> do processo</td>
+                    <td>Mostra o <strong>valor exato</strong> naquele momento</td>
+                </tr>
+                <tr>
+                    <td>Útil para análise de <strong>desempenho ao longo do tempo</strong></td>
+                    <td>Útil para saber o <strong>valor máximo ou pontual</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>
+
+
+
+
+
+</main>
+
+<footer>
+    Prof.Valter@2026
+</footer>
+
+</body>
+</html>
