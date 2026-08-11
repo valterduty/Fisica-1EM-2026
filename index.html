@@ -806,84 +806,9 @@
 
 
         <div class="conteudo-aula" id="aula-4">
-            <h2>Aula 04</h2>
-            <p>Conteúdo da Aula 04...</p>
-        </div>
-        <div class="conteudo-aula" id="aula-5">
-            <h2>Aula 05</h2>
-            <p>Conteúdo da Aula 05...</p>
-        </div>
-        <div class="conteudo-aula" id="aula-6">
-            <h2>Aula 06</h2>
-            <p>Conteúdo da Aula 06...</p>
-        </div>
-        <div class="conteudo-aula" id="aula-7">
-            <h2>Aula 07</h2>
-            <p>Conteúdo da Aula 07...</p>
-        </div>
-        <div class="conteudo-aula" id="aula-8">
-            <h2>Aula 08</h2>
-            <p>Conteúdo da Aula 08...</p>
-        </div>
-        <div class="conteudo-aula" id="aula-9">
-            <h2>Aula 09</h2>
-            <p>Conteúdo da Aula 09...</p>
-        </div>
-        <div class="conteudo-aula" id="aula-10">
-            <h2>Aula 10</h2>
-            <p>Conteúdo da Aula 10...</p>
-        </div>
-        <div class="conteudo-aula" id="aula-11">
-            <h2>Aula 11</h2>
-            <p>Conteúdo da Aula 11...</p>
-        </div>
-        <div class="conteudo-aula" id="aula-12">
-            <h2>Aula 12</h2>
-            <p>Conteúdo da Aula 12...</p>
-        </div>
-        <div class="conteudo-aula" id="aula-13">
-            <h2>Aula 13</h2>
-            <p>Conteúdo da Aula 13...</p>
-        </div>
-        <div class="conteudo-aula" id="aula-14">
-            <h2>Aula 14 — Conclusão</h2>
-            <p>Conteúdo da última aula. Coloque aqui resumos, avaliações finais e materiais complementares.</p>
-        </div>
-    </div>
-
-<script>
-    // Seleciona todos os botões e conteúdos
-    const botoes = document.querySelectorAll('.botao-aula');
-    const conteudos = document.querySelectorAll('.conteudo-aula');
-
-    // Adiciona o clique em cada botão
-    botoes.forEach(botao => {
-        botao.addEventListener('click', () => {
-            // Remove destaque de todos os botões e esconde todos os conteúdos
-            botoes.forEach(btn => btn.classList.remove('ativa'));
-            conteudos.forEach(ctd => ctd.classList.remove('visivel'));
-
-            // Pega o número da aula clicada
-            const numeroAula = botao.getAttribute('data-aula');
-            
-            // Adiciona destaque ao botão clicado e mostra o conteúdo correspondente
-            botao.classList.add('ativa');
-            document.getElementById(`aula-${numeroAula}`).classList.add('visivel');
-        });
-    });
-</script>
-
-</body>
-</html>
-
-
-
-
-
-
-
-
-<!DOCTYPE html>
+            <h2>Aula 04: Sistemas isolados: a chave para a conservação da quantidade de movimento
+</h2>
+            <p><!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -1221,6 +1146,96 @@
 
 </body>
 </html>
+</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="conteudo-aula" id="aula-5">
+            <h2>Aula 05</h2>
+            <p>Conteúdo da Aula 05...</p>
+        </div>
+        <div class="conteudo-aula" id="aula-6">
+            <h2>Aula 06</h2>
+            <p>Conteúdo da Aula 06...</p>
+        </div>
+        <div class="conteudo-aula" id="aula-7">
+            <h2>Aula 07</h2>
+            <p>Conteúdo da Aula 07...</p>
+        </div>
+        <div class="conteudo-aula" id="aula-8">
+            <h2>Aula 08</h2>
+            <p>Conteúdo da Aula 08...</p>
+        </div>
+        <div class="conteudo-aula" id="aula-9">
+            <h2>Aula 09</h2>
+            <p>Conteúdo da Aula 09...</p>
+        </div>
+        <div class="conteudo-aula" id="aula-10">
+            <h2>Aula 10</h2>
+            <p>Conteúdo da Aula 10...</p>
+        </div>
+        <div class="conteudo-aula" id="aula-11">
+            <h2>Aula 11</h2>
+            <p>Conteúdo da Aula 11...</p>
+        </div>
+        <div class="conteudo-aula" id="aula-12">
+            <h2>Aula 12</h2>
+            <p>Conteúdo da Aula 12...</p>
+        </div>
+        <div class="conteudo-aula" id="aula-13">
+            <h2>Aula 13</h2>
+            <p>Conteúdo da Aula 13...</p>
+        </div>
+        <div class="conteudo-aula" id="aula-14">
+            <h2>Aula 14 — Conclusão</h2>
+            <p>Conteúdo da última aula. Coloque aqui resumos, avaliações finais e materiais complementares.</p>
+        </div>
+    </div>
+
+<script>
+    // Seleciona todos os botões e conteúdos
+    const botoes = document.querySelectorAll('.botao-aula');
+    const conteudos = document.querySelectorAll('.conteudo-aula');
+
+    // Adiciona o clique em cada botão
+    botoes.forEach(botao => {
+        botao.addEventListener('click', () => {
+            // Remove destaque de todos os botões e esconde todos os conteúdos
+            botoes.forEach(btn => btn.classList.remove('ativa'));
+            conteudos.forEach(ctd => ctd.classList.remove('visivel'));
+
+            // Pega o número da aula clicada
+            const numeroAula = botao.getAttribute('data-aula');
+            
+            // Adiciona destaque ao botão clicado e mostra o conteúdo correspondente
+            botao.classList.add('ativa');
+            document.getElementById(`aula-${numeroAula}`).classList.add('visivel');
+        });
+    });
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
 
 
 
