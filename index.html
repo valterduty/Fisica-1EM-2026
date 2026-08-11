@@ -11,6 +11,206 @@
 </body>
 </html>
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas - Conteúdo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2d3748;
+            margin-bottom: 2.5rem;
+        }
+
+        .lista-aulas {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .botao-aula {
+            padding: 1rem 1.2rem;
+            background-color: #3182ce;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .botao-aula:hover {
+            background-color: #2b6cb0;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .botao-aula.ativa {
+            background-color: #2f855a;
+            box-shadow: 0 4px 14px rgba(47,133,90,0.3);
+        }
+
+        .conteudo-aula {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            min-height: 200px;
+            display: none;
+        }
+
+        .conteudo-aula.visivel {
+            display: block;
+            animation: aparece 0.4s ease;
+        }
+
+        .conteudo-aula h2 {
+            color: #2d3748;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+
+        @keyframes aparece {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>📚 Lista de Aulas</h1>
+
+    <!-- Lista dos botões das aulas -->
+    <div class="lista-aulas">
+        <button class="botao-aula" data-aula="1">Aula 01</button>
+        <button class="botao-aula" data-aula="2">Aula 02</button>
+        <button class="botao-aula" data-aula="3">Aula 03</button>
+        <button class="botao-aula" data-aula="4">Aula 04</button>
+        <button class="botao-aula" data-aula="5">Aula 05</button>
+        <button class="botao-aula" data-aula="6">Aula 06</button>
+        <button class="botao-aula" data-aula="7">Aula 07</button>
+        <button class="botao-aula" data-aula="8">Aula 08</button>
+        <button class="botao-aula" data-aula="9">Aula 09</button>
+        <button class="botao-aula" data-aula="10">Aula 10</button>
+        <button class="botao-aula" data-aula="11">Aula 11</button>
+        <button class="botao-aula" data-aula="12">Aula 12</button>
+        <button class="botao-aula" data-aula="13">Aula 13</button>
+        <button class="botao-aula" data-aula="14">Aula 14</button>
+    </div>
+
+    <!-- Área onde o conteúdo será exibido -->
+    <div id="conteudo-exibicao">
+        <div class="conteudo-aula" id="aula-1">
+            <h2>Aula 01 — Introdução</h2>
+            <p>Aqui você coloca o conteúdo da primeira aula: textos, vídeos, links, materiais, etc.</p>
+        </div>
+
+        <div class="conteudo-aula" id="aula-2">
+            <h2>Aula 02 — Fundamentos</h2>
+            <p>Conteúdo da segunda aula. Substitua este texto pelo material real.</p>
+        </div>
+
+        <!-- Repita o padrão para as demais aulas -->
+        <div class="conteudo-aula" id="aula-3">
+            <h2>Aula 03</h2>
+            <p>Conteúdo da Aula 03...</p>
+        </div>
+        <div class="conteudo-aula" id="aula-4">
+            <h2>Aula 04</h2>
+            <p>Conteúdo da Aula 04...</p>
+        </div>
+        <div class="conteudo-aula" id="aula-5">
+            <h2>Aula 05</h2>
+            <p>Conteúdo da Aula 05...</p>
+        </div>
+        <div class="conteudo-aula" id="aula-6">
+            <h2>Aula 06</h2>
+            <p>Conteúdo da Aula 06...</p>
+        </div>
+        <div class="conteudo-aula" id="aula-7">
+            <h2>Aula 07</h2>
+            <p>Conteúdo da Aula 07...</p>
+        </div>
+        <div class="conteudo-aula" id="aula-8">
+            <h2>Aula 08</h2>
+            <p>Conteúdo da Aula 08...</p>
+        </div>
+        <div class="conteudo-aula" id="aula-9">
+            <h2>Aula 09</h2>
+            <p>Conteúdo da Aula 09...</p>
+        </div>
+        <div class="conteudo-aula" id="aula-10">
+            <h2>Aula 10</h2>
+            <p>Conteúdo da Aula 10...</p>
+        </div>
+        <div class="conteudo-aula" id="aula-11">
+            <h2>Aula 11</h2>
+            <p>Conteúdo da Aula 11...</p>
+        </div>
+        <div class="conteudo-aula" id="aula-12">
+            <h2>Aula 12</h2>
+            <p>Conteúdo da Aula 12...</p>
+        </div>
+        <div class="conteudo-aula" id="aula-13">
+            <h2>Aula 13</h2>
+            <p>Conteúdo da Aula 13...</p>
+        </div>
+        <div class="conteudo-aula" id="aula-14">
+            <h2>Aula 14 — Conclusão</h2>
+            <p>Conteúdo da última aula. Coloque aqui resumos, avaliações finais e materiais complementares.</p>
+        </div>
+    </div>
+
+<script>
+    // Seleciona todos os botões e conteúdos
+    const botoes = document.querySelectorAll('.botao-aula');
+    const conteudos = document.querySelectorAll('.conteudo-aula');
+
+    // Adiciona o clique em cada botão
+    botoes.forEach(botao => {
+        botao.addEventListener('click', () => {
+            // Remove destaque de todos os botões e esconde todos os conteúdos
+            botoes.forEach(btn => btn.classList.remove('ativa'));
+            conteudos.forEach(ctd => ctd.classList.remove('visivel'));
+
+            // Pega o número da aula clicada
+            const numeroAula = botao.getAttribute('data-aula');
+            
+            // Adiciona destaque ao botão clicado e mostra o conteúdo correspondente
+            botao.classList.add('ativa');
+            document.getElementById(`aula-${numeroAula}`).classList.add('visivel');
+        });
+    });
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
 
 <!DOCTYPE html>
 <html lang="pt-BR">
