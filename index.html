@@ -559,29 +559,252 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         
         <!-- Repita o padrão para as demais aulas -->
         <div class="conteudo-aula" id="aula-3">
-            <h2>Aula 03</h2>
-            <p>Conteúdo da Aula 03...</p>
+            <h2>Aula 03: Além do chute: impulso de uma força variável</h2>
+            <p><header>
+    <h1>Aula 03: Além do chute — Impulso de uma força variável</h1>
+    <p style="font-style: italic; opacity: 0.9;">Relação entre força, tempo, sistema e quantidade de movimento</p>
+</header>
+
+<section class="conteudo">
+    <h2>Impulso de uma força variável</h2>
+    
+    <p>O impulso de uma força pode ser determinado a partir de um <strong>gráfico Força × Tempo (F × t)</strong>. Nesse tipo de gráfico, o valor do impulso é numericamente igual à <strong>área sob a curva</strong>.</p>
+
+    <div class="destaque">
+        <h3>Força constante</h3>
+        <p>Quando a força é constante, o impulso pode ser calculado diretamente pela expressão:</p>
+        <div class="formula">I = F · Δt</div>
+        <p>Onde: <em>F</em> = intensidade da força aplicada; <em>Δt</em> = intervalo de tempo durante o qual ela atua.</p>
+    </div>
+
+    <h3>Força variável</h3>
+    <p>Quando a força é variável, essa expressão <strong>não é válida</strong>. Nesses casos, o impulso é determinado pela <strong>área sob a curva</strong> no gráfico F × t, que representa como a força varia ao longo do tempo.</p>
+
+    <p>O gráfico F × t pode apresentar diferentes formas geométricas — e a forma determina como calcular a área e, portanto, o impulso.</p>
+
+    <div class="grafico-container">
+        <h4>Ilustração: Gráficos Força × Tempo</h4>
+        <svg width="750" height="320" viewBox="0 0 750 320" xmlns="http://www.w3.org/2000/svg">
+            <!-- Eixos gráfico 1 -->
+            <line x1="40" y1="270" x2="320" y2="270" stroke="#333" stroke-width="2"/>
+            <line x1="40" y1="30" x2="40" y2="270" stroke="#333" stroke-width="2"/>
+            <text x="330" y="275" font-size="14">t (s)</text>
+            <text x="10" y="35" font-size="14">F</text>
+            <text x="80" y="295" font-size="13">Força Constante</text>
+            <!-- Área retângulo -->
+            <rect x="40" y="80" width="200" height="190" fill="#aed6f1" opacity="0.6" stroke="#2980b9" stroke-width="2"/>
+            <line x1="40" y1="80" x2="240" y2="80" stroke="#e74c3c" stroke-width="3" stroke-dasharray="4,2"/>
+
+            <!-- Eixos gráfico 2 -->
+            <line x1="420" y1="270" x2="700" y2="270" stroke="#333" stroke-width="2"/>
+            <line x1="420" y1="30" x2="420" y2="270" stroke="#333" stroke-width="2"/>
+            <text x="705" y="275" font-size="14">t (s)</text>
+            <text x="390" y="35" font-size="14">F</text>
+            <text x="450" y="295" font-size="13">Força Variável</text>
+            <!-- Área sob curva -->
+            <path d="M420,270 L420,150 Q480,60 560,90 Q640,120 700,180 L700,270 Z" fill="#abebc6" opacity="0.6" stroke="#27ae60" stroke-width="2"/>
+            <path d="M420,150 Q480,60 560,90 Q640,120 700,180" fill="none" stroke="#27ae60" stroke-width="3"/>
+
+            <!-- Rótulos -->
+            <text x="110" y="260" font-size="12" fill="#2980b9">Área = Impulso</text>
+            <text x="510" y="260" font-size="12" fill="#27ae60">Área sob a curva = Impulso</text>
+        </svg>
+    </div>
+
+    <h3>Como calcular</h3>
+    <ul>
+        <li><strong>Formas simples:</strong> calcular a área diretamente pela fórmula geométrica (retângulo, triângulo, trapézio).</li>
+        <li><strong>Formas compostas:</strong> dividir o gráfico em figuras mais simples e somar as áreas.</li>
+    </ul>
+    <p><em>Não importa qual seja a forma da curva: o impulso é sempre a área algébrica sob o gráfico F × t.</em></p>
+
+    <div class="atencao">
+        <strong>Justificativa:</strong> Quando a força varia, a expressão I = F·Δt não é válida. Nesse caso, devemos calcular a área do gráfico F × t.
+    </div>
+</section>
+
+<section class="conteudo">
+    <h2>Conceito de "Sistema"</h2>
+    <p>Em Dinâmica, <strong>sistema</strong> é simplesmente o <em>conjunto de corpos que decidimos analisar</em>.</p>
+
+    <div class="exemplo">
+        <strong>Exemplos:</strong>
+        <ul>
+            <li>Uma caixa → o sistema é apenas a caixa.</li>
+            <li>Duas caixas ligadas por uma corda → podemos escolher as duas caixas como um único sistema.</li>
+            <li>Caixa + Terra → também podemos definir ambos como o sistema, dependendo do problema.</li>
+        </ul>
+    </div>
+
+    <p>Isso é importante porque, ao escolher o sistema, determinamos <strong>quais forças devem ser consideradas</strong>.</p>
+
+    <h3>Um sistema pode incluir corpos que:</h3>
+    <ul>
+        <li>podem se movimentar;</li>
+        <li>podem interagir entre si;</li>
+        <li>têm participação relevante na dinâmica do problema;</li>
+        <li>não estão necessariamente fixos ao ambiente.</li>
+    </ul>
+
+    <p>A escolha do sistema é fundamental porque determina quais forças são <strong>internas</strong> e quais são <strong>externas</strong>.</p>
+
+    <div class="destaque">
+        <strong>Ordem de análise:</strong><br>
+        ✅ Escolha o sistema → ✅ Identifique as forças que atuam nele → ✅ Aplique as Leis de Newton.
+    </div>
+
+    <p>Um corpo externo pode exercer força sobre o sistema, mesmo sem fazer parte dele.</p>
+
+    <h3>O que geralmente fica FORA do sistema (ambiente):</h3>
+    <ul>
+        <li>Corpos fixos ao ambiente;</li>
+        <li>Corpos com massa muito maior que a dos corpos analisados;</li>
+        <li>Elementos cujo movimento não é relevante para o problema.</li>
+    </ul>
+
+    <p>Esses corpos são tratados como <em>externos</em>, e suas forças sobre o sistema aparecem como forças externas.</p>
+
+    <div class="exemplo">
+        <strong>Exemplo prático:</strong> Caixa sobre o chão.<br>
+        ✅ Sistema: a caixa.<br>
+        🌍 Terra e chão: externos.<br>
+        ⬇ Peso e ⬆ Força normal: forças externas que atuam na caixa.
+    </div>
+
+    <div class="atencao">
+        ⚠ Isso é uma <em>regra prática</em>, não absoluta. Nós escolhemos o sistema de acordo com o que queremos analisar.
+    </div>
+</section>
+
+<section class="conteudo">
+    <h2>Conceito de "Ambiente"</h2>
+    <p>A ideia central: a força resultante produz aceleração, mas a aceleração depende também da massa.</p>
+    <p>Pela 2ª Lei de Newton:</p>
+    <div class="formula">F<sub>r</sub> = m · a &nbsp;&nbsp;&nbsp; ou &nbsp;&nbsp;&nbsp; a = F<sub>r</sub> / m</div>
+    <p>Para uma mesma força, quanto maior a massa, <strong>menor tende a ser a aceleração</strong>.</p>
+
+    <p>Exemplo: ao empurrar uma parede, você exerce força sobre ela, mas sua aceleração é tão pequena que pode ser considerada desprezível.</p>
+
+    <p>Esses corpos são considerados parte do <strong>ambiente</strong>, e não do sistema que estamos estudando.</p>
+
+    <div class="destaque">
+        <strong>Resumo:</strong><br>
+        🧱 Parede, chão, árvore → <em>ambiente</em> (massa muito grande, aceleração desprezível)<br>
+        📦 Corpos que estamos analisando → <em>sistema</em><br>
+        ➡ As interações com o ambiente aparecem como <strong>forças externas</strong> sobre o sistema.
+    </div>
+</section>
+
+<section class="conteudo">
+    <h2>Forças Internas e Externas</h2>
+    <p>Essa divisão é fundamental para analisar um sistema.</p>
+
+    <svg width="700" height="280" viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg">
+        <!-- Caixa do sistema -->
+        <rect x="50" y="40" width="600" height="200" fill="#eafaf1" stroke="#27ae60" stroke-width="3" rx="10"/>
+        <text x="70" y="65" font-size="16" font-weight="bold" fill="#27ae60">Sistema</text>
+
+        <!-- Elementos -->
+        <circle cx="180" cy="140" r="40" fill="#3498db" opacity="0.8"/>
+        <text x="165" y="145" fill="white" font-size="14">A</text>
+        
+        <circle cx="350" cy="140" r="40" fill="#e74c3c" opacity="0.8"/>
+        <text x="335" y="145" fill="white" font-size="14">B</text>
+        
+        <circle cx="520" cy="140" r="40" fill="#f39c12" opacity="0.8"/>
+        <text x="505" y="145" fill="white" font-size="14">C</text>
+
+        <!-- Forças internas -->
+        <path d="M220,120 L310,120" stroke="#27ae60" stroke-width="3" marker-end="url(#setaVerde)"/>
+        <text x="250" y="110" font-size="12" fill="#27ae60">Interna</text>
+        
+        <path d="M390,160 L260,160" stroke="#27ae60" stroke-width="3" marker-end="url(#setaVerde)"/>
+        <text x="290" y="185" font-size="12" fill="#27ae60">Interna</text>
+
+        <!-- Caixa ambiente -->
+        <rect x="50" y="250" width="600" height="25" fill="#fdecea" stroke="#e74c3c" stroke-width="2" rx="5"/>
+        <text x="70" y="268" font-size="13" fill="#e74c3c">Ambiente (forças externas atuam sobre o sistema)</text>
+
+        <!-- Seta externa -->
+        <path d="M350,10 L350,35" stroke="#e74c3c" stroke-width="3" marker-end="url(#setaVermelha)"/>
+        <text x="360" y="30" font-size="12" fill="#e74c3c">Externa</text>
+
+        <!-- Marcadores de seta -->
+        <defs>
+            <marker id="setaVerde" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                <polygon points="0,0 10,5 0,10" fill="#27ae60"/>
+            </marker>
+            <marker id="setaVermelha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                <polygon points="0,0 10,5 0,10" fill="#e74c3c"/>
+            </marker>
+        </defs>
+    </svg>
+
+    <h3>🔹 Forças Internas</h3>
+    <p>São forças em que <em>tanto o corpo que exerce quanto o corpo que recebe a força pertencem ao sistema</em>.</p>
+    <p><strong>Exemplo:</strong> se o sistema é formado por uma bola e um menino, a força que a bola exerce no menino e a força que o menino exerce na bola são forças <span class="forca-interna">internas</span>.</p>
+
+    <h3>🔹 Forças Externas</h3>
+    <p>Acontecem quando <em>o corpo que exerce a força está fora do sistema</em>.</p>
+    <p><strong>Exemplo:</strong> se o sistema é bola + menino, a força que o chão exerce sobre eles é uma força <span class="forca-externa">externa</span>, pois o chão pertence ao ambiente.</p>
+
+    <div class="exemplo">
+        <strong>Exemplos no sistema: homem + menino + bola</strong><br>
+        ✅ Forças <span class="forca-interna">internas</span>: homem ↔ bola, menino ↔ bola.<br>
+        ⚠️ Se o sistema for apenas a bola → essas mesmas forças passam a ser <span class="forca-externa">externas</span> (exercidas por corpos fora do sistema).<br>
+        🌍 Forças <span class="forca-externa">externas</span>: Peso (Terra → corpos), Força normal (chão → corpos), Força de atrito (chão → homem).
+    </div>
+</section>
+
+<section class="conteudo">
+    <h2>Influência na quantidade de movimento</h2>
+    <p>Esse é um dos resultados mais importantes do estudo de sistemas.</p>
+
+    <h3>Conservação da quantidade de movimento</h3>
+    <p>Quando a <strong>resultante das forças externas é nula</strong>, as forças internas não conseguem alterar a quantidade de movimento <strong>total</strong> do sistema.</p>
+
+    <div class="destaque">
+        <p><strong>Entendendo melhor:</strong></p>
+        <ol>
+            <li>O corpo A exerce força sobre B → B ganha quantidade de movimento.</li>
+            <li>Pela 3ª Lei de Newton, B exerce força de mesma intensidade e sentido oposto sobre A.</li>
+            <li>A sofre variação de quantidade de movimento em sentido contrário.</li>
+            <li>➡ Resultante externa nula → quantidade de movimento total se conserva.</li>
+        </ol>
+    </div>
+
+    <p>Não é necessário que nenhuma força externa exista — basta que a <strong>resultante das forças externas seja zero</strong> (ou desprezível no intervalo analisado).</p>
+
+    <h3>Quando há força externa resultante</h3>
+    <p>Se existe resultante de forças externas diferente de zero, a quantidade de movimento total do sistema <strong>varia</strong>. O ambiente pode transferir quantidade de movimento para o sistema ou retirar dele.</p>
+
+    <div class="atencao">
+        ⚠ Cuidado: não basta existir uma força externa. Podem haver várias que se anulam. O que importa é a <strong>resultante</strong> das forças externas.
+    </div>
+</section>
+
+
+</section>
+
+</body>
+</html></p>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="conteudo-aula" id="aula-4">
             <h2>Aula 04</h2>
             <p>Conteúdo da Aula 04...</p>
@@ -1123,234 +1346,7 @@
 </head>
 <body>
 
-<header>
-    <h1>Aula 03: Além do chute — Impulso de uma força variável</h1>
-    <p style="font-style: italic; opacity: 0.9;">Relação entre força, tempo, sistema e quantidade de movimento</p>
-</header>
 
-<section class="conteudo">
-    <h2>Impulso de uma força variável</h2>
-    
-    <p>O impulso de uma força pode ser determinado a partir de um <strong>gráfico Força × Tempo (F × t)</strong>. Nesse tipo de gráfico, o valor do impulso é numericamente igual à <strong>área sob a curva</strong>.</p>
-
-    <div class="destaque">
-        <h3>Força constante</h3>
-        <p>Quando a força é constante, o impulso pode ser calculado diretamente pela expressão:</p>
-        <div class="formula">I = F · Δt</div>
-        <p>Onde: <em>F</em> = intensidade da força aplicada; <em>Δt</em> = intervalo de tempo durante o qual ela atua.</p>
-    </div>
-
-    <h3>Força variável</h3>
-    <p>Quando a força é variável, essa expressão <strong>não é válida</strong>. Nesses casos, o impulso é determinado pela <strong>área sob a curva</strong> no gráfico F × t, que representa como a força varia ao longo do tempo.</p>
-
-    <p>O gráfico F × t pode apresentar diferentes formas geométricas — e a forma determina como calcular a área e, portanto, o impulso.</p>
-
-    <div class="grafico-container">
-        <h4>Ilustração: Gráficos Força × Tempo</h4>
-        <svg width="750" height="320" viewBox="0 0 750 320" xmlns="http://www.w3.org/2000/svg">
-            <!-- Eixos gráfico 1 -->
-            <line x1="40" y1="270" x2="320" y2="270" stroke="#333" stroke-width="2"/>
-            <line x1="40" y1="30" x2="40" y2="270" stroke="#333" stroke-width="2"/>
-            <text x="330" y="275" font-size="14">t (s)</text>
-            <text x="10" y="35" font-size="14">F</text>
-            <text x="80" y="295" font-size="13">Força Constante</text>
-            <!-- Área retângulo -->
-            <rect x="40" y="80" width="200" height="190" fill="#aed6f1" opacity="0.6" stroke="#2980b9" stroke-width="2"/>
-            <line x1="40" y1="80" x2="240" y2="80" stroke="#e74c3c" stroke-width="3" stroke-dasharray="4,2"/>
-
-            <!-- Eixos gráfico 2 -->
-            <line x1="420" y1="270" x2="700" y2="270" stroke="#333" stroke-width="2"/>
-            <line x1="420" y1="30" x2="420" y2="270" stroke="#333" stroke-width="2"/>
-            <text x="705" y="275" font-size="14">t (s)</text>
-            <text x="390" y="35" font-size="14">F</text>
-            <text x="450" y="295" font-size="13">Força Variável</text>
-            <!-- Área sob curva -->
-            <path d="M420,270 L420,150 Q480,60 560,90 Q640,120 700,180 L700,270 Z" fill="#abebc6" opacity="0.6" stroke="#27ae60" stroke-width="2"/>
-            <path d="M420,150 Q480,60 560,90 Q640,120 700,180" fill="none" stroke="#27ae60" stroke-width="3"/>
-
-            <!-- Rótulos -->
-            <text x="110" y="260" font-size="12" fill="#2980b9">Área = Impulso</text>
-            <text x="510" y="260" font-size="12" fill="#27ae60">Área sob a curva = Impulso</text>
-        </svg>
-    </div>
-
-    <h3>Como calcular</h3>
-    <ul>
-        <li><strong>Formas simples:</strong> calcular a área diretamente pela fórmula geométrica (retângulo, triângulo, trapézio).</li>
-        <li><strong>Formas compostas:</strong> dividir o gráfico em figuras mais simples e somar as áreas.</li>
-    </ul>
-    <p><em>Não importa qual seja a forma da curva: o impulso é sempre a área algébrica sob o gráfico F × t.</em></p>
-
-    <div class="atencao">
-        <strong>Justificativa:</strong> Quando a força varia, a expressão I = F·Δt não é válida. Nesse caso, devemos calcular a área do gráfico F × t.
-    </div>
-</section>
-
-<section class="conteudo">
-    <h2>Conceito de "Sistema"</h2>
-    <p>Em Dinâmica, <strong>sistema</strong> é simplesmente o <em>conjunto de corpos que decidimos analisar</em>.</p>
-
-    <div class="exemplo">
-        <strong>Exemplos:</strong>
-        <ul>
-            <li>Uma caixa → o sistema é apenas a caixa.</li>
-            <li>Duas caixas ligadas por uma corda → podemos escolher as duas caixas como um único sistema.</li>
-            <li>Caixa + Terra → também podemos definir ambos como o sistema, dependendo do problema.</li>
-        </ul>
-    </div>
-
-    <p>Isso é importante porque, ao escolher o sistema, determinamos <strong>quais forças devem ser consideradas</strong>.</p>
-
-    <h3>Um sistema pode incluir corpos que:</h3>
-    <ul>
-        <li>podem se movimentar;</li>
-        <li>podem interagir entre si;</li>
-        <li>têm participação relevante na dinâmica do problema;</li>
-        <li>não estão necessariamente fixos ao ambiente.</li>
-    </ul>
-
-    <p>A escolha do sistema é fundamental porque determina quais forças são <strong>internas</strong> e quais são <strong>externas</strong>.</p>
-
-    <div class="destaque">
-        <strong>Ordem de análise:</strong><br>
-        ✅ Escolha o sistema → ✅ Identifique as forças que atuam nele → ✅ Aplique as Leis de Newton.
-    </div>
-
-    <p>Um corpo externo pode exercer força sobre o sistema, mesmo sem fazer parte dele.</p>
-
-    <h3>O que geralmente fica FORA do sistema (ambiente):</h3>
-    <ul>
-        <li>Corpos fixos ao ambiente;</li>
-        <li>Corpos com massa muito maior que a dos corpos analisados;</li>
-        <li>Elementos cujo movimento não é relevante para o problema.</li>
-    </ul>
-
-    <p>Esses corpos são tratados como <em>externos</em>, e suas forças sobre o sistema aparecem como forças externas.</p>
-
-    <div class="exemplo">
-        <strong>Exemplo prático:</strong> Caixa sobre o chão.<br>
-        ✅ Sistema: a caixa.<br>
-        🌍 Terra e chão: externos.<br>
-        ⬇ Peso e ⬆ Força normal: forças externas que atuam na caixa.
-    </div>
-
-    <div class="atencao">
-        ⚠ Isso é uma <em>regra prática</em>, não absoluta. Nós escolhemos o sistema de acordo com o que queremos analisar.
-    </div>
-</section>
-
-<section class="conteudo">
-    <h2>Conceito de "Ambiente"</h2>
-    <p>A ideia central: a força resultante produz aceleração, mas a aceleração depende também da massa.</p>
-    <p>Pela 2ª Lei de Newton:</p>
-    <div class="formula">F<sub>r</sub> = m · a &nbsp;&nbsp;&nbsp; ou &nbsp;&nbsp;&nbsp; a = F<sub>r</sub> / m</div>
-    <p>Para uma mesma força, quanto maior a massa, <strong>menor tende a ser a aceleração</strong>.</p>
-
-    <p>Exemplo: ao empurrar uma parede, você exerce força sobre ela, mas sua aceleração é tão pequena que pode ser considerada desprezível.</p>
-
-    <p>Esses corpos são considerados parte do <strong>ambiente</strong>, e não do sistema que estamos estudando.</p>
-
-    <div class="destaque">
-        <strong>Resumo:</strong><br>
-        🧱 Parede, chão, árvore → <em>ambiente</em> (massa muito grande, aceleração desprezível)<br>
-        📦 Corpos que estamos analisando → <em>sistema</em><br>
-        ➡ As interações com o ambiente aparecem como <strong>forças externas</strong> sobre o sistema.
-    </div>
-</section>
-
-<section class="conteudo">
-    <h2>Forças Internas e Externas</h2>
-    <p>Essa divisão é fundamental para analisar um sistema.</p>
-
-    <svg width="700" height="280" viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg">
-        <!-- Caixa do sistema -->
-        <rect x="50" y="40" width="600" height="200" fill="#eafaf1" stroke="#27ae60" stroke-width="3" rx="10"/>
-        <text x="70" y="65" font-size="16" font-weight="bold" fill="#27ae60">Sistema</text>
-
-        <!-- Elementos -->
-        <circle cx="180" cy="140" r="40" fill="#3498db" opacity="0.8"/>
-        <text x="165" y="145" fill="white" font-size="14">A</text>
-        
-        <circle cx="350" cy="140" r="40" fill="#e74c3c" opacity="0.8"/>
-        <text x="335" y="145" fill="white" font-size="14">B</text>
-        
-        <circle cx="520" cy="140" r="40" fill="#f39c12" opacity="0.8"/>
-        <text x="505" y="145" fill="white" font-size="14">C</text>
-
-        <!-- Forças internas -->
-        <path d="M220,120 L310,120" stroke="#27ae60" stroke-width="3" marker-end="url(#setaVerde)"/>
-        <text x="250" y="110" font-size="12" fill="#27ae60">Interna</text>
-        
-        <path d="M390,160 L260,160" stroke="#27ae60" stroke-width="3" marker-end="url(#setaVerde)"/>
-        <text x="290" y="185" font-size="12" fill="#27ae60">Interna</text>
-
-        <!-- Caixa ambiente -->
-        <rect x="50" y="250" width="600" height="25" fill="#fdecea" stroke="#e74c3c" stroke-width="2" rx="5"/>
-        <text x="70" y="268" font-size="13" fill="#e74c3c">Ambiente (forças externas atuam sobre o sistema)</text>
-
-        <!-- Seta externa -->
-        <path d="M350,10 L350,35" stroke="#e74c3c" stroke-width="3" marker-end="url(#setaVermelha)"/>
-        <text x="360" y="30" font-size="12" fill="#e74c3c">Externa</text>
-
-        <!-- Marcadores de seta -->
-        <defs>
-            <marker id="setaVerde" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-                <polygon points="0,0 10,5 0,10" fill="#27ae60"/>
-            </marker>
-            <marker id="setaVermelha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-                <polygon points="0,0 10,5 0,10" fill="#e74c3c"/>
-            </marker>
-        </defs>
-    </svg>
-
-    <h3>🔹 Forças Internas</h3>
-    <p>São forças em que <em>tanto o corpo que exerce quanto o corpo que recebe a força pertencem ao sistema</em>.</p>
-    <p><strong>Exemplo:</strong> se o sistema é formado por uma bola e um menino, a força que a bola exerce no menino e a força que o menino exerce na bola são forças <span class="forca-interna">internas</span>.</p>
-
-    <h3>🔹 Forças Externas</h3>
-    <p>Acontecem quando <em>o corpo que exerce a força está fora do sistema</em>.</p>
-    <p><strong>Exemplo:</strong> se o sistema é bola + menino, a força que o chão exerce sobre eles é uma força <span class="forca-externa">externa</span>, pois o chão pertence ao ambiente.</p>
-
-    <div class="exemplo">
-        <strong>Exemplos no sistema: homem + menino + bola</strong><br>
-        ✅ Forças <span class="forca-interna">internas</span>: homem ↔ bola, menino ↔ bola.<br>
-        ⚠️ Se o sistema for apenas a bola → essas mesmas forças passam a ser <span class="forca-externa">externas</span> (exercidas por corpos fora do sistema).<br>
-        🌍 Forças <span class="forca-externa">externas</span>: Peso (Terra → corpos), Força normal (chão → corpos), Força de atrito (chão → homem).
-    </div>
-</section>
-
-<section class="conteudo">
-    <h2>Influência na quantidade de movimento</h2>
-    <p>Esse é um dos resultados mais importantes do estudo de sistemas.</p>
-
-    <h3>Conservação da quantidade de movimento</h3>
-    <p>Quando a <strong>resultante das forças externas é nula</strong>, as forças internas não conseguem alterar a quantidade de movimento <strong>total</strong> do sistema.</p>
-
-    <div class="destaque">
-        <p><strong>Entendendo melhor:</strong></p>
-        <ol>
-            <li>O corpo A exerce força sobre B → B ganha quantidade de movimento.</li>
-            <li>Pela 3ª Lei de Newton, B exerce força de mesma intensidade e sentido oposto sobre A.</li>
-            <li>A sofre variação de quantidade de movimento em sentido contrário.</li>
-            <li>➡ Resultante externa nula → quantidade de movimento total se conserva.</li>
-        </ol>
-    </div>
-
-    <p>Não é necessário que nenhuma força externa exista — basta que a <strong>resultante das forças externas seja zero</strong> (ou desprezível no intervalo analisado).</p>
-
-    <h3>Quando há força externa resultante</h3>
-    <p>Se existe resultante de forças externas diferente de zero, a quantidade de movimento total do sistema <strong>varia</strong>. O ambiente pode transferir quantidade de movimento para o sistema ou retirar dele.</p>
-
-    <div class="atencao">
-        ⚠ Cuidado: não basta existir uma força externa. Podem haver várias que se anulam. O que importa é a <strong>resultante</strong> das forças externas.
-    </div>
-</section>
-
-
-</section>
-
-</body>
-</html>
 
 
 
