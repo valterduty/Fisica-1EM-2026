@@ -120,7 +120,7 @@
     <!-- Área onde o conteúdo será exibido -->
     <div id="conteudo-exibicao">
         <div class="conteudo-aula" id="aula-1">
-            <h2>Aula 01 — Potência Média ou Instantânea: Entenda de uma vez por todas qual é a diferença entre elas</h2>
+            <h2>Aula 01 — Potência Média ou Instantânea: qual é a diferença?</h2>
             <p>
     <header>
         <h1>⚡ Aula 01: Potência Média ou Instantânea</h1>
@@ -358,10 +358,225 @@
         </div>
 
         <div class="conteudo-aula" id="aula-2">
-            <h2>Aula 02 — Fundamentos</h2>
-            <p>Conteúdo da segunda aula. Substitua este texto pelo material real.</p>
+            <h2>Aula 02 — Quando parar faz a diferença: o papel do impulso na colisão</h2>
+            <p>    <header>
+        <h1>⚡ Aula 02 — Quando Parar Faz a Diferença<br>O Papel do Impulso na Colisão</h1>
+        <div class="subtitulo-cabecalho">Quantidade de Movimento • Impulso • Teorema do Impulso</div>
+    </header>
+
+    <!-- SEÇÃO 1: Quantidade de Movimento -->
+    <section>
+        <h2>📐 Quantidade de Movimento</h2>
+        <p>A <strong>quantidade de movimento</strong> (ou momento linear) é a grandeza física que mede o estado de movimento de um corpo. Ela depende de duas propriedades: a <em>massa</em> do objeto e a sua <em>velocidade</em>.</p>
+
+        <div class="formula-destaque">
+            <p><strong>Expressão matemática:</strong></p>
+            <div class="formula">Q = m ⋅ v</div>
+            <ul class="lista-definicoes">
+                <li><strong>Q</strong> → Quantidade de movimento → quilograma-metro por segundo (kg·m/s)</li>
+                <li><strong>m</strong> → Massa → quilograma (kg)</li>
+                <li><strong>v</strong> → Velocidade → metro por segundo (m/s)</li>
+            </ul>
         </div>
 
+        <p>Existem apenas <strong>duas variáveis</strong> na fórmula:</p>
+        <ul>
+            <li>✅ Massa</li>
+            <li>✅ Velocidade</li>
+        </ul>
+        <p>Isso significa que, se a massa dobra → a quantidade de movimento dobra. Se a velocidade dobra → a quantidade de movimento também dobra.</p>
+
+        <div class="caixa-observacao">
+            <h3>💡 Importante: Grandeza Vetorial</h3>
+            <p>A quantidade de movimento possui <strong>módulo, direção e sentido</strong> — assim como a velocidade. O vetor quantidade de movimento <strong>sempre aponta na mesma direção e sentido da velocidade</strong> do corpo.</p>
+        </div>
+
+        <div class="svg-wrapper">
+            <svg width="360" height="170" viewBox="0 0 360 170" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="fundoVetor" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#f0f9ff"/>
+                        <stop offset="100%" stop-color="#e0f2fe"/>
+                    </linearGradient>
+                    <linearGradient id="bolaAzul" x1="30%" y1="30%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#60a5fa"/>
+                        <stop offset="100%" stop-color="#2563eb"/>
+                    </linearGradient>
+                    <marker id="setaV" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                        <polygon points="0,0 10,5 0,10" fill="#dc2626"/>
+                    </marker>
+                    <marker id="setaQ" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                        <polygon points="0,0 10,5 0,10" fill="#059669"/>
+                    </marker>
+                </defs>
+                <rect x="10" y="10" width="340" height="150" rx="14" fill="url(#fundoVetor)" stroke="#bae6fd" stroke-width="1.5"/>
+                <text x="25" y="38" font-family="Poppins,Arial" font-size="15" fill="#0c4a6e" font-weight="600">Vetor Q segue a velocidade v</text>
+                <circle cx="70" cy="100" r="26" fill="url(#bolaAzul)"/>
+                <text x="62" y="106" font-family="Poppins" font-size="14" fill="white" font-weight="600">m</text>
+                <line x1="96" y1="92" x2="200" y2="92" stroke="#dc2626" stroke-width="3.5" marker-end="url(#setaV)"/>
+                <text x="140" y="82" font-size="13" fill="#b91c1c" font-weight="500">v (velocidade)</text>
+                <line x1="70" y1="114" x2="220" y2="114" stroke="#059669" stroke-width="3.5" marker-end="url(#setaQ)"/>
+                <text x="145" y="138" font-size="13" fill="#047857" font-weight="500">Q = m·v (mesma direção e sentido)</text>
+            </svg>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 2: Impulso -->
+    <section>
+        <h2>💪 Impulso de uma Força Constante</h2>
+        <p>O <strong>impulso</strong> representa o efeito de uma força aplicada durante um intervalo de tempo. Quanto maior a força ou quanto mais tempo ela atua, maior o impulso produzido.</p>
+
+        <div class="formula-destaque">
+            <div class="formula">I = F ⋅ Δt</div>
+            <ul class="lista-definicoes">
+                <li><strong>I</strong> → Impulso → newton-segundo (N·s)</li>
+                <li><strong>F</strong> → Força constante → newton (N)</li>
+                <li><strong>Δt</strong> → Intervalo de tempo → segundo (s)</li>
+            </ul>
+        </div>
+
+        <div class="svg-wrapper">
+            <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="fundoImp" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#f0fdf4"/>
+                        <stop offset="100%" stop-color="#dcfce7"/>
+                    </linearGradient>
+                    <linearGradient id="areaImp" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#86efac" stop-opacity="0.6"/>
+                        <stop offset="100%" stop-color="#4ade80" stop-opacity="0.6"/>
+                    </linearGradient>
+                    <marker id="setaF" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                        <polygon points="0,0 10,5 0,10" fill="#dc2626"/>
+                    </marker>
+                </defs>
+                <rect x="10" y="10" width="380" height="180" rx="14" fill="url(#fundoImp)" stroke="#bbf7d0" stroke-width="1.5"/>
+                <text x="85" y="38" font-family="Poppins" font-size="15" fill="#065f46" font-weight="600">Impulso = Força × Tempo de Aplicação</text>
+                <line x1="60" y1="160" x2="340" y2="160" stroke="#374151" stroke-width="2.5"/>
+                <line x1="60" y1="160" x2="60" y2="55" stroke="#374151" stroke-width="2.5"/>
+                <text x="345" y="165" font-size="13" fill="#4b5563">Δt</text>
+                <text x="35" y="70" font-size="13" fill="#4b5563">F</text>
+                <rect x="60" y="80" width="240" height="80" fill="url(#areaImp)" rx="4"/>
+                <line x1="60" y1="80" x2="300" y2="80" stroke="#16a34a" stroke-width="3"/>
+                <text x="150" y="128" font-family="JetBrains Mono" font-size="18" fill="#15803d" font-weight="600">I = F · Δt</text>
+                <line x1="110" y1="105" x2="200" y2="105" stroke="#dc2626" stroke-width="3" marker-end="url(#setaF)"/>
+                <text x="130" y="95" font-size="12" fill="#b91c1c">Força aplicada</text>
+            </svg>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 3: Teorema do Impulso -->
+    <section>
+        <h2>🧠 Teorema do Impulso</h2>
+        <p>O resultado mais importante desta aula: o impulso produzido por uma força resultante é <strong>exatamente igual à variação da quantidade de movimento</strong> do corpo.</p>
+
+        <h3>📝 Construção Passo a Passo</h3>
+
+        <div class="caixa-passo">
+            <span class="rotulo-passo">Passo 1 — Definição de impulso</span>
+            <p>Começamos pela própria definição:</p>
+            <div class="formula" style="font-size:1.4rem">I = F ⋅ Δt</div>
+        </div>
+
+        <div class="caixa-passo">
+            <span class="rotulo-passo">Passo 2 — Substituindo pela 2ª Lei de Newton</span>
+            <p>Sabemos que: <strong>F = m ⋅ a</strong></p>
+            <p>Substituindo a força:</p>
+            <div class="formula" style="font-size:1.4rem">I = (m ⋅ a) ⋅ Δt</div>
+            <p class="comentario">Apenas trocamos a força pela sua expressão na Segunda Lei de Newton.</p>
+        </div>
+
+        <div class="caixa-passo">
+            <span class="rotulo-passo">Passo 3 — Aceleração e variação de velocidade</span>
+            <p>Usamos: <strong>a = Δv ÷ Δt</strong></p>
+            <p>Substituindo a aceleração:</p>
+            <div class="formula" style="font-size:1.4rem">I = m ⋅ (Δv ÷ Δt) ⋅ Δt</div>
+            <p class="comentario">O Δt aparece em cima e embaixo → eles se cancelam!</p>
+        </div>
+
+        <div class="caixa-passo">
+            <span class="rotulo-passo">Passo 4 — Resultado Final ✅</span>
+            <p>Cancelando o tempo, resta:</p>
+            <div class="formula" style="font-size:1.4rem">I = m ⋅ Δv</div>
+            <p>Como <strong>Δv = v<sub>final</sub> − v<sub>inicial</sub></strong> e <strong>Q = m·v</strong>, temos:</p>
+            <div class="formula" style="font-size:1.4rem">I = Q<sub>final</sub> − Q<sub>inicial</sub> = ΔQ</div>
+        </div>
+
+        <div class="destaque-final">
+            <p style="font-weight:600; color:#92400e; margin-bottom:0.4rem;">🎯 TEOREMA DO IMPULSO</p>
+            <div class="formula">I = ΔQ</div>
+            <p style="margin-top:0.6rem; color:#78350f;">O impulso aplicado = variação da quantidade de movimento</p>
+        </div>
+
+        <div class="svg-wrapper">
+            <svg width="440" height="200" viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="caixaI" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#93c5fd"/>
+                        <stop offset="100%" stop-color="#3b82f6"/>
+                    </linearGradient>
+                    <linearGradient id="caixaQ" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#86efac"/>
+                        <stop offset="100%" stop-color="#22c55e"/>
+                    </linearGradient>
+                    <marker id="setaIgual" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                        <polygon points="0,0 10,5 0,10" fill="#1f2937"/>
+                    </marker>
+                </defs>
+                <rect x="10" y="10" width="420" height="180" rx="14" fill="#f8fafc" stroke="#e5e7eb" stroke-width="1.5"/>
+                <text x="135" y="42" font-family="Poppins" font-size="17" fill="#1e40af" font-weight="700">I = ΔQ — O Teorema</text>
+                <rect x="35" y="60" width="130" height="80" rx="12" fill="url(#caixaI)"/>
+                <text x="98" y="112" font-family="JetBrains Mono" font-size="28" fill="white" text-anchor="middle" font-weight="700">I</text>
+                <text x="55" y="155" font-size="12" fill="#1e3a8a" font-weight="500">Impulso aplicado</text>
+                <path d="M175,100 L235,100" stroke="#1f2937" stroke-width="3.5" marker-end="url(#setaIgual)"/>
+                <text x="185" y="90" font-size="13" fill="#4b5563" font-weight="500">é igual a</text>
+                <rect x="255" y="60" width="150" height="80" rx="12" fill="url(#caixaQ)"/>
+                <text x="330" y="112" font-family="JetBrains Mono" font-size="28" fill="white" text-anchor="middle" font-weight="700">ΔQ</text>
+                <text x="270" y="155" font-size="12" fill="#166534" font-weight="500">Variação do movimento</text>
+            </svg>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 4: Interpretação Física -->
+    <section>
+        <h2>📖 Interpretação Física</h2>
+        <div class="caixa-interpretacao">
+            <p style="font-size:1.08rem;">O impulso funciona como uma <strong>transferência de movimento</strong> entre o agente que aplica a força e o corpo.</p>
+            <ul style="margin-top:0.8rem;">
+                <li>✅ Quanto <strong>maior</strong> o impulso → <strong>maior</strong> a alteração do movimento.</li>
+                <li>🟢 Impulso <strong>positivo</strong> → a velocidade <strong>aumenta</strong>.</li>
+                <li>🟠 Impulso <strong>negativo</strong> → a velocidade <strong>diminui</strong>.</li>
+                <li>🔴 Impulso <strong>contrário ao movimento</strong> → pode reduzir a velocidade até o corpo <strong>parar</strong>.</li>
+            </ul>
+        </div>
+        </div>
+    </section>
+
+</body>
+</html></p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         <!-- Repita o padrão para as demais aulas -->
         <div class="conteudo-aula" id="aula-3">
             <h2>Aula 03</h2>
@@ -1386,201 +1601,7 @@
 </head>
 <body>
 
-    <header>
-        <h1>⚡ Aula 02 — Quando Parar Faz a Diferença<br>O Papel do Impulso na Colisão</h1>
-        <div class="subtitulo-cabecalho">Quantidade de Movimento • Impulso • Teorema do Impulso</div>
-    </header>
 
-    <!-- SEÇÃO 1: Quantidade de Movimento -->
-    <section>
-        <h2>📐 Quantidade de Movimento</h2>
-        <p>A <strong>quantidade de movimento</strong> (ou momento linear) é a grandeza física que mede o estado de movimento de um corpo. Ela depende de duas propriedades: a <em>massa</em> do objeto e a sua <em>velocidade</em>.</p>
-
-        <div class="formula-destaque">
-            <p><strong>Expressão matemática:</strong></p>
-            <div class="formula">Q = m ⋅ v</div>
-            <ul class="lista-definicoes">
-                <li><strong>Q</strong> → Quantidade de movimento → quilograma-metro por segundo (kg·m/s)</li>
-                <li><strong>m</strong> → Massa → quilograma (kg)</li>
-                <li><strong>v</strong> → Velocidade → metro por segundo (m/s)</li>
-            </ul>
-        </div>
-
-        <p>Existem apenas <strong>duas variáveis</strong> na fórmula:</p>
-        <ul>
-            <li>✅ Massa</li>
-            <li>✅ Velocidade</li>
-        </ul>
-        <p>Isso significa que, se a massa dobra → a quantidade de movimento dobra. Se a velocidade dobra → a quantidade de movimento também dobra.</p>
-
-        <div class="caixa-observacao">
-            <h3>💡 Importante: Grandeza Vetorial</h3>
-            <p>A quantidade de movimento possui <strong>módulo, direção e sentido</strong> — assim como a velocidade. O vetor quantidade de movimento <strong>sempre aponta na mesma direção e sentido da velocidade</strong> do corpo.</p>
-        </div>
-
-        <div class="svg-wrapper">
-            <svg width="360" height="170" viewBox="0 0 360 170" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="fundoVetor" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#f0f9ff"/>
-                        <stop offset="100%" stop-color="#e0f2fe"/>
-                    </linearGradient>
-                    <linearGradient id="bolaAzul" x1="30%" y1="30%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#60a5fa"/>
-                        <stop offset="100%" stop-color="#2563eb"/>
-                    </linearGradient>
-                    <marker id="setaV" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-                        <polygon points="0,0 10,5 0,10" fill="#dc2626"/>
-                    </marker>
-                    <marker id="setaQ" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-                        <polygon points="0,0 10,5 0,10" fill="#059669"/>
-                    </marker>
-                </defs>
-                <rect x="10" y="10" width="340" height="150" rx="14" fill="url(#fundoVetor)" stroke="#bae6fd" stroke-width="1.5"/>
-                <text x="25" y="38" font-family="Poppins,Arial" font-size="15" fill="#0c4a6e" font-weight="600">Vetor Q segue a velocidade v</text>
-                <circle cx="70" cy="100" r="26" fill="url(#bolaAzul)"/>
-                <text x="62" y="106" font-family="Poppins" font-size="14" fill="white" font-weight="600">m</text>
-                <line x1="96" y1="92" x2="200" y2="92" stroke="#dc2626" stroke-width="3.5" marker-end="url(#setaV)"/>
-                <text x="140" y="82" font-size="13" fill="#b91c1c" font-weight="500">v (velocidade)</text>
-                <line x1="70" y1="114" x2="220" y2="114" stroke="#059669" stroke-width="3.5" marker-end="url(#setaQ)"/>
-                <text x="145" y="138" font-size="13" fill="#047857" font-weight="500">Q = m·v (mesma direção e sentido)</text>
-            </svg>
-        </div>
-    </section>
-
-    <!-- SEÇÃO 2: Impulso -->
-    <section>
-        <h2>💪 Impulso de uma Força Constante</h2>
-        <p>O <strong>impulso</strong> representa o efeito de uma força aplicada durante um intervalo de tempo. Quanto maior a força ou quanto mais tempo ela atua, maior o impulso produzido.</p>
-
-        <div class="formula-destaque">
-            <div class="formula">I = F ⋅ Δt</div>
-            <ul class="lista-definicoes">
-                <li><strong>I</strong> → Impulso → newton-segundo (N·s)</li>
-                <li><strong>F</strong> → Força constante → newton (N)</li>
-                <li><strong>Δt</strong> → Intervalo de tempo → segundo (s)</li>
-            </ul>
-        </div>
-
-        <div class="svg-wrapper">
-            <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="fundoImp" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#f0fdf4"/>
-                        <stop offset="100%" stop-color="#dcfce7"/>
-                    </linearGradient>
-                    <linearGradient id="areaImp" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#86efac" stop-opacity="0.6"/>
-                        <stop offset="100%" stop-color="#4ade80" stop-opacity="0.6"/>
-                    </linearGradient>
-                    <marker id="setaF" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-                        <polygon points="0,0 10,5 0,10" fill="#dc2626"/>
-                    </marker>
-                </defs>
-                <rect x="10" y="10" width="380" height="180" rx="14" fill="url(#fundoImp)" stroke="#bbf7d0" stroke-width="1.5"/>
-                <text x="85" y="38" font-family="Poppins" font-size="15" fill="#065f46" font-weight="600">Impulso = Força × Tempo de Aplicação</text>
-                <line x1="60" y1="160" x2="340" y2="160" stroke="#374151" stroke-width="2.5"/>
-                <line x1="60" y1="160" x2="60" y2="55" stroke="#374151" stroke-width="2.5"/>
-                <text x="345" y="165" font-size="13" fill="#4b5563">Δt</text>
-                <text x="35" y="70" font-size="13" fill="#4b5563">F</text>
-                <rect x="60" y="80" width="240" height="80" fill="url(#areaImp)" rx="4"/>
-                <line x1="60" y1="80" x2="300" y2="80" stroke="#16a34a" stroke-width="3"/>
-                <text x="150" y="128" font-family="JetBrains Mono" font-size="18" fill="#15803d" font-weight="600">I = F · Δt</text>
-                <line x1="110" y1="105" x2="200" y2="105" stroke="#dc2626" stroke-width="3" marker-end="url(#setaF)"/>
-                <text x="130" y="95" font-size="12" fill="#b91c1c">Força aplicada</text>
-            </svg>
-        </div>
-    </section>
-
-    <!-- SEÇÃO 3: Teorema do Impulso -->
-    <section>
-        <h2>🧠 Teorema do Impulso</h2>
-        <p>O resultado mais importante desta aula: o impulso produzido por uma força resultante é <strong>exatamente igual à variação da quantidade de movimento</strong> do corpo.</p>
-
-        <h3>📝 Construção Passo a Passo</h3>
-
-        <div class="caixa-passo">
-            <span class="rotulo-passo">Passo 1 — Definição de impulso</span>
-            <p>Começamos pela própria definição:</p>
-            <div class="formula" style="font-size:1.4rem">I = F ⋅ Δt</div>
-        </div>
-
-        <div class="caixa-passo">
-            <span class="rotulo-passo">Passo 2 — Substituindo pela 2ª Lei de Newton</span>
-            <p>Sabemos que: <strong>F = m ⋅ a</strong></p>
-            <p>Substituindo a força:</p>
-            <div class="formula" style="font-size:1.4rem">I = (m ⋅ a) ⋅ Δt</div>
-            <p class="comentario">Apenas trocamos a força pela sua expressão na Segunda Lei de Newton.</p>
-        </div>
-
-        <div class="caixa-passo">
-            <span class="rotulo-passo">Passo 3 — Aceleração e variação de velocidade</span>
-            <p>Usamos: <strong>a = Δv ÷ Δt</strong></p>
-            <p>Substituindo a aceleração:</p>
-            <div class="formula" style="font-size:1.4rem">I = m ⋅ (Δv ÷ Δt) ⋅ Δt</div>
-            <p class="comentario">O Δt aparece em cima e embaixo → eles se cancelam!</p>
-        </div>
-
-        <div class="caixa-passo">
-            <span class="rotulo-passo">Passo 4 — Resultado Final ✅</span>
-            <p>Cancelando o tempo, resta:</p>
-            <div class="formula" style="font-size:1.4rem">I = m ⋅ Δv</div>
-            <p>Como <strong>Δv = v<sub>final</sub> − v<sub>inicial</sub></strong> e <strong>Q = m·v</strong>, temos:</p>
-            <div class="formula" style="font-size:1.4rem">I = Q<sub>final</sub> − Q<sub>inicial</sub> = ΔQ</div>
-        </div>
-
-        <div class="destaque-final">
-            <p style="font-weight:600; color:#92400e; margin-bottom:0.4rem;">🎯 TEOREMA DO IMPULSO</p>
-            <div class="formula">I = ΔQ</div>
-            <p style="margin-top:0.6rem; color:#78350f;">O impulso aplicado = variação da quantidade de movimento</p>
-        </div>
-
-        <div class="svg-wrapper">
-            <svg width="440" height="200" viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="caixaI" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#93c5fd"/>
-                        <stop offset="100%" stop-color="#3b82f6"/>
-                    </linearGradient>
-                    <linearGradient id="caixaQ" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#86efac"/>
-                        <stop offset="100%" stop-color="#22c55e"/>
-                    </linearGradient>
-                    <marker id="setaIgual" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-                        <polygon points="0,0 10,5 0,10" fill="#1f2937"/>
-                    </marker>
-                </defs>
-                <rect x="10" y="10" width="420" height="180" rx="14" fill="#f8fafc" stroke="#e5e7eb" stroke-width="1.5"/>
-                <text x="135" y="42" font-family="Poppins" font-size="17" fill="#1e40af" font-weight="700">I = ΔQ — O Teorema</text>
-                <rect x="35" y="60" width="130" height="80" rx="12" fill="url(#caixaI)"/>
-                <text x="98" y="112" font-family="JetBrains Mono" font-size="28" fill="white" text-anchor="middle" font-weight="700">I</text>
-                <text x="55" y="155" font-size="12" fill="#1e3a8a" font-weight="500">Impulso aplicado</text>
-                <path d="M175,100 L235,100" stroke="#1f2937" stroke-width="3.5" marker-end="url(#setaIgual)"/>
-                <text x="185" y="90" font-size="13" fill="#4b5563" font-weight="500">é igual a</text>
-                <rect x="255" y="60" width="150" height="80" rx="12" fill="url(#caixaQ)"/>
-                <text x="330" y="112" font-family="JetBrains Mono" font-size="28" fill="white" text-anchor="middle" font-weight="700">ΔQ</text>
-                <text x="270" y="155" font-size="12" fill="#166534" font-weight="500">Variação do movimento</text>
-            </svg>
-        </div>
-    </section>
-
-    <!-- SEÇÃO 4: Interpretação Física -->
-    <section>
-        <h2>📖 Interpretação Física</h2>
-        <div class="caixa-interpretacao">
-            <p style="font-size:1.08rem;">O impulso funciona como uma <strong>transferência de movimento</strong> entre o agente que aplica a força e o corpo.</p>
-            <ul style="margin-top:0.8rem;">
-                <li>✅ Quanto <strong>maior</strong> o impulso → <strong>maior</strong> a alteração do movimento.</li>
-                <li>🟢 Impulso <strong>positivo</strong> → a velocidade <strong>aumenta</strong>.</li>
-                <li>🟠 Impulso <strong>negativo</strong> → a velocidade <strong>diminui</strong>.</li>
-                <li>🔴 Impulso <strong>contrário ao movimento</strong> → pode reduzir a velocidade até o corpo <strong>parar</strong>.</li>
-            </ul>
-        </div>
-        </div>
-    </section>
-
-</body>
-</html>
 
 
 
