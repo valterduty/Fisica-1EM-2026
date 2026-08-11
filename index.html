@@ -120,8 +120,241 @@
     <!-- Área onde o conteúdo será exibido -->
     <div id="conteudo-exibicao">
         <div class="conteudo-aula" id="aula-1">
-            <h2>Aula 01 — Introdução</h2>
-            <p>Aqui você coloca o conteúdo da primeira aula: textos, vídeos, links, materiais, etc.</p>
+            <h2>Aula 01 — Potência Média ou Instantânea: Entenda de uma vez por todas qual é a diferença entre elas</h2>
+            <p>
+    <header>
+        <h1>⚡ Aula 01: Potência Média ou Instantânea</h1>
+        <p>Entenda de uma vez por todas qual é a diferença entre elas</p>
+    </header>
+
+    <section>
+        <h2>🔋 Potência</h2>
+
+        <h3>O que é Potência?</h3>
+        <p>A potência é a grandeza física que mede a <strong>rapidez</strong> com que um trabalho é realizado ou uma energia é transferida.</p>
+
+        <div class="definicao-box">
+            <strong>📌 Regra geral:</strong>
+            <ul class="regra-lista">
+                <li>Quanto <span class="destaque">menos tempo</span> para realizar a mesma tarefa → <span class="destaque">maior a potência</span>.</li>
+                <li>Quanto <span class="destaque">mais energia</span> transformada no mesmo tempo → <span class="destaque">maior a potência</span>.</li>
+            </ul>
+        </div>
+
+        <div class="esquema-container">
+            <h3>📐 Fórmula Fundamental</h3>
+            <svg width="620" height="220" viewBox="0 0 620 220" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="fundoCard" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#eff6ff"/>
+                        <stop offset="100%" stop-color="#dbeafe"/>
+                    </linearGradient>
+                    <linearGradient id="blocoE" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#93c5fd"/>
+                        <stop offset="100%" stop-color="#3b82f6"/>
+                    </linearGradient>
+                    <linearGradient id="blocoP" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#fef08a"/>
+                        <stop offset="100%" stop-color="#facc15"/>
+                    </linearGradient>
+                    <marker id="setaAzul" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                        <path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/>
+                    </marker>
+                    <marker id="setaVerde" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                        <path d="M0 0 L10 5 L0 10 z" fill="#16a34a"/>
+                    </marker>
+                </defs>
+
+                <rect x="10" y="10" width="600" height="200" rx="14" fill="url(#fundoCard)" stroke="#bfdbfe" stroke-width="2"/>
+
+                <rect x="40" y="65" width="140" height="80" rx="10" fill="url(#blocoE)" stroke="#1d4ed8" stroke-width="2.5"/>
+                <text x="110" y="98" text-anchor="middle" font-size="20" font-weight="bold" fill="#1e3a8a">Energia (E)</text>
+                <text x="110" y="125" text-anchor="middle" font-size="13" fill="#1e40af">ou Trabalho (τ)</text>
+
+                <text x="210" y="118" font-size="40" font-weight="bold" fill="#1e40af">÷</text>
+
+                <rect x="260" y="65" width="140" height="80" rx="10" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2.5"/>
+                <text x="330" y="98" text-anchor="middle" font-size="20" font-weight="bold" fill="#1e3a8a">Tempo (Δt)</text>
+                <text x="330" y="125" text-anchor="middle" font-size="13" fill="#1e40af">intervalo de tempo</text>
+
+                <text x="430" y="118" font-size="40" font-weight="bold" fill="#1e40af">=</text>
+
+                <rect x="470" y="65" width="120" height="80" rx="10" fill="url(#blocoP)" stroke="#ca8a04" stroke-width="2.5"/>
+                <text x="530" y="112" text-anchor="middle" font-size="22" font-weight="bold" fill="#854d0e">Potência (P)</text>
+
+                <path d="M 95 152 Q 95 182 155 182" stroke="#dc2626" stroke-width="3.5" fill="none" marker-end="url(#setaAzul)"/>
+                <text x="125" y="198" text-anchor="middle" font-size="12.5" font-weight="500" fill="#b91c1c">↑ Mais energia → Mais potência</text>
+
+                <path d="M 325 152 Q 325 182 265 182" stroke="#16a34a" stroke-width="3.5" fill="none" marker-end="url(#setaVerde)"/>
+                <text x="295" y="198" text-anchor="middle" font-size="12.5" font-weight="500" fill="#15803d">↓ Menos tempo → Mais potência</text>
+            </svg>
+        </div>
+    </section>
+
+    <section>
+        <h2>📊 Potência Média</h2>
+        <p>A potência média é a <strong>razão</strong> entre o trabalho realizado (ou a energia transferida) e o intervalo de tempo gasto.</p>
+        <p>Usamos a potência média quando queremos saber o comportamento <strong>ao longo de um intervalo maior de tempo</strong>.</p>
+
+        <div class="formula">
+            P<sub>média</sub> = E / Δt &nbsp;&nbsp; ou &nbsp;&nbsp; P<sub>média</sub> = τ / Δt
+        </div>
+
+        <p>Como o trabalho τ corresponde à energia transferida, ambas as fórmulas são equivalentes.</p>
+
+        <div class="unidade-box">
+            <strong>📏 Unidade de Medida — Sistema Internacional (SI):</strong>
+            <br><br>
+            <strong>1 Watt (W) = 1 Joule por segundo (J/s)</strong>
+            <br>Significa que 1 Joule de energia é transformada a cada 1 segundo.
+            <br><br>
+            Também usamos: <strong>1 kW = 1.000 W</strong> e <strong>1 MW = 1.000.000 W</strong>.
+        </div>
+
+        <p>A potência é chamada de <em>média</em> porque considera <strong>toda</strong> a energia transferida no período. Se a potência varia durante o processo, o valor instantâneo pode ser bem diferente da média.</p>
+    </section>
+
+    <section>
+        <h2>🚀 Potência, Força e Velocidade</h2>
+        <p>Quando um corpo se move com velocidade constante e a força atua na mesma direção do movimento, podemos relacionar diretamente potência, força e velocidade.</p>
+
+        <div class="esquema-container">
+            <h3>🔗 Relação: P = F × v</h3>
+            <svg width="620" height="240" viewBox="0 0 620 240" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="carroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#3b82f6"/>
+                        <stop offset="100%" stop-color="#1d4ed8"/>
+                    </linearGradient>
+                    <linearGradient id="eqBox" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#fef9c3"/>
+                        <stop offset="100%" stop-color="#fef08a"/>
+                    </linearGradient>
+                    <marker id="setaVermelha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                        <path d="M0 0 L10 5 L0 10 z" fill="#ef4444"/>
+                    </marker>
+                    <marker id="setaVerdeF" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                        <path d="M0 0 L10 5 L0 10 z" fill="#22c55e"/>
+                    </marker>
+                </defs>
+
+                <rect x="10" y="10" width="600" height="220" rx="14" fill="#fafafa" stroke="#e5e7eb" stroke-width="2"/>
+
+                <rect x="60" y="95" width="90" height="55" rx="8" fill="url(#carroGrad)" stroke="#1e40af" stroke-width="2.5" filter="drop-shadow(2px 3px 2px rgba(0,0,0,0.1))"/>
+                <text x="105" y="128" text-anchor="middle" fill="white" font-size="15" font-weight="bold">Corpo</text>
+
+                <path d="M 150 122 L 260 122" stroke="#ef4444" stroke-width="5" marker-end="url(#setaVermelha)"/>
+                <text x="205" y="110" text-anchor="middle" fill="#dc2626" font-size="14" font-weight="bold">Força (F)</text>
+
+                <path d="M 60 165 L 260 165" stroke="#22c55e" stroke-width="5" marker-end="url(#setaVerdeF)"/>
+                <text x="160" y="188" text-anchor="middle" fill="#16a34a" font-size="14" font-weight="bold">Velocidade (v)</text>
+
+                <rect x="340" y="75" width="240" height="90" rx="10" fill="url(#eqBox)" stroke="#eab308" stroke-width="2.5"/>
+                <text x="460" y="120" text-anchor="middle" font-size="30" font-weight="bold" fill="#854d0e">P = F × v</text>
+                <text x="460" y="148" text-anchor="middle" font-size="13" fill="#a16207">Força multiplicada pela velocidade</text>
+
+                <text x="350" y="215" font-size="13" fill="#475569">↑ Força aumenta → Potência aumenta &nbsp;|&nbsp; ↑ Velocidade aumenta → Potência aumenta</text>
+            </svg>
+        </div>
+
+        <p>Onde:</p>
+        <ul class="lista-dados">
+            <li><strong>P</strong> → Potência, em Watts (W)</li>
+            <li><strong>F</strong> → Força aplicada, em Newtons (N)</li>
+            <li><strong>v</strong> → Velocidade, em metros por segundo (m/s)</li>
+        </ul>
+        <p>✅ Quanto maior a força ou a velocidade, maior será a potência desenvolvida.</p>
+    </section>
+
+    <section>
+        <h2>⚡ Potência Instantânea</h2>
+        <p>Já a potência instantânea representa o valor da potência em <strong>um instante específico</strong>, quando o intervalo de tempo Δt é praticamente zero.</p>
+        <p>Para calculá-la, usamos a <strong>velocidade instantânea</strong> no lugar da velocidade média.</p>
+
+        <div class="esquema-container">
+            <h3>📈 Comparação: Média × Instantânea</h3>
+            <svg width="620" height="300" viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grafFundo" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#f0f9ff"/>
+                        <stop offset="100%" stop-color="#e0f2fe"/>
+                    </linearGradient>
+                    <linearGradient id="curvaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#f97316"/>
+                        <stop offset="100%" stop-color="#ef4444"/>
+                    </linearGradient>
+                </defs>
+
+                <rect x="10" y="10" width="600" height="280" rx="14" fill="url(#grafFundo)" stroke="#bae6fd" stroke-width="2"/>
+
+                <line x1="70" y1="240" x2="570" y2="240" stroke="#334155" stroke-width="2.5"/>
+                <line x1="70" y1="40" x2="70" y2="240" stroke="#334155" stroke-width="2.5"/>
+
+                <text x="585" y="248" text-anchor="middle" font-size="14" fill="#475569">Tempo →</text>
+                <text x="35" y="45" text-anchor="middle" transform="rotate(-90, 35, 140)" font-size="14" fill="#475569">Potência →</text>
+
+                <path d="M 70 190 
+                         C 130 200, 180 110, 250 90 
+                         C 320 70, 360 35, 400 55 
+                         C 440 75, 500 170, 570 180" 
+                      stroke="url(#curvaGrad)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+                <line x1="70" y1="140" x2="570" y2="140" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="10,5"/>
+
+                <line x1="370" y1="40" x2="370" y2="240" stroke="#22c55e" stroke-width="2.5" stroke-dasharray="5,5"/>
+                <circle cx="370" cy="48" r="8" fill="#22c55e" stroke="#15803d" stroke-width="2.5"/>
+
+                <rect x="300" y="250" width="140" height="22" rx="6" fill="#dcfce7" stroke="#bbf7d0"/>
+                <text x="370" y="265" text-anchor="middle" font-size="12" fill="#166534">Δt → 0 (instante)</text>
+
+                <text x="490" y="100" font-size="14" font-weight="bold" fill="#2563eb">—— Média (constante)</text>
+                <text x="490" y="125" font-size="14" font-weight="bold" fill="#f97316">─── Instantânea (varia)</text>
+                <text x="385" y="45" font-size="12" font-weight="600" fill="#166534">Valor exato</text>
+            </svg>
+        </div>
+
+        <div class="exemplo-box">
+            <strong>🚗 Exemplo prático:</strong>
+            <br><br>
+            A potência <strong>média</strong> de um carro durante uma viagem de 1 hora é de <strong>30 kW</strong>.
+            <br>
+            No entanto, no momento em que ele acelera para ultrapassar outro veículo, a potência <strong>instantânea</strong> pode chegar a <strong>70 kW</strong> — bem acima da média!
+        </div>
+    </section>
+
+    <section>
+        <h2>📋 Resumo Comparativo</h2>
+
+        <table class="tabela-resumo">
+            <thead>
+                <tr>
+                    <th style="width: 50%;">📊 Potência Média</th>
+                    <th style="width: 50%;">⚡ Potência Instantânea</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Considera um <strong>intervalo maior</strong> de tempo</td>
+                    <td>Considera <strong>um instante exato</strong> (Δt → 0)</td>
+                </tr>
+                <tr>
+                    <td>Depende da <strong>velocidade média</strong></td>
+                    <td>Depende da <strong>velocidade instantânea</strong></td>
+                </tr>
+                <tr>
+                    <td>Mostra o <strong>desempenho geral</strong> do processo</td>
+                    <td>Mostra o <strong>valor exato</strong> naquele momento</td>
+                </tr>
+                <tr>
+                    <td>Útil para análise de <strong>desempenho ao longo do tempo</strong></td>
+                    <td>Útil para saber o <strong>valor máximo ou pontual</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html></p>
         </div>
 
         <div class="conteudo-aula" id="aula-2">
@@ -1603,239 +1836,6 @@
 </head>
 <body>
 
-    <header>
-        <h1>⚡ Aula 01: Potência Média ou Instantânea</h1>
-        <p>Entenda de uma vez por todas qual é a diferença entre elas</p>
-    </header>
-
-    <section>
-        <h2>🔋 Potência</h2>
-
-        <h3>O que é Potência?</h3>
-        <p>A potência é a grandeza física que mede a <strong>rapidez</strong> com que um trabalho é realizado ou uma energia é transferida.</p>
-
-        <div class="definicao-box">
-            <strong>📌 Regra geral:</strong>
-            <ul class="regra-lista">
-                <li>Quanto <span class="destaque">menos tempo</span> para realizar a mesma tarefa → <span class="destaque">maior a potência</span>.</li>
-                <li>Quanto <span class="destaque">mais energia</span> transformada no mesmo tempo → <span class="destaque">maior a potência</span>.</li>
-            </ul>
-        </div>
-
-        <div class="esquema-container">
-            <h3>📐 Fórmula Fundamental</h3>
-            <svg width="620" height="220" viewBox="0 0 620 220" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="fundoCard" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#eff6ff"/>
-                        <stop offset="100%" stop-color="#dbeafe"/>
-                    </linearGradient>
-                    <linearGradient id="blocoE" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#93c5fd"/>
-                        <stop offset="100%" stop-color="#3b82f6"/>
-                    </linearGradient>
-                    <linearGradient id="blocoP" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#fef08a"/>
-                        <stop offset="100%" stop-color="#facc15"/>
-                    </linearGradient>
-                    <marker id="setaAzul" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-                        <path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/>
-                    </marker>
-                    <marker id="setaVerde" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-                        <path d="M0 0 L10 5 L0 10 z" fill="#16a34a"/>
-                    </marker>
-                </defs>
-
-                <rect x="10" y="10" width="600" height="200" rx="14" fill="url(#fundoCard)" stroke="#bfdbfe" stroke-width="2"/>
-
-                <rect x="40" y="65" width="140" height="80" rx="10" fill="url(#blocoE)" stroke="#1d4ed8" stroke-width="2.5"/>
-                <text x="110" y="98" text-anchor="middle" font-size="20" font-weight="bold" fill="#1e3a8a">Energia (E)</text>
-                <text x="110" y="125" text-anchor="middle" font-size="13" fill="#1e40af">ou Trabalho (τ)</text>
-
-                <text x="210" y="118" font-size="40" font-weight="bold" fill="#1e40af">÷</text>
-
-                <rect x="260" y="65" width="140" height="80" rx="10" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2.5"/>
-                <text x="330" y="98" text-anchor="middle" font-size="20" font-weight="bold" fill="#1e3a8a">Tempo (Δt)</text>
-                <text x="330" y="125" text-anchor="middle" font-size="13" fill="#1e40af">intervalo de tempo</text>
-
-                <text x="430" y="118" font-size="40" font-weight="bold" fill="#1e40af">=</text>
-
-                <rect x="470" y="65" width="120" height="80" rx="10" fill="url(#blocoP)" stroke="#ca8a04" stroke-width="2.5"/>
-                <text x="530" y="112" text-anchor="middle" font-size="22" font-weight="bold" fill="#854d0e">Potência (P)</text>
-
-                <path d="M 95 152 Q 95 182 155 182" stroke="#dc2626" stroke-width="3.5" fill="none" marker-end="url(#setaAzul)"/>
-                <text x="125" y="198" text-anchor="middle" font-size="12.5" font-weight="500" fill="#b91c1c">↑ Mais energia → Mais potência</text>
-
-                <path d="M 325 152 Q 325 182 265 182" stroke="#16a34a" stroke-width="3.5" fill="none" marker-end="url(#setaVerde)"/>
-                <text x="295" y="198" text-anchor="middle" font-size="12.5" font-weight="500" fill="#15803d">↓ Menos tempo → Mais potência</text>
-            </svg>
-        </div>
-    </section>
-
-    <section>
-        <h2>📊 Potência Média</h2>
-        <p>A potência média é a <strong>razão</strong> entre o trabalho realizado (ou a energia transferida) e o intervalo de tempo gasto.</p>
-        <p>Usamos a potência média quando queremos saber o comportamento <strong>ao longo de um intervalo maior de tempo</strong>.</p>
-
-        <div class="formula">
-            P<sub>média</sub> = E / Δt &nbsp;&nbsp; ou &nbsp;&nbsp; P<sub>média</sub> = τ / Δt
-        </div>
-
-        <p>Como o trabalho τ corresponde à energia transferida, ambas as fórmulas são equivalentes.</p>
-
-        <div class="unidade-box">
-            <strong>📏 Unidade de Medida — Sistema Internacional (SI):</strong>
-            <br><br>
-            <strong>1 Watt (W) = 1 Joule por segundo (J/s)</strong>
-            <br>Significa que 1 Joule de energia é transformada a cada 1 segundo.
-            <br><br>
-            Também usamos: <strong>1 kW = 1.000 W</strong> e <strong>1 MW = 1.000.000 W</strong>.
-        </div>
-
-        <p>A potência é chamada de <em>média</em> porque considera <strong>toda</strong> a energia transferida no período. Se a potência varia durante o processo, o valor instantâneo pode ser bem diferente da média.</p>
-    </section>
-
-    <section>
-        <h2>🚀 Potência, Força e Velocidade</h2>
-        <p>Quando um corpo se move com velocidade constante e a força atua na mesma direção do movimento, podemos relacionar diretamente potência, força e velocidade.</p>
-
-        <div class="esquema-container">
-            <h3>🔗 Relação: P = F × v</h3>
-            <svg width="620" height="240" viewBox="0 0 620 240" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="carroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#3b82f6"/>
-                        <stop offset="100%" stop-color="#1d4ed8"/>
-                    </linearGradient>
-                    <linearGradient id="eqBox" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#fef9c3"/>
-                        <stop offset="100%" stop-color="#fef08a"/>
-                    </linearGradient>
-                    <marker id="setaVermelha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-                        <path d="M0 0 L10 5 L0 10 z" fill="#ef4444"/>
-                    </marker>
-                    <marker id="setaVerdeF" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-                        <path d="M0 0 L10 5 L0 10 z" fill="#22c55e"/>
-                    </marker>
-                </defs>
-
-                <rect x="10" y="10" width="600" height="220" rx="14" fill="#fafafa" stroke="#e5e7eb" stroke-width="2"/>
-
-                <rect x="60" y="95" width="90" height="55" rx="8" fill="url(#carroGrad)" stroke="#1e40af" stroke-width="2.5" filter="drop-shadow(2px 3px 2px rgba(0,0,0,0.1))"/>
-                <text x="105" y="128" text-anchor="middle" fill="white" font-size="15" font-weight="bold">Corpo</text>
-
-                <path d="M 150 122 L 260 122" stroke="#ef4444" stroke-width="5" marker-end="url(#setaVermelha)"/>
-                <text x="205" y="110" text-anchor="middle" fill="#dc2626" font-size="14" font-weight="bold">Força (F)</text>
-
-                <path d="M 60 165 L 260 165" stroke="#22c55e" stroke-width="5" marker-end="url(#setaVerdeF)"/>
-                <text x="160" y="188" text-anchor="middle" fill="#16a34a" font-size="14" font-weight="bold">Velocidade (v)</text>
-
-                <rect x="340" y="75" width="240" height="90" rx="10" fill="url(#eqBox)" stroke="#eab308" stroke-width="2.5"/>
-                <text x="460" y="120" text-anchor="middle" font-size="30" font-weight="bold" fill="#854d0e">P = F × v</text>
-                <text x="460" y="148" text-anchor="middle" font-size="13" fill="#a16207">Força multiplicada pela velocidade</text>
-
-                <text x="350" y="215" font-size="13" fill="#475569">↑ Força aumenta → Potência aumenta &nbsp;|&nbsp; ↑ Velocidade aumenta → Potência aumenta</text>
-            </svg>
-        </div>
-
-        <p>Onde:</p>
-        <ul class="lista-dados">
-            <li><strong>P</strong> → Potência, em Watts (W)</li>
-            <li><strong>F</strong> → Força aplicada, em Newtons (N)</li>
-            <li><strong>v</strong> → Velocidade, em metros por segundo (m/s)</li>
-        </ul>
-        <p>✅ Quanto maior a força ou a velocidade, maior será a potência desenvolvida.</p>
-    </section>
-
-    <section>
-        <h2>⚡ Potência Instantânea</h2>
-        <p>Já a potência instantânea representa o valor da potência em <strong>um instante específico</strong>, quando o intervalo de tempo Δt é praticamente zero.</p>
-        <p>Para calculá-la, usamos a <strong>velocidade instantânea</strong> no lugar da velocidade média.</p>
-
-        <div class="esquema-container">
-            <h3>📈 Comparação: Média × Instantânea</h3>
-            <svg width="620" height="300" viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="grafFundo" x1="0%" y1="0%" x2="0%" y2="100%">
-                        <stop offset="0%" stop-color="#f0f9ff"/>
-                        <stop offset="100%" stop-color="#e0f2fe"/>
-                    </linearGradient>
-                    <linearGradient id="curvaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#f97316"/>
-                        <stop offset="100%" stop-color="#ef4444"/>
-                    </linearGradient>
-                </defs>
-
-                <rect x="10" y="10" width="600" height="280" rx="14" fill="url(#grafFundo)" stroke="#bae6fd" stroke-width="2"/>
-
-                <line x1="70" y1="240" x2="570" y2="240" stroke="#334155" stroke-width="2.5"/>
-                <line x1="70" y1="40" x2="70" y2="240" stroke="#334155" stroke-width="2.5"/>
-
-                <text x="585" y="248" text-anchor="middle" font-size="14" fill="#475569">Tempo →</text>
-                <text x="35" y="45" text-anchor="middle" transform="rotate(-90, 35, 140)" font-size="14" fill="#475569">Potência →</text>
-
-                <path d="M 70 190 
-                         C 130 200, 180 110, 250 90 
-                         C 320 70, 360 35, 400 55 
-                         C 440 75, 500 170, 570 180" 
-                      stroke="url(#curvaGrad)" stroke-width="4" fill="none" stroke-linecap="round"/>
-
-                <line x1="70" y1="140" x2="570" y2="140" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="10,5"/>
-
-                <line x1="370" y1="40" x2="370" y2="240" stroke="#22c55e" stroke-width="2.5" stroke-dasharray="5,5"/>
-                <circle cx="370" cy="48" r="8" fill="#22c55e" stroke="#15803d" stroke-width="2.5"/>
-
-                <rect x="300" y="250" width="140" height="22" rx="6" fill="#dcfce7" stroke="#bbf7d0"/>
-                <text x="370" y="265" text-anchor="middle" font-size="12" fill="#166534">Δt → 0 (instante)</text>
-
-                <text x="490" y="100" font-size="14" font-weight="bold" fill="#2563eb">—— Média (constante)</text>
-                <text x="490" y="125" font-size="14" font-weight="bold" fill="#f97316">─── Instantânea (varia)</text>
-                <text x="385" y="45" font-size="12" font-weight="600" fill="#166534">Valor exato</text>
-            </svg>
-        </div>
-
-        <div class="exemplo-box">
-            <strong>🚗 Exemplo prático:</strong>
-            <br><br>
-            A potência <strong>média</strong> de um carro durante uma viagem de 1 hora é de <strong>30 kW</strong>.
-            <br>
-            No entanto, no momento em que ele acelera para ultrapassar outro veículo, a potência <strong>instantânea</strong> pode chegar a <strong>70 kW</strong> — bem acima da média!
-        </div>
-    </section>
-
-    <section>
-        <h2>📋 Resumo Comparativo</h2>
-
-        <table class="tabela-resumo">
-            <thead>
-                <tr>
-                    <th style="width: 50%;">📊 Potência Média</th>
-                    <th style="width: 50%;">⚡ Potência Instantânea</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Considera um <strong>intervalo maior</strong> de tempo</td>
-                    <td>Considera <strong>um instante exato</strong> (Δt → 0)</td>
-                </tr>
-                <tr>
-                    <td>Depende da <strong>velocidade média</strong></td>
-                    <td>Depende da <strong>velocidade instantânea</strong></td>
-                </tr>
-                <tr>
-                    <td>Mostra o <strong>desempenho geral</strong> do processo</td>
-                    <td>Mostra o <strong>valor exato</strong> naquele momento</td>
-                </tr>
-                <tr>
-                    <td>Útil para análise de <strong>desempenho ao longo do tempo</strong></td>
-                    <td>Útil para saber o <strong>valor máximo ou pontual</strong></td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-</body>
-</html>
 
 
 
