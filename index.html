@@ -11,6 +11,10 @@
 </body>
 </html>
 
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -117,687 +121,938 @@
         <button class="botao-aula" data-aula="14">Aula 14</button>
     </div>
 
+
+
     <!-- Área onde o conteúdo será exibido -->
     <div id="conteudo-exibicao">
         <div class="conteudo-aula" id="aula-1">
-            <h2>Aula 01 — Potência Média ou Instantânea: qual é a diferença?</h2>
-            <p>
-    <header>
-        <h1>⚡ Aula 01: Potência Média ou Instantânea</h1>
-        <p>Entenda de uma vez por todas qual é a diferença entre elas</p>
-    </header>
+            <h2>Aula 01 - Potência média ou instantânea: qual é a diferença?</h2>
+            <p><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01 — Potência Média ou Instantânea: Qual é a Diferença?</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #2d3748;
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            background: linear-gradient(135deg, #2b6cb0, #2c5282);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+        h2 { color: #2b6cb0; margin: 2rem 0 1rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.3rem; }
+        h3 { color: #2f855a; margin: 1.2rem 0 0.6rem; }
+        p { margin-bottom: 1rem; }
+        .regra {
+            background-color: #fef5e7;
+            border-left: 4px solid #ed8936;
+            padding: 1rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1rem 0;
+        }
+        .formula {
+            background-color: #ebf4ff;
+            border: 1px solid #90cdf4;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.1rem;
+            margin: 1rem 0;
+            font-family: 'Cambria Math', serif;
+        }
+        .unidade {
+            background-color: #f0fff4;
+            border-left: 4px solid #48bb78;
+            padding: 1rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1rem 0;
+        }
+        svg { display: block; margin: 1rem auto; max-width: 100%; height: auto; }
+        .exemplo {
+            background-color: #faf5ff;
+            border-left: 4px solid #9f7aea;
+            padding: 1rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1rem 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+        th, td {
+            padding: 0.9rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        th { background-color: #2b6cb0; color: white; }
+        tr:last-child td { border-bottom: none; }
+        .ilustracao {
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
 
-    <section>
-        <h2>🔋 Potência</h2>
+<header>
+    <h1>Aula 01 — Potência Média ou Instantânea</h1>
+    <p style="margin:0; opacity:0.9;">Qual é a diferença entre elas?</p>
+</header>
 
-        <h3>O que é Potência?</h3>
-        <p>A potência é a grandeza física que mede a <strong>rapidez</strong> com que um trabalho é realizado ou uma energia é transferida.</p>
+<section>
+    <h2>⚡ Potência</h2>
+    <h3>O que é Potência?</h3>
+    <p>A potência é a grandeza física que mede a rapidez com que um trabalho é realizado ou uma energia é transferida.</p>
 
-        <div class="definicao-box">
-            <strong>📌 Regra geral:</strong>
-            <ul class="regra-lista">
-                <li>Quanto <span class="destaque">menos tempo</span> para realizar a mesma tarefa → <span class="destaque">maior a potência</span>.</li>
-                <li>Quanto <span class="destaque">mais energia</span> transformada no mesmo tempo → <span class="destaque">maior a potência</span>.</li>
-            </ul>
-        </div>
-
-        <div class="esquema-container">
-            <h3>📐 Fórmula Fundamental</h3>
-            <svg width="620" height="220" viewBox="0 0 620 220" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="fundoCard" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#eff6ff"/>
-                        <stop offset="100%" stop-color="#dbeafe"/>
-                    </linearGradient>
-                    <linearGradient id="blocoE" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#93c5fd"/>
-                        <stop offset="100%" stop-color="#3b82f6"/>
-                    </linearGradient>
-                    <linearGradient id="blocoP" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#fef08a"/>
-                        <stop offset="100%" stop-color="#facc15"/>
-                    </linearGradient>
-                    <marker id="setaAzul" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-                        <path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/>
-                    </marker>
-                    <marker id="setaVerde" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-                        <path d="M0 0 L10 5 L0 10 z" fill="#16a34a"/>
-                    </marker>
-                </defs>
-
-                <rect x="10" y="10" width="600" height="200" rx="14" fill="url(#fundoCard)" stroke="#bfdbfe" stroke-width="2"/>
-
-                <rect x="40" y="65" width="140" height="80" rx="10" fill="url(#blocoE)" stroke="#1d4ed8" stroke-width="2.5"/>
-                <text x="110" y="98" text-anchor="middle" font-size="20" font-weight="bold" fill="#1e3a8a">Energia (E)</text>
-                <text x="110" y="125" text-anchor="middle" font-size="13" fill="#1e40af">ou Trabalho (τ)</text>
-
-                <text x="210" y="118" font-size="40" font-weight="bold" fill="#1e40af">÷</text>
-
-                <rect x="260" y="65" width="140" height="80" rx="10" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2.5"/>
-                <text x="330" y="98" text-anchor="middle" font-size="20" font-weight="bold" fill="#1e3a8a">Tempo (Δt)</text>
-                <text x="330" y="125" text-anchor="middle" font-size="13" fill="#1e40af">intervalo de tempo</text>
-
-                <text x="430" y="118" font-size="40" font-weight="bold" fill="#1e40af">=</text>
-
-                <rect x="470" y="65" width="120" height="80" rx="10" fill="url(#blocoP)" stroke="#ca8a04" stroke-width="2.5"/>
-                <text x="530" y="112" text-anchor="middle" font-size="22" font-weight="bold" fill="#854d0e">Potência (P)</text>
-
-                <path d="M 95 152 Q 95 182 155 182" stroke="#dc2626" stroke-width="3.5" fill="none" marker-end="url(#setaAzul)"/>
-                <text x="125" y="198" text-anchor="middle" font-size="12.5" font-weight="500" fill="#b91c1c">↑ Mais energia → Mais potência</text>
-
-                <path d="M 325 152 Q 325 182 265 182" stroke="#16a34a" stroke-width="3.5" fill="none" marker-end="url(#setaVerde)"/>
-                <text x="295" y="198" text-anchor="middle" font-size="12.5" font-weight="500" fill="#15803d">↓ Menos tempo → Mais potência</text>
-            </svg>
-        </div>
-    </section>
-
-    <section>
-        <h2>📊 Potência Média</h2>
-        <p>A potência média é a <strong>razão</strong> entre o trabalho realizado (ou a energia transferida) e o intervalo de tempo gasto.</p>
-        <p>Usamos a potência média quando queremos saber o comportamento <strong>ao longo de um intervalo maior de tempo</strong>.</p>
-
-        <div class="formula">
-            P<sub>média</sub> = E / Δt &nbsp;&nbsp; ou &nbsp;&nbsp; P<sub>média</sub> = τ / Δt
-        </div>
-
-        <p>Como o trabalho τ corresponde à energia transferida, ambas as fórmulas são equivalentes.</p>
-
-        <div class="unidade-box">
-            <strong>📏 Unidade de Medida — Sistema Internacional (SI):</strong>
-            <br><br>
-            <strong>1 Watt (W) = 1 Joule por segundo (J/s)</strong>
-            <br>Significa que 1 Joule de energia é transformada a cada 1 segundo.
-            <br><br>
-            Também usamos: <strong>1 kW = 1.000 W</strong> e <strong>1 MW = 1.000.000 W</strong>.
-        </div>
-
-        <p>A potência é chamada de <em>média</em> porque considera <strong>toda</strong> a energia transferida no período. Se a potência varia durante o processo, o valor instantâneo pode ser bem diferente da média.</p>
-    </section>
-
-    <section>
-        <h2>🚀 Potência, Força e Velocidade</h2>
-        <p>Quando um corpo se move com velocidade constante e a força atua na mesma direção do movimento, podemos relacionar diretamente potência, força e velocidade.</p>
-
-        <div class="esquema-container">
-            <h3>🔗 Relação: P = F × v</h3>
-            <svg width="620" height="240" viewBox="0 0 620 240" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="carroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#3b82f6"/>
-                        <stop offset="100%" stop-color="#1d4ed8"/>
-                    </linearGradient>
-                    <linearGradient id="eqBox" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#fef9c3"/>
-                        <stop offset="100%" stop-color="#fef08a"/>
-                    </linearGradient>
-                    <marker id="setaVermelha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-                        <path d="M0 0 L10 5 L0 10 z" fill="#ef4444"/>
-                    </marker>
-                    <marker id="setaVerdeF" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-                        <path d="M0 0 L10 5 L0 10 z" fill="#22c55e"/>
-                    </marker>
-                </defs>
-
-                <rect x="10" y="10" width="600" height="220" rx="14" fill="#fafafa" stroke="#e5e7eb" stroke-width="2"/>
-
-                <rect x="60" y="95" width="90" height="55" rx="8" fill="url(#carroGrad)" stroke="#1e40af" stroke-width="2.5" filter="drop-shadow(2px 3px 2px rgba(0,0,0,0.1))"/>
-                <text x="105" y="128" text-anchor="middle" fill="white" font-size="15" font-weight="bold">Corpo</text>
-
-                <path d="M 150 122 L 260 122" stroke="#ef4444" stroke-width="5" marker-end="url(#setaVermelha)"/>
-                <text x="205" y="110" text-anchor="middle" fill="#dc2626" font-size="14" font-weight="bold">Força (F)</text>
-
-                <path d="M 60 165 L 260 165" stroke="#22c55e" stroke-width="5" marker-end="url(#setaVerdeF)"/>
-                <text x="160" y="188" text-anchor="middle" fill="#16a34a" font-size="14" font-weight="bold">Velocidade (v)</text>
-
-                <rect x="340" y="75" width="240" height="90" rx="10" fill="url(#eqBox)" stroke="#eab308" stroke-width="2.5"/>
-                <text x="460" y="120" text-anchor="middle" font-size="30" font-weight="bold" fill="#854d0e">P = F × v</text>
-                <text x="460" y="148" text-anchor="middle" font-size="13" fill="#a16207">Força multiplicada pela velocidade</text>
-
-                <text x="350" y="215" font-size="13" fill="#475569">↑ Força aumenta → Potência aumenta &nbsp;|&nbsp; ↑ Velocidade aumenta → Potência aumenta</text>
-            </svg>
-        </div>
-
-        <p>Onde:</p>
-        <ul class="lista-dados">
-            <li><strong>P</strong> → Potência, em Watts (W)</li>
-            <li><strong>F</strong> → Força aplicada, em Newtons (N)</li>
-            <li><strong>v</strong> → Velocidade, em metros por segundo (m/s)</li>
+    <div class="regra">
+        <strong>Regra geral:</strong>
+        <ul style="margin:0.5rem 0 1.2rem 1.8rem;">
+            <li>Quanto menor o tempo para realizar a mesma tarefa, <strong>maior</strong> é a potência.</li>
+            <li>Quanto mais energia transformada no mesmo tempo, <strong>maior</strong> é a potência.</li>
         </ul>
-        <p>✅ Quanto maior a força ou a velocidade, maior será a potência desenvolvida.</p>
-    </section>
+    </div>
 
-    <section>
-        <h2>⚡ Potência Instantânea</h2>
-        <p>Já a potência instantânea representa o valor da potência em <strong>um instante específico</strong>, quando o intervalo de tempo Δt é praticamente zero.</p>
-        <p>Para calculá-la, usamos a <strong>velocidade instantânea</strong> no lugar da velocidade média.</p>
+    <div class="ilustracao">
+        <svg width="520" height="180" viewBox="0 0 520 180" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" width="240" height="160" rx="10" fill="#fef5e7" stroke="#ed8936" stroke-width="2"/>
+            <rect x="270" y="10" width="240" height="160" rx="10" fill="#ebf4ff" stroke="#3182ce" stroke-width="2"/>
+            
+            <text x="130" y="40" text-anchor="middle" font-size="16" font-weight="bold" fill="#c05621">Mais Tempo → Menos Potência</text>
+            <rect x="40" y="60" width="180" height="24" rx="4" fill="#fbd38d"/>
+            <text x="130" y="78" text-anchor="middle" font-size="12" fill="#744210">Energia total (mesma quantidade)</text>
+            <rect x="40" y="100" width="90" height="20" rx="3" fill="#f6e05e"/>
+            <text x="85" y="115" text-anchor="middle" font-size="11">Tempo maior</text>
 
-        <div class="esquema-container">
-            <h3>📈 Comparação: Média × Instantânea</h3>
-            <svg width="620" height="300" viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="grafFundo" x1="0%" y1="0%" x2="0%" y2="100%">
-                        <stop offset="0%" stop-color="#f0f9ff"/>
-                        <stop offset="100%" stop-color="#e0f2fe"/>
-                    </linearGradient>
-                    <linearGradient id="curvaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#f97316"/>
-                        <stop offset="100%" stop-color="#ef4444"/>
-                    </linearGradient>
-                </defs>
+            <text x="390" y="40" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c5282">Menos Tempo → Mais Potência</text>
+            <rect x="300" y="60" width="180" height="24" rx="4" fill="#90cdf4"/>
+            <text x="390" y="78" text-anchor="middle" font-size="12" fill="#2a4365">Energia total (mesma quantidade)</text>
+            <rect x="300" y="100" width="180" height="20" rx="3" fill="#63b3ed"/>
+            <text x="390" y="115" text-anchor="middle" font-size="11">Tempo menor</text>
 
-                <rect x="10" y="10" width="600" height="280" rx="14" fill="url(#grafFundo)" stroke="#bae6fd" stroke-width="2"/>
+            <path d="M 130 145 L 130 155 M 115 155 L 145 155" stroke="#c05621" stroke-width="2"/>
+            <text x="130" y="170" text-anchor="middle" font-size="11">P ↓</text>
+            <path d="M 390 145 L 390 155 M 375 145 L 405 145" stroke="#2b6cb0" stroke-width="2"/>
+            <text x="390" y="170" text-anchor="middle" font-size="11">P ↑</text>
+        </svg>
+    </div>
+</section>
 
-                <line x1="70" y1="240" x2="570" y2="240" stroke="#334155" stroke-width="2.5"/>
-                <line x1="70" y1="40" x2="70" y2="240" stroke="#334155" stroke-width="2.5"/>
+<section>
+    <h2>📊 Potência Média</h2>
+    <p>A potência média é a razão entre o trabalho realizado (ou a energia transferida) e o intervalo de tempo gasto.</p>
+    <p>Quando queremos saber a potência ao longo de um intervalo de tempo maior, usamos a potência média. Ela é calculada dividindo a energia transformada ou o trabalho realizado pelo tempo gasto.</p>
 
-                <text x="585" y="248" text-anchor="middle" font-size="14" fill="#475569">Tempo →</text>
-                <text x="35" y="45" text-anchor="middle" transform="rotate(-90, 35, 140)" font-size="14" fill="#475569">Potência →</text>
+    <div class="formula">
+        P<sub>média</sub> = <sup>E</sup> / <sub>Δt</sub> &nbsp;&nbsp; ou &nbsp;&nbsp; P<sub>média</sub> = <sup>τ</sup> / <sub>Δt</sub>
+    </div>
 
-                <path d="M 70 190 
-                         C 130 200, 180 110, 250 90 
-                         C 320 70, 360 35, 400 55 
-                         C 440 75, 500 170, 570 180" 
-                      stroke="url(#curvaGrad)" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <p>Como o trabalho τ corresponde à energia transferida, também podemos escrever:</p>
 
-                <line x1="70" y1="140" x2="570" y2="140" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="10,5"/>
+    <div class="unidade">
+        <strong>Unidade de Medida — Sistema Internacional (SI):</strong>
+        <p style="margin:0.5rem 0 0;">1 Watt = 1 Joule por segundo → significa que 1 J de energia é transformada a cada 1 segundo.</p>
+        <p style="margin:0.3rem 0 0; font-size:0.95rem;">Outras unidades comuns: kW, CV, hp</p>
+    </div>
 
-                <line x1="370" y1="40" x2="370" y2="240" stroke="#22c55e" stroke-width="2.5" stroke-dasharray="5,5"/>
-                <circle cx="370" cy="48" r="8" fill="#22c55e" stroke="#15803d" stroke-width="2.5"/>
+    <p>A potência é chamada de <strong>média</strong> porque considera toda a energia transferida ao longo de um intervalo de tempo. Se a potência varia durante o processo, a potência instantânea pode ser diferente da potência média.</p>
 
-                <rect x="300" y="250" width="140" height="22" rx="6" fill="#dcfce7" stroke="#bbf7d0"/>
-                <text x="370" y="265" text-anchor="middle" font-size="12" fill="#166534">Δt → 0 (instante)</text>
+    <div class="ilustracao">
+        <svg width="520" height="200" viewBox="0 0 520 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#90cdf4"/>
+                    <stop offset="100%" stop-color="#2b6cb0"/>
+                </linearGradient>
+            </defs>
+            <text x="260" y="30" text-anchor="middle" font-size="16" font-weight="bold">Potência Média em um Intervalo de Tempo</text>
+            <line x1="60" y1="160" x2="480" y2="160" stroke="#333" stroke-width="2"/>
+            <line x1="60" y1="40" x2="60" y2="160" stroke="#333" stroke-width="2"/>
+            <text x="45" y="50" font-size="12">P</text>
+            <text x="495" y="170" font-size="12">t</text>
 
-                <text x="490" y="100" font-size="14" font-weight="bold" fill="#2563eb">—— Média (constante)</text>
-                <text x="490" y="125" font-size="14" font-weight="bold" fill="#f97316">─── Instantânea (varia)</text>
-                <text x="385" y="45" font-size="12" font-weight="600" fill="#166534">Valor exato</text>
-            </svg>
-        </div>
+            <path d="M 60 130 L 150 90 L 240 110 L 330 60 L 420 100 L 480 120" stroke="#e53e3e" stroke-width="3" fill="none" stroke-dasharray="6,4"/>
+            <rect x="60" y="95" width="420" height="65" fill="url(#grad1)" opacity="0.4"/>
+            <line x1="60" y1="95" x2="480" y2="95" stroke="#2b6cb0" stroke-width="2.5"/>
+            <text x="260" y="88" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c5282">Valor médio</text>
+            <text x="260" y="190" text-anchor="middle" font-size="12" fill="#2a4365">Δt — Intervalo de tempo considerado</text>
+        </svg>
+    </div>
+</section>
 
-        <div class="exemplo-box">
-            <strong>🚗 Exemplo prático:</strong>
-            <br><br>
-            A potência <strong>média</strong> de um carro durante uma viagem de 1 hora é de <strong>30 kW</strong>.
-            <br>
-            No entanto, no momento em que ele acelera para ultrapassar outro veículo, a potência <strong>instantânea</strong> pode chegar a <strong>70 kW</strong> — bem acima da média!
-        </div>
-    </section>
+<section>
+    <h2>🚗 Potência e Velocidade</h2>
+    <p>Quando um corpo se move com velocidade constante e a força atua na mesma direção do movimento, podemos relacionar potência com força e velocidade.</p>
 
-    <section>
-        <h2>📋 Resumo Comparativo</h2>
+    <p>Substituindo as expressões na fórmula da potência:</p>
+    <div class="formula">
+        P = F · v
+    </div>
 
-        <table class="tabela-resumo">
-            <thead>
-                <tr>
-                    <th style="width: 50%;">📊 Potência Média</th>
-                    <th style="width: 50%;">⚡ Potência Instantânea</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Considera um <strong>intervalo maior</strong> de tempo</td>
-                    <td>Considera <strong>um instante exato</strong> (Δt → 0)</td>
-                </tr>
-                <tr>
-                    <td>Depende da <strong>velocidade média</strong></td>
-                    <td>Depende da <strong>velocidade instantânea</strong></td>
-                </tr>
-                <tr>
-                    <td>Mostra o <strong>desempenho geral</strong> do processo</td>
-                    <td>Mostra o <strong>valor exato</strong> naquele momento</td>
-                </tr>
-                <tr>
-                    <td>Útil para análise de <strong>desempenho ao longo do tempo</strong></td>
-                    <td>Útil para saber o <strong>valor máximo ou pontual</strong></td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+    <p>Onde:</p>
+    <ul style="margin:0 0 0 1.8rem;">
+        <li><strong>P</strong> = potência (W)</li>
+        <li><strong>F</strong> = força (N)</li>
+        <li><strong>v</strong> = velocidade (m/s)</li>
+    </ul>
+
+    <p style="margin-top:1rem;">Essa relação mostra que:</p>
+    <ul style="margin:0 0 0 1.8rem;">
+        <li>Se a força aumenta, a potência aumenta.</li>
+        <li>Se a velocidade aumenta, a potência também aumenta (mantendo a mesma força).</li>
+    </ul>
+
+    <div class="ilustracao">
+        <svg width="520" height="160" viewBox="0 0 520 160" xmlns="http://www.w3.org/2000/svg">
+            <text x="260" y="30" text-anchor="middle" font-size="16" font-weight="bold">Relação: Força, Velocidade e Potência</text>
+            <g transform="translate(40,50)">
+                <rect x="0" y="30" width="120" height="60" rx="8" fill="#fef5e7" stroke="#ed8936" stroke-width="2"/>
+                <text x="60" y="55" text-anchor="middle" font-size="14" font-weight="bold">F ↑ → P ↑</text>
+                <text x="60" y="80" text-anchor="middle" font-size="11">Velocidade constante</text>
+            </g>
+            <g transform="translate(200,50)">
+                <path d="M0 60 L 60 60 M 45 50 L 60 60 L 45 70" stroke="#2b6cb0" stroke-width="3" fill="none"/>
+            </g>
+            <g transform="translate(300,50)">
+                <rect x="0" y="30" width="120" height="60" rx="8" fill="#ebf4ff" stroke="#2b6cb0" stroke-width="2"/>
+                <text x="60" y="55" text-anchor="middle" font-size="14" font-weight="bold">v ↑ → P ↑</text>
+                <text x="60" y="80" text-anchor="middle" font-size="11">Força constante</text>
+            </g>
+        </svg>
+    </div>
+</section>
+
+<section>
+    <h2>⚡ Potência Instantânea</h2>
+    <p>Até agora falamos de valores médios. Mas e se quisermos saber a potência em um instante exato? É aí que entra a potência instantânea.</p>
+    <p>Ela corresponde à potência quando o intervalo de tempo Δt é muito pequeno (quase zero). Para calculá-la, usamos a velocidade instantânea no lugar da velocidade média:</p>
+
+    <div class="formula">
+        P = F · v<sub>inst</sub> &nbsp;&nbsp;(em um instante específico)
+    </div>
+
+    <div class="exemplo">
+        <strong>Exemplo simples:</strong>
+        <p style="margin:0.5rem 0 0;">A potência média de um carro durante uma viagem de 1 hora é de <strong>30 kW</strong>.<br>
+        Mas no momento em que ele acelera para ultrapassar outro veículo, a potência instantânea pode chegar a <strong>70 kW</strong>.</p>
+    </div>
+
+    <div class="ilustracao">
+        <svg width="520" height="220" viewBox="0 0 520 220" xmlns="http://www.w3.org/2000/svg">
+            <text x="260" y="30" text-anchor="middle" font-size="16" font-weight="bold">Média vs Instante</text>
+            <line x1="60" y1="180" x2="480" y2="180" stroke="#333" stroke-width="2"/>
+            <line x1="60" y1="40" x2="60" y2="180" stroke="#333" stroke-width="2"/>
+            <text x="45" y="50" font-size="12">P</text>
+            <text x="495" y="190" font-size="12">t</text>
+
+            <path d="M 60 130 L 150 110 L 240 100 L 300 50 L 330 50 L 360 100 L 480 120" 
+                  stroke="#e53e3e" stroke-width="3" fill="none"/>
+
+            <line x1="315" y1="45" x2="315" y2="180" stroke="#9f7aea" stroke-width="2" stroke-dasharray="5,5"/>
+            <circle cx="315" cy="50" r="7" fill="#e53e3e"/>
+            <text x="315" y="35" text-anchor="middle" font-size="12" font-weight="bold" fill="#c53030">Instante</text>
+
+            <rect x="60" y="105" width="420" height="75" fill="#3182ce" opacity="0.12"/>
+            <line x1="60" y1="105" x2="480" y2="105" stroke="#2b6cb0" stroke-width="2"/>
+            <text x="150" y="98" font-size="13" font-weight="bold" fill="#2b6cb0">—— Potência média (valor geral)</text>
+            <text x="150" y="205" font-size="12" fill="#6b7280">━━━━ Intervalo de tempo total</text>
+        </svg>
+    </div>
+</section>
+
+<section>
+    <h2>📋 Resumo da Diferença</h2>
+    <table>
+        <thead>
+            <tr>
+                <th style="width:50%;">Potência Média</th>
+                <th style="width:50%;">Potência Instantânea</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Considera um intervalo maior de tempo</td>
+                <td>Considera um instante específico</td>
+            </tr>
+            <tr>
+                <td>Usa velocidade média</td>
+                <td>Usa velocidade instantânea</td>
+            </tr>
+            <tr>
+                <td>Dá uma visão geral do desempenho</td>
+                <td>Dá o valor exato da potência naquele momento</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
 
 </body>
-</html></p>
+</html> </p>
         </div>
+
+
 
         <div class="conteudo-aula" id="aula-2">
-            <h2>Aula 02 — Quando parar faz a diferença: o papel do impulso na colisão</h2>
-            <p>    <header>
-        <h1>⚡ Aula 02 — Quando Parar Faz a Diferença<br>O Papel do Impulso na Colisão</h1>
-        <div class="subtitulo-cabecalho">Quantidade de Movimento • Impulso • Teorema do Impulso</div>
+            <h2>Aula 02: Quando parar faz a diferença: o papel do impulso na colisão</h2>
+            <p><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02: Quando Parar Faz a Diferença — O Papel do Impulso na Colisão</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            color: #2d3748;
+            line-height: 1.7;
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 3px solid #2b6cb0;
+        }
+
+        h1 {
+            color: #2c5282;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            color: #2b6cb0;
+            font-size: 1.4rem;
+            margin: 2.5rem 0 1.2rem;
+            border-left: 4px solid #4299e1;
+            padding-left: 0.8rem;
+        }
+
+        h3 {
+            color: #2c7a7b;
+            font-size: 1.15rem;
+            margin: 1.8rem 0 0.8rem;
+        }
+
+        .formula-box {
+            background-color: #ebf8ff;
+            border: 2px solid #90cdf4;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1.2rem 0;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1a365d;
+        }
+
+        .note-box {
+            background-color: #fef5e7;
+            border-left: 5px solid #ed8936;
+            padding: 1.2rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .step-box {
+            background-color: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.3rem;
+            margin: 1rem 0;
+        }
+
+        .step-number {
+            display: inline-block;
+            background-color: #2b6cb0;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-weight: bold;
+            margin-right: 0.7rem;
+        }
+
+        .svg-container {
+            display: flex;
+            justify-content: center;
+            margin: 1.5rem 0;
+        }
+
+        ul, ol {
+            margin-left: 1.8rem;
+            margin-top: 0.6rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight {
+            background-color: #fef08a;
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        .conclusion-box {
+            background-color: #e6fffa;
+            border: 2px solid #4fd1c5;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Aula 02: Quando parar faz a diferença</h1>
+        <p><strong>O papel do impulso na colisão</strong></p>
     </header>
 
-    <!-- SEÇÃO 1: Quantidade de Movimento -->
+    <!-- Seção: Quantidade de Movimento -->
     <section>
-        <h2>📐 Quantidade de Movimento</h2>
-        <p>A <strong>quantidade de movimento</strong> (ou momento linear) é a grandeza física que mede o estado de movimento de um corpo. Ela depende de duas propriedades: a <em>massa</em> do objeto e a sua <em>velocidade</em>.</p>
+        <h2>Quantidade de Movimento</h2>
+        <p>A <strong>quantidade de movimento</strong> (ou momento linear) é uma grandeza física que mede o movimento de um corpo. Ela depende da massa do objeto e da sua velocidade.</p>
 
-        <div class="formula-destaque">
-            <p><strong>Expressão matemática:</strong></p>
-            <div class="formula">Q = m ⋅ v</div>
-            <ul class="lista-definicoes">
-                <li><strong>Q</strong> → Quantidade de movimento → quilograma-metro por segundo (kg·m/s)</li>
-                <li><strong>m</strong> → Massa → quilograma (kg)</li>
-                <li><strong>v</strong> → Velocidade → metro por segundo (m/s)</li>
-            </ul>
+        <div class="formula-box">
+            Q = m ⋅ v
         </div>
 
-        <p>Existem apenas <strong>duas variáveis</strong> na fórmula:</p>
+        <p><strong>Onde:</strong></p>
+        <ul>
+            <li><strong>Q</strong> = quantidade de movimento (kg·m/s)</li>
+            <li><strong>m</strong> = massa (kg)</li>
+            <li><strong>v</strong> = velocidade (m/s)</li>
+        </ul>
+
+        <p>Existem apenas duas variáveis que definem a quantidade de movimento:</p>
         <ul>
             <li>✅ Massa</li>
             <li>✅ Velocidade</li>
         </ul>
-        <p>Isso significa que, se a massa dobra → a quantidade de movimento dobra. Se a velocidade dobra → a quantidade de movimento também dobra.</p>
+        <p>Isso significa que:</p>
+        <ul>
+            <li>Se a massa dobra, a quantidade de movimento <strong>dobra</strong>;</li>
+            <li>Se a velocidade dobra, a quantidade de movimento também <strong>dobra</strong>.</li>
+        </ul>
 
-        <div class="caixa-observacao">
-            <h3>💡 Importante: Grandeza Vetorial</h3>
-            <p>A quantidade de movimento possui <strong>módulo, direção e sentido</strong> — assim como a velocidade. O vetor quantidade de movimento <strong>sempre aponta na mesma direção e sentido da velocidade</strong> do corpo.</p>
-        </div>
-
-        <div class="svg-wrapper">
-            <svg width="360" height="170" viewBox="0 0 360 170" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="fundoVetor" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#f0f9ff"/>
-                        <stop offset="100%" stop-color="#e0f2fe"/>
-                    </linearGradient>
-                    <linearGradient id="bolaAzul" x1="30%" y1="30%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#60a5fa"/>
-                        <stop offset="100%" stop-color="#2563eb"/>
-                    </linearGradient>
-                    <marker id="setaV" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-                        <polygon points="0,0 10,5 0,10" fill="#dc2626"/>
-                    </marker>
-                    <marker id="setaQ" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-                        <polygon points="0,0 10,5 0,10" fill="#059669"/>
-                    </marker>
-                </defs>
-                <rect x="10" y="10" width="340" height="150" rx="14" fill="url(#fundoVetor)" stroke="#bae6fd" stroke-width="1.5"/>
-                <text x="25" y="38" font-family="Poppins,Arial" font-size="15" fill="#0c4a6e" font-weight="600">Vetor Q segue a velocidade v</text>
-                <circle cx="70" cy="100" r="26" fill="url(#bolaAzul)"/>
-                <text x="62" y="106" font-family="Poppins" font-size="14" fill="white" font-weight="600">m</text>
-                <line x1="96" y1="92" x2="200" y2="92" stroke="#dc2626" stroke-width="3.5" marker-end="url(#setaV)"/>
-                <text x="140" y="82" font-size="13" fill="#b91c1c" font-weight="500">v (velocidade)</text>
-                <line x1="70" y1="114" x2="220" y2="114" stroke="#059669" stroke-width="3.5" marker-end="url(#setaQ)"/>
-                <text x="145" y="138" font-size="13" fill="#047857" font-weight="500">Q = m·v (mesma direção e sentido)</text>
-            </svg>
-        </div>
-    </section>
-
-    <!-- SEÇÃO 2: Impulso -->
-    <section>
-        <h2>💪 Impulso de uma Força Constante</h2>
-        <p>O <strong>impulso</strong> representa o efeito de uma força aplicada durante um intervalo de tempo. Quanto maior a força ou quanto mais tempo ela atua, maior o impulso produzido.</p>
-
-        <div class="formula-destaque">
-            <div class="formula">I = F ⋅ Δt</div>
-            <ul class="lista-definicoes">
-                <li><strong>I</strong> → Impulso → newton-segundo (N·s)</li>
-                <li><strong>F</strong> → Força constante → newton (N)</li>
-                <li><strong>Δt</strong> → Intervalo de tempo → segundo (s)</li>
+        <div class="note-box">
+            <strong>📌 Observação importante:</strong><br>
+            A quantidade de movimento é uma <strong>grandeza vetorial</strong>. Isso significa que ela possui:
+            <ul>
+                <li>Módulo</li>
+                <li>Direção</li>
+                <li>Sentido</li>
             </ul>
+            Seu vetor possui sempre a <strong>mesma direção e o mesmo sentido</strong> da velocidade do corpo.
         </div>
 
-        <div class="svg-wrapper">
-            <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- SVG: Vetor Quantidade de Movimento -->
+        <div class="svg-container">
+            <svg width="350" height="120" viewBox="0 0 350 120" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                    <linearGradient id="fundoImp" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#f0fdf4"/>
-                        <stop offset="100%" stop-color="#dcfce7"/>
-                    </linearGradient>
-                    <linearGradient id="areaImp" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#86efac" stop-opacity="0.6"/>
-                        <stop offset="100%" stop-color="#4ade80" stop-opacity="0.6"/>
-                    </linearGradient>
-                    <marker id="setaF" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-                        <polygon points="0,0 10,5 0,10" fill="#dc2626"/>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                        <polygon points="0 0, 10 3.5, 0 7" fill="#2b6cb0"/>
                     </marker>
                 </defs>
-                <rect x="10" y="10" width="380" height="180" rx="14" fill="url(#fundoImp)" stroke="#bbf7d0" stroke-width="1.5"/>
-                <text x="85" y="38" font-family="Poppins" font-size="15" fill="#065f46" font-weight="600">Impulso = Força × Tempo de Aplicação</text>
-                <line x1="60" y1="160" x2="340" y2="160" stroke="#374151" stroke-width="2.5"/>
-                <line x1="60" y1="160" x2="60" y2="55" stroke="#374151" stroke-width="2.5"/>
-                <text x="345" y="165" font-size="13" fill="#4b5563">Δt</text>
-                <text x="35" y="70" font-size="13" fill="#4b5563">F</text>
-                <rect x="60" y="80" width="240" height="80" fill="url(#areaImp)" rx="4"/>
-                <line x1="60" y1="80" x2="300" y2="80" stroke="#16a34a" stroke-width="3"/>
-                <text x="150" y="128" font-family="JetBrains Mono" font-size="18" fill="#15803d" font-weight="600">I = F · Δt</text>
-                <line x1="110" y1="105" x2="200" y2="105" stroke="#dc2626" stroke-width="3" marker-end="url(#setaF)"/>
-                <text x="130" y="95" font-size="12" fill="#b91c1c">Força aplicada</text>
+                <!-- Eixo -->
+                <line x1="40" y1="60" x2="310" y2="60" stroke="#333" stroke-width="2"/>
+                <!-- Vetor v -->
+                <line x1="50" y1="60" x2="150" y2="60" stroke="#e53e3e" stroke-width="4" marker-end="url(#arrowhead)"/>
+                <text x="95" y="45" fill="#e53e3e" font-weight="bold" font-size="16">v</text>
+                <!-- Vetor Q -->
+                <line x1="50" y1="60" x2="250" y2="60" stroke="#2b6cb0" stroke-width="5" marker-end="url(#arrowhead)"/>
+                <text x="190" y="40" fill="#2b6cb0" font-weight="bold" font-size="16">Q = m·v</text>
+                <!-- Rótulos -->
+                <text x="10" y="65" font-size="12">Corpo</text>
+                <text x="270" y="85" font-size="12">Mesma direção e sentido</text>
             </svg>
         </div>
     </section>
 
-    <!-- SEÇÃO 3: Teorema do Impulso -->
+    <!-- Seção: Impulso -->
     <section>
-        <h2>🧠 Teorema do Impulso</h2>
-        <p>O resultado mais importante desta aula: o impulso produzido por uma força resultante é <strong>exatamente igual à variação da quantidade de movimento</strong> do corpo.</p>
+        <h2>Impulso de uma Força Constante</h2>
+        <p>O <strong>impulso</strong> de uma força constante é a grandeza física que mede o efeito de uma força aplicada durante um intervalo de tempo.</p>
 
-        <h3>📝 Construção Passo a Passo</h3>
-
-        <div class="caixa-passo">
-            <span class="rotulo-passo">Passo 1 — Definição de impulso</span>
-            <p>Começamos pela própria definição:</p>
-            <div class="formula" style="font-size:1.4rem">I = F ⋅ Δt</div>
+        <div class="formula-box">
+            I = F ⋅ Δt
         </div>
 
-        <div class="caixa-passo">
-            <span class="rotulo-passo">Passo 2 — Substituindo pela 2ª Lei de Newton</span>
-            <p>Sabemos que: <strong>F = m ⋅ a</strong></p>
-            <p>Substituindo a força:</p>
-            <div class="formula" style="font-size:1.4rem">I = (m ⋅ a) ⋅ Δt</div>
-            <p class="comentario">Apenas trocamos a força pela sua expressão na Segunda Lei de Newton.</p>
-        </div>
+        <p><strong>Onde:</strong></p>
+        <ul>
+            <li><strong>I</strong> = impulso (N·s)</li>
+            <li><strong>F</strong> = força constante (N)</li>
+            <li><strong>Δt</strong> = intervalo de tempo (s)</li>
+        </ul>
 
-        <div class="caixa-passo">
-            <span class="rotulo-passo">Passo 3 — Aceleração e variação de velocidade</span>
-            <p>Usamos: <strong>a = Δv ÷ Δt</strong></p>
-            <p>Substituindo a aceleração:</p>
-            <div class="formula" style="font-size:1.4rem">I = m ⋅ (Δv ÷ Δt) ⋅ Δt</div>
-            <p class="comentario">O Δt aparece em cima e embaixo → eles se cancelam!</p>
-        </div>
+        <!-- SVG: Força x Tempo -->
+        <div class="svg-container">
+            <svg width="380" height="200" viewBox="0 0 380 200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Eixos -->
+                <line x1="50" y1="170" x2="350" y2="170" stroke="#333" stroke-width="2"/>
+                <line x1="50" y1="170" x2="50" y2="30" stroke="#333" stroke-width="2"/>
+                <text x="340" y="190" font-size="14">Tempo (s)</text>
+                <text x="10" y="50" transform="rotate(-90, 20, 90)" font-size="14">Força F (N)</text>
 
-        <div class="caixa-passo">
-            <span class="rotulo-passo">Passo 4 — Resultado Final ✅</span>
-            <p>Cancelando o tempo, resta:</p>
-            <div class="formula" style="font-size:1.4rem">I = m ⋅ Δv</div>
-            <p>Como <strong>Δv = v<sub>final</sub> − v<sub>inicial</sub></strong> e <strong>Q = m·v</strong>, temos:</p>
-            <div class="formula" style="font-size:1.4rem">I = Q<sub>final</sub> − Q<sub>inicial</sub> = ΔQ</div>
-        </div>
+                <!-- Linha da força constante -->
+                <line x1="80" y1="70" x2="300" y2="70" stroke="#e53e3e" stroke-width="3"/>
+                <line x1="80" y1="70" x2="80" y2="170" stroke="#4299e1" stroke-width="2" stroke-dasharray="5,5"/>
+                <line x1="300" y1="70" x2="300" y2="170" stroke="#4299e1" stroke-width="2" stroke-dasharray="5,5"/>
 
-        <div class="destaque-final">
-            <p style="font-weight:600; color:#92400e; margin-bottom:0.4rem;">🎯 TEOREMA DO IMPULSO</p>
-            <div class="formula">I = ΔQ</div>
-            <p style="margin-top:0.6rem; color:#78350f;">O impulso aplicado = variação da quantidade de movimento</p>
-        </div>
+                <!-- Área = Impulso -->
+                <rect x="80" y="70" width="220" height="100" fill="#90cdf4" fill-opacity="0.4" stroke="#2b6cb0" stroke-width="2"/>
+                <text x="160" y="130" fill="#1a365d" font-weight="bold" font-size="16">I = F · Δt</text>
 
-        <div class="svg-wrapper">
-            <svg width="440" height="200" viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="caixaI" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#93c5fd"/>
-                        <stop offset="100%" stop-color="#3b82f6"/>
-                    </linearGradient>
-                    <linearGradient id="caixaQ" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#86efac"/>
-                        <stop offset="100%" stop-color="#22c55e"/>
-                    </linearGradient>
-                    <marker id="setaIgual" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-                        <polygon points="0,0 10,5 0,10" fill="#1f2937"/>
-                    </marker>
-                </defs>
-                <rect x="10" y="10" width="420" height="180" rx="14" fill="#f8fafc" stroke="#e5e7eb" stroke-width="1.5"/>
-                <text x="135" y="42" font-family="Poppins" font-size="17" fill="#1e40af" font-weight="700">I = ΔQ — O Teorema</text>
-                <rect x="35" y="60" width="130" height="80" rx="12" fill="url(#caixaI)"/>
-                <text x="98" y="112" font-family="JetBrains Mono" font-size="28" fill="white" text-anchor="middle" font-weight="700">I</text>
-                <text x="55" y="155" font-size="12" fill="#1e3a8a" font-weight="500">Impulso aplicado</text>
-                <path d="M175,100 L235,100" stroke="#1f2937" stroke-width="3.5" marker-end="url(#setaIgual)"/>
-                <text x="185" y="90" font-size="13" fill="#4b5563" font-weight="500">é igual a</text>
-                <rect x="255" y="60" width="150" height="80" rx="12" fill="url(#caixaQ)"/>
-                <text x="330" y="112" font-family="JetBrains Mono" font-size="28" fill="white" text-anchor="middle" font-weight="700">ΔQ</text>
-                <text x="270" y="155" font-size="12" fill="#166534" font-weight="500">Variação do movimento</text>
+                <!-- Marcadores -->
+                <text x="180" y="190" font-size="13">Δt</text>
+                <text x="30" y="75" font-size="13">F</text>
             </svg>
         </div>
     </section>
 
-    <!-- SEÇÃO 4: Interpretação Física -->
+    <!-- Seção: Teorema do Impulso -->
     <section>
-        <h2>📖 Interpretação Física</h2>
-        <div class="caixa-interpretacao">
-            <p style="font-size:1.08rem;">O impulso funciona como uma <strong>transferência de movimento</strong> entre o agente que aplica a força e o corpo.</p>
-            <ul style="margin-top:0.8rem;">
-                <li>✅ Quanto <strong>maior</strong> o impulso → <strong>maior</strong> a alteração do movimento.</li>
-                <li>🟢 Impulso <strong>positivo</strong> → a velocidade <strong>aumenta</strong>.</li>
-                <li>🟠 Impulso <strong>negativo</strong> → a velocidade <strong>diminui</strong>.</li>
-                <li>🔴 Impulso <strong>contrário ao movimento</strong> → pode reduzir a velocidade até o corpo <strong>parar</strong>.</li>
-            </ul>
+        <h2>Teorema do Impulso</h2>
+        <p>O Teorema do Impulso mostra que o impulso produzido por uma força é exatamente igual à <strong>variação da quantidade de movimento</strong> do corpo.</p>
+
+        <h3>🔧 Construindo o Teorema Passo a Passo</h3>
+
+        <div class="step-box">
+            <span class="step-number">1</span>
+            <strong>Definição de impulso</strong><br>
+            I = F ⋅ Δt<br>
+            <em>Esta é a definição de impulso.</em>
         </div>
+
+        <div class="step-box">
+            <span class="step-number">2</span>
+            <strong>Segunda Lei de Newton</strong><br>
+            Sabemos que: F = m ⋅ a<br>
+            Substituindo: I = (m ⋅ a) ⋅ Δt<br>
+            <em>Até aqui apenas trocamos a força pela expressão da Segunda Lei de Newton.</em>
+        </div>
+
+        <div class="step-box">
+            <span class="step-number">3</span>
+            <strong>Aceleração e velocidade</strong><br>
+            Sabemos também que: a = Δv / Δt<br>
+            Substituindo: I = m ⋅ (Δv / Δt) ⋅ Δt<br>
+            <em>Observem que aparece o mesmo Δt no numerador e no denominador. Eles se cancelam.</em>
+        </div>
+
+        <div class="step-box">
+            <span class="step-number">4</span>
+            <strong>Resultado final</strong><br>
+            Cancelando Δt: I = m ⋅ Δv<br>
+            Mas Δv = v<sub>final</sub> − v<sub>inicial</sub><br>
+            Distribuindo a massa: I = m ⋅ v<sub>final</sub> − m ⋅ v<sub>inicial</sub><br>
+            Lembrando que Q = m ⋅ v:<br>
+            <br>
+            <strong>I = Q<sub>final</sub> − Q<sub>inicial</sub></strong><br>
+            <strong>I = ΔQ</strong>
+        </div>
+
+        <div class="conclusion-box">
+            <h3>🎯 Conclusão</h3>
+            <p>Chegamos ao resultado mais importante da aula:</p>
+            <p style="font-size: 1.4rem; text-align: center; margin: 1rem 0; font-weight: bold;">
+                I = ΔQ
+            </p>
+            <p>O <strong>Teorema do Impulso</strong> afirma que o impulso de uma força resultante é igual à <strong>variação da quantidade de movimento</strong> de um corpo.</p>
+            <p>Isso significa que aplicar uma força durante certo intervalo de tempo <strong>altera a quantidade de movimento</strong> do corpo.</p>
+        </div>
+    </section>
+
+    <!-- Seção: Interpretação Física -->
+    <section>
+        <h2>Interpretação Física</h2>
+        <p>O impulso funciona como uma <strong>transferência de movimento</strong>.</p>
+        <ul>
+            <li>Quanto maior o impulso, <strong>maior</strong> será a alteração da quantidade de movimento.</li>
+            <li>Se o impulso for <span class="highlight">positivo</span> → a velocidade <strong>aumenta</strong>.</li>
+            <li>Se o impulso for <span class="highlight">negativo</span> → a velocidade <strong>diminui</strong>.</li>
+            <li>Se o impulso for <strong>contrário ao movimento</strong>, o corpo pode até <strong>parar</strong>.</li>
+        </ul>
+
+        <!-- SVG: Interpretação do Impulso -->
+        <div class="svg-container">
+            <svg width="420" height="180" viewBox="0 0 420 180" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                        <polygon points="0 0, 8 3, 0 6" fill="#333"/>
+                    </marker>
+                    <marker id="arrow-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                        <polygon points="0 0, 8 3, 0 6" fill="#e53e3e"/>
+                    </marker>
+                </defs>
+
+                <!-- Cenário 1: Impulso positivo -->
+                <circle cx="70" cy="60" r="20" fill="#90cdf4" stroke="#2b6cb0" stroke-width="2"/>
+                <text x="63" y="65" font-size="10" fill="#1a365d">m</text>
+                <line x1="90" y1="50" x2="140" y2="50" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+                <text x="105" y="45" font-size="11">v inicial</text>
+                <line x1="90" y1="70" x2="160" y2="70" stroke="#48bb78" stroke-width="3" marker-end="url(#arrow)"/>
+                <text x="115" y="85" font-size="12" fill="#276749">I > 0 → velocidade aumenta</text>
+
+                <!-- Cenário 2: Impulso negativo -->
+                <circle cx="70" cy="140" r="20" fill="#90cdf4" stroke="#2b6cb0" stroke-width="2"/>
+                <text x="63" y="145" font-size="10" fill="#1a365d">m</text>
+                <line x1="90" y1="130" x2="140" y2="130" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+                <text x="105" y="125" font-size="11">v inicial</text>
+                <line x1="140" y1="150" x2="90" y2="150" stroke="#e53e3e" stroke-width="3" marker-end="url(#arrow-red)"/>
+                <text x="100" y="165" font-size="12" fill="#c53030">I < 0 → velocidade diminui</text>
+            </svg>
         </div>
     </section>
 
 </body>
-</html></p>
+</html> </p>
         </div>
 
 
 
 
-        
         <!-- Repita o padrão para as demais aulas -->
         <div class="conteudo-aula" id="aula-3">
             <h2>Aula 03: Além do chute: impulso de uma força variável</h2>
-            <p><header>
-    <h1>Aula 03: Além do chute — Impulso de uma força variável</h1>
-    <p style="font-style: italic; opacity: 0.9;">Relação entre força, tempo, sistema e quantidade de movimento</p>
+            <p><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03: Além do chute — Impulso de uma Força Variável</title>
+    <style>
+        :root {
+            --cor-primaria: #2563eb;
+            --cor-secundaria: #1e40af;
+            --cor-destaque: #f97316;
+            --cor-fundo: #f0f7ff;
+            --cor-texto: #1f2937;
+            --cor-caixa: #ffffff;
+            --borda-suave: 12px;
+            --sombra: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            line-height: 1.7;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+            color: white;
+            padding: 30px;
+            border-radius: var(--borda-suave);
+            margin-bottom: 30px;
+            box-shadow: var(--sombra);
+        }
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+        }
+        h2 {
+            color: var(--cor-secundaria);
+            margin: 28px 0 16px;
+            border-left: 5px solid var(--cor-destaque);
+            padding-left: 12px;
+        }
+        h3 {
+            color: var(--cor-primaria);
+            margin: 20px 0 10px;
+        }
+        .caixa-conteudo {
+            background: var(--cor-caixa);
+            padding: 24px;
+            border-radius: var(--borda-suave);
+            margin-bottom: 24px;
+            box-shadow: var(--sombra);
+        }
+        .destaque {
+            background-color: #fff7ed;
+            border-left: 4px solid var(--cor-destaque);
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+        }
+        .formula {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.2rem;
+            background: #eef2ff;
+            padding: 10px 16px;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 8px 0;
+        }
+        svg {
+            display: block;
+            margin: 16px auto;
+            max-width: 100%;
+            height: auto;
+        }
+        .grid-dois {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .caixa-pergunta {
+            background: #f0fdf4;
+            border: 2px solid #86efac;
+            border-radius: var(--borda-suave);
+            padding: 20px;
+            margin-top: 24px;
+        }
+        .resposta {
+            background: white;
+            border-radius: 8px;
+            padding: 14px;
+            margin-top: 12px;
+            border-left: 4px solid #22c55e;
+        }
+        @media (max-width: 700px) {
+            .grid-dois {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Aula 03: Além do chute</h1>
+    <p style="font-size: 1.1rem; opacity: 0.95;">Impulso de uma força variável</p>
 </header>
 
-<section class="conteudo">
-    <h2>Impulso de uma força variável</h2>
+<section class="caixa-conteudo">
+    <h2>Impulso de uma Força Variável</h2>
     
-    <p>O impulso de uma força pode ser determinado a partir de um <strong>gráfico Força × Tempo (F × t)</strong>. Nesse tipo de gráfico, o valor do impulso é numericamente igual à <strong>área sob a curva</strong>.</p>
+    <p>O impulso de uma força pode ser determinado a partir de um gráfico <strong>F × t</strong>. Nesse tipo de gráfico, o valor do impulso é numericamente igual à <strong>área sob a curva</strong>.</p>
+
+    <h3>Força Constante</h3>
+    <p>Quando a força é constante, o impulso pode ser calculado diretamente pela expressão:</p>
+    <div class="formula">I = F · Δt</div>
+    <p>Onde: <em>F</em> = intensidade da força aplicada; <em>Δt</em> = intervalo de tempo de atuação.</p>
+
+    <h3>Força Variável</h3>
+    <p>Quando a força é variável, essa expressão <strong>não é válida</strong>. Nesses casos, o impulso é dado pela <strong>área sob a curva</strong> no gráfico F × t.</p>
+
+    <!-- Gráfico SVG: Força Constante vs Variável -->
+    <svg width="720" height="300" viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg">
+        <!-- Eixos -->
+        <line x1="60" y1="250" x2="340" y2="250" stroke="#333" stroke-width="2"/>
+        <line x1="60" y1="250" x2="60" y2="50" stroke="#333" stroke-width="2"/>
+        <text x="345" y="255" font-size="14" fill="#333">Tempo (s)</text>
+        <text x="30" y="55" font-size="14" fill="#333">Força (N)</text>
+        <text x="150" y="280" font-size="15" font-weight="bold" fill="#2563eb">Força Constante</text>
+        
+        <!-- Área sob o retângulo -->
+        <rect x="60" y="100" width="240" height="150" fill="#bfdbfe" opacity="0.6"/>
+        <line x1="60" y1="100" x2="300" y2="100" stroke="#2563eb" stroke-width="3"/>
+        <text x="140" y="180" font-size="14" fill="#1e40af">I = F·Δt</text>
+
+        <!-- Segundo gráfico -->
+        <line x1="420" y1="250" x2="700" y2="250" stroke="#333" stroke-width="2"/>
+        <line x1="420" y1="250" x2="420" y2="50" stroke="#333" stroke-width="2"/>
+        <text x="705" y="255" font-size="14" fill="#333">Tempo (s)</text>
+        <text x="390" y="55" font-size="14" fill="#333">Força (N)</text>
+        <text x="490" y="280" font-size="15" font-weight="bold" fill="#f97316">Força Variável</text>
+
+        <!-- Curva e área -->
+        <path d="M420,250 L460,180 L520,90 L580,130 L640,170 L700,220 L700,250 Z" fill="#fed7aa" opacity="0.6"/>
+        <path d="M420,250 L460,180 L520,90 L580,130 L640,170 L700,220" stroke="#f97316" stroke-width="3" fill="none"/>
+        <text x="500" y="200" font-size="13" fill="#c2410c">Impulso = Área sob a curva</text>
+    </svg>
 
     <div class="destaque">
-        <h3>Força constante</h3>
-        <p>Quando a força é constante, o impulso pode ser calculado diretamente pela expressão:</p>
-        <div class="formula">I = F · Δt</div>
-        <p>Onde: <em>F</em> = intensidade da força aplicada; <em>Δt</em> = intervalo de tempo durante o qual ela atua.</p>
+        <p><strong>Formas compostas:</strong> dividimos o gráfico em figuras geométricas mais simples (retângulos, triângulos, trapézios), calculamos cada área e somamos os resultados.</p>
+        <p>Não importa qual seja a forma da curva: <strong>o impulso é sempre a área algébrica sob o gráfico F × t.</strong></p>
     </div>
 
-    <h3>Força variável</h3>
-    <p>Quando a força é variável, essa expressão <strong>não é válida</strong>. Nesses casos, o impulso é determinado pela <strong>área sob a curva</strong> no gráfico F × t, que representa como a força varia ao longo do tempo.</p>
-
-    <p>O gráfico F × t pode apresentar diferentes formas geométricas — e a forma determina como calcular a área e, portanto, o impulso.</p>
-
-    <div class="grafico-container">
-        <h4>Ilustração: Gráficos Força × Tempo</h4>
-        <svg width="750" height="320" viewBox="0 0 750 320" xmlns="http://www.w3.org/2000/svg">
-            <!-- Eixos gráfico 1 -->
-            <line x1="40" y1="270" x2="320" y2="270" stroke="#333" stroke-width="2"/>
-            <line x1="40" y1="30" x2="40" y2="270" stroke="#333" stroke-width="2"/>
-            <text x="330" y="275" font-size="14">t (s)</text>
-            <text x="10" y="35" font-size="14">F</text>
-            <text x="80" y="295" font-size="13">Força Constante</text>
-            <!-- Área retângulo -->
-            <rect x="40" y="80" width="200" height="190" fill="#aed6f1" opacity="0.6" stroke="#2980b9" stroke-width="2"/>
-            <line x1="40" y1="80" x2="240" y2="80" stroke="#e74c3c" stroke-width="3" stroke-dasharray="4,2"/>
-
-            <!-- Eixos gráfico 2 -->
-            <line x1="420" y1="270" x2="700" y2="270" stroke="#333" stroke-width="2"/>
-            <line x1="420" y1="30" x2="420" y2="270" stroke="#333" stroke-width="2"/>
-            <text x="705" y="275" font-size="14">t (s)</text>
-            <text x="390" y="35" font-size="14">F</text>
-            <text x="450" y="295" font-size="13">Força Variável</text>
-            <!-- Área sob curva -->
-            <path d="M420,270 L420,150 Q480,60 560,90 Q640,120 700,180 L700,270 Z" fill="#abebc6" opacity="0.6" stroke="#27ae60" stroke-width="2"/>
-            <path d="M420,150 Q480,60 560,90 Q640,120 700,180" fill="none" stroke="#27ae60" stroke-width="3"/>
-
-            <!-- Rótulos -->
-            <text x="110" y="260" font-size="12" fill="#2980b9">Área = Impulso</text>
-            <text x="510" y="260" font-size="12" fill="#27ae60">Área sob a curva = Impulso</text>
-        </svg>
-    </div>
-
-    <h3>Como calcular</h3>
-    <ul>
-        <li><strong>Formas simples:</strong> calcular a área diretamente pela fórmula geométrica (retângulo, triângulo, trapézio).</li>
-        <li><strong>Formas compostas:</strong> dividir o gráfico em figuras mais simples e somar as áreas.</li>
-    </ul>
-    <p><em>Não importa qual seja a forma da curva: o impulso é sempre a área algébrica sob o gráfico F × t.</em></p>
-
-    <div class="atencao">
-        <strong>Justificativa:</strong> Quando a força varia, a expressão I = F·Δt não é válida. Nesse caso, devemos calcular a área do gráfico F × t.
-    </div>
+    <h3>Justificativa</h3>
+    <p>Quando a força varia ao longo do tempo, a fórmula <span class="formula">I = FΔt</span> deixa de ser válida, pois não existe um único valor de <em>F</em> que represente a força durante todo o intervalo. Por isso, calculamos a área sob o gráfico — que equivale ao impulso total.</p>
 </section>
 
-<section class="conteudo">
-    <h2>Conceito de "Sistema"</h2>
-    <p>Em Dinâmica, <strong>sistema</strong> é simplesmente o <em>conjunto de corpos que decidimos analisar</em>.</p>
+<section class="caixa-conteudo">
+    <h2>Conceito de Sistema</h2>
+    <p>Em Dinâmica, <strong>sistema</strong> é o conjunto de corpos que escolhemos analisar.</p>
 
-    <div class="exemplo">
-        <strong>Exemplos:</strong>
-        <ul>
-            <li>Uma caixa → o sistema é apenas a caixa.</li>
-            <li>Duas caixas ligadas por uma corda → podemos escolher as duas caixas como um único sistema.</li>
-            <li>Caixa + Terra → também podemos definir ambos como o sistema, dependendo do problema.</li>
-        </ul>
-    </div>
-
-    <p>Isso é importante porque, ao escolher o sistema, determinamos <strong>quais forças devem ser consideradas</strong>.</p>
-
-    <h3>Um sistema pode incluir corpos que:</h3>
-    <ul>
-        <li>podem se movimentar;</li>
-        <li>podem interagir entre si;</li>
-        <li>têm participação relevante na dinâmica do problema;</li>
-        <li>não estão necessariamente fixos ao ambiente.</li>
-    </ul>
-
-    <p>A escolha do sistema é fundamental porque determina quais forças são <strong>internas</strong> e quais são <strong>externas</strong>.</p>
-
-    <div class="destaque">
-        <strong>Ordem de análise:</strong><br>
-        ✅ Escolha o sistema → ✅ Identifique as forças que atuam nele → ✅ Aplique as Leis de Newton.
-    </div>
-
-    <p>Um corpo externo pode exercer força sobre o sistema, mesmo sem fazer parte dele.</p>
-
-    <h3>O que geralmente fica FORA do sistema (ambiente):</h3>
-    <ul>
-        <li>Corpos fixos ao ambiente;</li>
-        <li>Corpos com massa muito maior que a dos corpos analisados;</li>
-        <li>Elementos cujo movimento não é relevante para o problema.</li>
-    </ul>
-
-    <p>Esses corpos são tratados como <em>externos</em>, e suas forças sobre o sistema aparecem como forças externas.</p>
-
-    <div class="exemplo">
-        <strong>Exemplo prático:</strong> Caixa sobre o chão.<br>
-        ✅ Sistema: a caixa.<br>
-        🌍 Terra e chão: externos.<br>
-        ⬇ Peso e ⬆ Força normal: forças externas que atuam na caixa.
-    </div>
-
-    <div class="atencao">
-        ⚠ Isso é uma <em>regra prática</em>, não absoluta. Nós escolhemos o sistema de acordo com o que queremos analisar.
-    </div>
-</section>
-
-<section class="conteudo">
-    <h2>Conceito de "Ambiente"</h2>
-    <p>A ideia central: a força resultante produz aceleração, mas a aceleração depende também da massa.</p>
-    <p>Pela 2ª Lei de Newton:</p>
-    <div class="formula">F<sub>r</sub> = m · a &nbsp;&nbsp;&nbsp; ou &nbsp;&nbsp;&nbsp; a = F<sub>r</sub> / m</div>
-    <p>Para uma mesma força, quanto maior a massa, <strong>menor tende a ser a aceleração</strong>.</p>
-
-    <p>Exemplo: ao empurrar uma parede, você exerce força sobre ela, mas sua aceleração é tão pequena que pode ser considerada desprezível.</p>
-
-    <p>Esses corpos são considerados parte do <strong>ambiente</strong>, e não do sistema que estamos estudando.</p>
-
-    <div class="destaque">
-        <strong>Resumo:</strong><br>
-        🧱 Parede, chão, árvore → <em>ambiente</em> (massa muito grande, aceleração desprezível)<br>
-        📦 Corpos que estamos analisando → <em>sistema</em><br>
-        ➡ As interações com o ambiente aparecem como <strong>forças externas</strong> sobre o sistema.
-    </div>
-</section>
-
-<section class="conteudo">
-    <h2>Forças Internas e Externas</h2>
-    <p>Essa divisão é fundamental para analisar um sistema.</p>
-
+    <!-- Esquema SVG: Sistema e Ambiente -->
     <svg width="700" height="280" viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg">
-        <!-- Caixa do sistema -->
-        <rect x="50" y="40" width="600" height="200" fill="#eafaf1" stroke="#27ae60" stroke-width="3" rx="10"/>
-        <text x="70" y="65" font-size="16" font-weight="bold" fill="#27ae60">Sistema</text>
+        <!-- Ambiente -->
+        <rect x="20" y="20" width="660" height="240" rx="12" fill="#e5e7eb" stroke="#9ca3af" stroke-width="2"/>
+        <text x="600" y="50" font-size="16" font-weight="bold" fill="#6b7280">Ambiente</text>
+        
+        <!-- Sistema -->
+        <rect x="80" y="70" width="380" height="140" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+        <text x="420" y="100" font-size="16" font-weight="bold" fill="#1e40af">Sistema</text>
 
-        <!-- Elementos -->
-        <circle cx="180" cy="140" r="40" fill="#3498db" opacity="0.8"/>
-        <text x="165" y="145" fill="white" font-size="14">A</text>
+        <!-- Corpos dentro -->
+        <circle cx="150" cy="140" r="35" fill="#bfdbfe" stroke="#2563eb" stroke-width="2"/>
+        <text x="135" y="145" font-size="12" fill="#1e3a8a">Corpo A</text>
         
-        <circle cx="350" cy="140" r="40" fill="#e74c3c" opacity="0.8"/>
-        <text x="335" y="145" fill="white" font-size="14">B</text>
-        
-        <circle cx="520" cy="140" r="40" fill="#f39c12" opacity="0.8"/>
-        <text x="505" y="145" fill="white" font-size="14">C</text>
+        <rect x="260" y="105" width="70" height="70" rx="4" fill="#bfdbfe" stroke="#2563eb" stroke-width="2"/>
+        <text x="275" y="145" font-size="12" fill="#1e3a8a">Corpo B</text>
 
         <!-- Forças internas -->
-        <path d="M220,120 L310,120" stroke="#27ae60" stroke-width="3" marker-end="url(#setaVerde)"/>
-        <text x="250" y="110" font-size="12" fill="#27ae60">Interna</text>
-        
-        <path d="M390,160 L260,160" stroke="#27ae60" stroke-width="3" marker-end="url(#setaVerde)"/>
-        <text x="290" y="185" font-size="12" fill="#27ae60">Interna</text>
+        <path d="M185,140 L255,140" stroke="#16a34a" stroke-width="2" marker-end="url(#setaVerde)"/>
+        <path d="M255,155 L185,155" stroke="#16a34a" stroke-width="2" marker-end="url(#setaVerde)"/>
+        <text x="210" y="130" font-size="11" fill="#15803d">Força interna</text>
 
-        <!-- Caixa ambiente -->
-        <rect x="50" y="250" width="600" height="25" fill="#fdecea" stroke="#e74c3c" stroke-width="2" rx="5"/>
-        <text x="70" y="268" font-size="13" fill="#e74c3c">Ambiente (forças externas atuam sobre o sistema)</text>
-
-        <!-- Seta externa -->
-        <path d="M350,10 L350,35" stroke="#e74c3c" stroke-width="3" marker-end="url(#setaVermelha)"/>
-        <text x="360" y="30" font-size="12" fill="#e74c3c">Externa</text>
+        <!-- Força externa -->
+        <path d="M500,140 L470,140" stroke="#ef4444" stroke-width="3" marker-end="url(#setaVermelha)"/>
+        <text x="510" y="145" font-size="12" fill="#dc2626">Força externa</text>
 
         <!-- Marcadores de seta -->
         <defs>
             <marker id="setaVerde" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-                <polygon points="0,0 10,5 0,10" fill="#27ae60"/>
+                <polygon points="0,0 10,5 0,10" fill="#16a34a"/>
             </marker>
             <marker id="setaVermelha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-                <polygon points="0,0 10,5 0,10" fill="#e74c3c"/>
+                <polygon points="0,0 10,5 0,10" fill="#ef4444"/>
             </marker>
         </defs>
     </svg>
 
-    <h3>🔹 Forças Internas</h3>
-    <p>São forças em que <em>tanto o corpo que exerce quanto o corpo que recebe a força pertencem ao sistema</em>.</p>
-    <p><strong>Exemplo:</strong> se o sistema é formado por uma bola e um menino, a força que a bola exerce no menino e a força que o menino exerce na bola são forças <span class="forca-interna">internas</span>.</p>
-
-    <h3>🔹 Forças Externas</h3>
-    <p>Acontecem quando <em>o corpo que exerce a força está fora do sistema</em>.</p>
-    <p><strong>Exemplo:</strong> se o sistema é bola + menino, a força que o chão exerce sobre eles é uma força <span class="forca-externa">externa</span>, pois o chão pertence ao ambiente.</p>
-
-    <div class="exemplo">
-        <strong>Exemplos no sistema: homem + menino + bola</strong><br>
-        ✅ Forças <span class="forca-interna">internas</span>: homem ↔ bola, menino ↔ bola.<br>
-        ⚠️ Se o sistema for apenas a bola → essas mesmas forças passam a ser <span class="forca-externa">externas</span> (exercidas por corpos fora do sistema).<br>
-        🌍 Forças <span class="forca-externa">externas</span>: Peso (Terra → corpos), Força normal (chão → corpos), Força de atrito (chão → homem).
-    </div>
-</section>
-
-<section class="conteudo">
-    <h2>Influência na quantidade de movimento</h2>
-    <p>Esse é um dos resultados mais importantes do estudo de sistemas.</p>
-
-    <h3>Conservação da quantidade de movimento</h3>
-    <p>Quando a <strong>resultante das forças externas é nula</strong>, as forças internas não conseguem alterar a quantidade de movimento <strong>total</strong> do sistema.</p>
+    <p><strong>Exemplos:</strong></p>
+    <ul>
+        <li>Uma caixa → sistema = apenas a caixa</li>
+        <li>Duas caixas ligadas por uma corda → podemos escolher as duas como um único sistema</li>
+        <li>Caixa + Terra → também podemos definir ambos como sistema</li>
+    </ul>
 
     <div class="destaque">
-        <p><strong>Entendendo melhor:</strong></p>
-        <ol>
-            <li>O corpo A exerce força sobre B → B ganha quantidade de movimento.</li>
-            <li>Pela 3ª Lei de Newton, B exerce força de mesma intensidade e sentido oposto sobre A.</li>
-            <li>A sofre variação de quantidade de movimento em sentido contrário.</li>
-            <li>➡ Resultante externa nula → quantidade de movimento total se conserva.</li>
-        </ol>
+        <p><strong>💡 Dica:</strong> Escolha primeiro o sistema → depois identifique as forças que atuam nele → então aplique as Leis de Newton.</p>
     </div>
 
-    <p>Não é necessário que nenhuma força externa exista — basta que a <strong>resultante das forças externas seja zero</strong> (ou desprezível no intervalo analisado).</p>
-
-    <h3>Quando há força externa resultante</h3>
-    <p>Se existe resultante de forças externas diferente de zero, a quantidade de movimento total do sistema <strong>varia</strong>. O ambiente pode transferir quantidade de movimento para o sistema ou retirar dele.</p>
-
-    <div class="atencao">
-        ⚠ Cuidado: não basta existir uma força externa. Podem haver várias que se anulam. O que importa é a <strong>resultante</strong> das forças externas.
-    </div>
+    <h3>O que fica fora do sistema?</h3>
+    <p>Geralmente tratamos como <strong>ambiente</strong>:</p>
+    <ul>
+        <li>Corpos fixos ao ambiente (parede, chão, árvore)</li>
+        <li>Corpos com massa muito maior que a dos corpos analisados</li>
+        <li>Elementos cujo movimento não é relevante para o problema</li>
+    </ul>
+    <p>Exemplo: caixa sobre o chão → <em>Sistema:</em> a caixa | <em>Ambiente:</em> Terra e chão → Peso e Normal = forças externas.</p>
 </section>
 
+<section class="caixa-conteudo">
+    <h2>Forças Internas e Externas</h2>
 
+    <div class="grid-dois">
+        <div style="background:#dcfce7; padding:16px; border-radius:10px;">
+            <h3 style="color:#166534; margin-top:0;">🔹 Forças Internas</h3>
+            <p>Ambos os corpos — o que exerce e o que recebe a força — pertencem ao sistema.</p>
+            <p><em>Exemplo:</em> força entre dois corpos dentro do sistema.</p>
+        </div>
+        <div style="background:#fee2e2; padding:16px; border-radius:10px;">
+            <h3 style="color:#991b1b; margin-top:0;">🔹 Forças Externas</h3>
+            <p>O corpo que exerce a força está <strong>fora</strong> do sistema (no ambiente).</p>
+            <p><em>Exemplo:</em> peso, força normal, atrito vindos do chão/Terra.</p>
+        </div>
+    </div>
+
+    <h3>Conservação da Quantidade de Movimento</h3>
+    <svg width="600" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+        <rect x="40" y="40" width="520" height="120" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+        <text x="250" y="30" font-size="14" font-weight="bold" fill="#1e40af">Sistema isolado de forças externas</text>
+        
+        <!-- Corpo A -->
+        <circle cx="120" cy="100" r="30" fill="#bfdbfe" stroke="#2563eb" stroke-width="2"/>
+        <text x="110" y="105" font-size="13" fill="#1e40af">A</text>
+        <path d="M150,100 L190,100" stroke="#2563eb" stroke-width="3" marker-end="url(#setaA)"/>
+        
+        <!-- Corpo B -->
+        <rect x="430" y="70" width="60" height="60" rx="4" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
+        <text x="445" y="105" font-size="13" fill="#991b1b">B</text>
+        <path d="M410,100 L370,100" stroke="#dc2626" stroke-width="3" marker-end="url(#setaB)"/>
+        
+        <text x="220" y="90" font-size="13" fill="#4b5563">Ação e reação se anulam →</text>
+        <text x="220" y="110" font-size="13" fill="#4b5563">quantidade de movimento conservada</text>
+        
+        <defs>
+            <marker id="setaA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6">
+                <polygon points="0,0 10,5 0,10" fill="#2563eb"/>
+            </marker>
+            <marker id="setaB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6">
+                <polygon points="0,0 10,5 0,10" fill="#dc2626"/>
+            </marker>
+        </defs>
+    </svg>
+
+    <p>Quando a <strong>resultante das forças externas é nula</strong>, as forças internas não conseguem alterar a quantidade de movimento total do sistema — ela se conserva.</p>
+    <p>Se houver <strong>força externa resultante</strong> diferente de zero, o ambiente transfere ou retira quantidade de movimento do sistema, que varia.</p>
+    <p class="destaque">⚠️ Não basta existir força externa: o que importa é a <strong>resultante</strong> das forças externas. Elas podem se anular!</p>
+</section>
+
+<section class="caixa-conteudo caixa-pergunta">
+    <h2>Exercício de Aplicação</h2>
+    <p><strong>Analise a situação:</strong> Uma pessoa empurra um carrinho. Responda:</p>
+
+    <h3>1. A força exercida pela pessoa sobre o carrinho é constante ou variável? Justifique.</h3>
+    <div class="resposta">
+        <p><strong>Resposta:</strong> É <strong>variável</strong>.</p>
+        <p>Durante o empurrão, a intensidade da força aumenta e/ou diminui ao longo do tempo. Em um gráfico F×t, não seria representada por uma linha reta horizontal — por isso, o impulso deve ser calculado pela <strong>área sob a curva</strong>.</p>
+    </div>
+
+    <h3>2. Quais elementos fazem parte do sistema e quais fazem parte do ambiente?</h3>
+    <div class="resposta">
+        <p><strong>Sistema:</strong> a pessoa + o carrinho (corpos que queremos analisar a interação).</p>
+        <p><strong>Ambiente:</strong> a Terra, o chão e outros elementos ao redor que não participam diretamente da interação principal.</p>
+        <p>Assim, a força entre eles é <strong>interna</strong>; peso, normal e atrito são <strong>forças externas</strong> vindas do ambiente.</p>
+    </div>
 </section>
 
 </body>
-</html></p>
+</html> </p>
         </div>
-
-
-
-
-
-
 
 
 
@@ -806,8 +1061,7 @@
 
 
         <div class="conteudo-aula" id="aula-4">
-            <h2>Aula 04: Sistemas isolados: a chave para a conservação da quantidade de movimento
-</h2>
+            <h2>Aula 04: Sistemas isolados: a chave para a conservação da quantidade de movimento</h2>
             <p><!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -819,7 +1073,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
             background-color: #f0f4f8;
@@ -838,332 +1092,602 @@
             text-align: center;
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
-        h1 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-            line-height: 1.4;
-        }
-        h2 {
-            color: #2b6cb0;
-            margin: 30px 0 15px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid #e2e8f0;
-            font-size: 1.3rem;
-        }
-        h3 {
-            color: #2c5282;
-            margin: 20px 0 10px;
-            font-size: 1.1rem;
-        }
-        .section {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            margin-bottom: 25px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-        .highlight-box {
-            background-color: #ebf8ff;
-            border-left: 5px solid #3182ce;
-            padding: 18px;
-            margin: 18px 0;
-            border-radius: 0 8px 8px 0;
-        }
-        .formula-box {
-            background-color: #f7fafc;
-            border: 2px solid #e2e8f0;
-            padding: 18px;
-            text-align: center;
+        h1 { font-size: 1.8rem; margin-bottom: 10px; }
+        h2 { 
+            color: #2b6cb0; 
+            border-bottom: 3px solid #e2e8f0; 
+            padding-bottom: 8px; 
+            margin: 35px 0 20px;
             font-size: 1.4rem;
-            font-weight: bold;
-            border-radius: 8px;
-            margin: 15px 0;
-            color: #2b6cb0;
         }
-        .svg-container {
-            display: flex;
-            justify-content: center;
-            margin: 22px 0;
-            overflow-x: auto;
+        h3 { color: #2f855a; margin: 20px 0 10px; font-size: 1.1rem; }
+        .ilustracao {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            text-align: center;
         }
-        .summary-chain {
-            background-color: #f0fff4;
-            border-left: 5px solid #38a169;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 0 8px 8px 0;
-            font-weight: 500;
-        }
-        ul, ol {
-            margin-left: 25px;
-            margin-bottom: 15px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        .memory-box {
+        svg { max-width: 100%; height: auto; }
+        .destaque {
             background-color: #fef5e7;
             border-left: 5px solid #ed8936;
             padding: 15px;
             margin: 15px 0;
             border-radius: 0 8px 8px 0;
         }
-        p {
-            margin-bottom: 12px;
+        .formula {
+            background-color: #ebf8ff;
+            border-left: 5px solid #3182ce;
+            padding: 15px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 1.1rem;
+            text-align: center;
+            border-radius: 0 8px 8px 0;
         }
-        @media (max-width: 768px) {
-            h1 { font-size: 1.4rem; }
-            .section { padding: 15px; }
-            svg { max-width: 100%; height: auto; }
-            .formula-box { font-size: 1.1rem; }
+        .resumo {
+            background-color: #f0fff4;
+            border-left: 5px solid #38a169;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
         }
+        .aviso {
+            background-color: #fff5f5;
+            border-left: 5px solid #e53e3e;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        ul, ol { margin: 12px 0; padding-left: 28px; }
+        li { margin-bottom: 8px; }
+        strong { color: #2c5282; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Aula 04: Sistemas isolados — a chave para a conservação da quantidade de movimento</h1>
+    <h1>Aula 04: Sistemas Isolados — A Chave para a Conservação da Quantidade de Movimento</h1>
+    <p>3ª Lei de Newton, Transferência e Conservação da Quantidade de Movimento</p>
 </header>
 
-<div class="section">
-    <h2>📌 A Lei da Ação e Reação — 3ª Lei de Newton</h2>
-    <p>A Lei da Ação e Reação é a 3ª Lei de Newton.</p>
-    <p><strong>Ela diz que:</strong></p>
-    <p>Para toda ação, existe uma reação de mesma intensidade e direção, mas em sentido contrário.</p>
+<h2>📌 A Lei da Ação e Reação (3ª Lei de Newton)</h2>
+<p>A Lei da Ação e Reação é a 3ª Lei de Newton. Ela diz que:</p>
 
-    <div class="highlight-box">
-        <strong>Exemplo:</strong> quando você empurra uma parede, a parede exerce sobre você uma força de mesma intensidade, mas no sentido oposto.
-    </div>
-
-    <div class="highlight-box">
-        <strong>Importante:</strong> as duas forças atuam em corpos diferentes, por isso <em>não se anulam</em>.
-    </div>
-
-    <div class="formula-box">
-        F<sub>A→B</sub> = − F<sub>B→A</sub>
-    </div>
-
-    <div class="svg-container">
-        <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-            <!-- Definições de setas -->
-            <defs>
-                <marker id="arrowVermelha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-                    <polygon points="0,0 10,5 0,10" fill="#e53e3e"/>
-                </marker>
-                <marker id="arrowAzul" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-                    <polygon points="10,0 0,5 10,10" fill="#2b6cb0"/>
-                </marker>
-            </defs>
-            <!-- Chão -->
-            <line x1="50" y1="160" x2="350" y2="160" stroke="#333" stroke-width="3"/>
-            <!-- Parede -->
-            <rect x="300" y="60" width="40" height="100" fill="#cbd5e0" stroke="#2d3748" stroke-width="2"/>
-            <text x="318" y="178" text-anchor="middle" font-size="14">Parede</text>
-            <!-- Pessoa -->
-            <circle cx="120" cy="90" r="20" fill="#90cdf4" stroke="#2b6cb0" stroke-width="2"/>
-            <rect x="110" y="110" width="20" height="40" fill="#90cdf4" stroke="#2b6cb0" stroke-width="2"/>
-            <text x="120" y="178" text-anchor="middle" font-size="14">Você</text>
-            <!-- Forças -->
-            <line x1="150" y1="90" x2="270" y2="90" stroke="#e53e3e" stroke-width="4" marker-end="url(#arrowVermelha)"/>
-            <text x="200" y="80" fill="#e53e3e" font-size="13" font-weight="bold">Ação</text>
-            <line x1="270" y1="110" x2="150" y2="110" stroke="#2b6cb0" stroke-width="4" marker-end="url(#arrowAzul)"/>
-            <text x="200" y="132" fill="#2b6cb0" font-size="13" font-weight="bold">Reação</text>
-        </svg>
-    </div>
+<div class="destaque">
+    <strong>Para toda ação, existe uma reação de mesma intensidade e direção, mas em sentido contrário.</strong>
 </div>
 
-<div class="section">
-    <h2>🔄 Transferência da Quantidade de Movimento</h2>
-    <p>Durante uma colisão, os dois corpos exercem forças um sobre o outro.</p>
-    <p>Pela 3ª Lei de Newton, essas forças têm:</p>
-    <ul>
-        <li>mesmo módulo (intensidade);</li>
-        <li>mesma direção;</li>
-        <li>sentidos opostos;</li>
-        <li>mesmo intervalo de tempo de atuação.</li>
-    </ul>
-    <p>Como o impulso é responsável pela variação da quantidade de movimento, cada corpo recebe um impulso de mesmo módulo e sentido contrário.</p>
-    <p>Assim, ocorre uma transferência de quantidade de movimento entre os corpos.</p>
+<p><strong>Exemplo:</strong> quando você empurra uma parede, a parede exerce sobre você uma força de mesma intensidade, mas no sentido oposto.</p>
 
-    <div class="summary-chain">
-        Resumo: Ação e reação → impulsos iguais e opostos → transferência de quantidade de movimento.
-    </div>
-
-    <p>Durante uma interação, os impulsos de ação e reação têm o mesmo módulo e sentidos opostos. Como o impulso está relacionado à variação da quantidade de movimento:</p>
-    <ul>
-        <li>um corpo recebe uma determinada quantidade de movimento;</li>
-        <li>o outro corpo sofre uma variação de mesma intensidade, mas em sentido contrário;</li>
-        <li>portanto, ocorre uma transferência de quantidade de movimento entre eles.</li>
-    </ul>
-
-    <div class="memory-box">
-        <strong>💡 Para memorizar:</strong><br>
-        Impulso recebido = variação da quantidade de movimento.<br>
-        Impulsos de ação e reação = quantidade de movimento transferida entre os corpos.
-    </div>
-
-    <div class="svg-container">
-        <svg width="450" height="180" viewBox="0 0 450 180" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <marker id="arrowPreto" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-                    <polygon points="0,0 10,5 0,10" fill="#2d3748"/>
-                </marker>
-            </defs>
-            <!-- Corpo A -->
-            <circle cx="100" cy="90" r="40" fill="#f6ad55" stroke="#ed8936" stroke-width="3"/>
-            <text x="100" y="95" text-anchor="middle" font-size="18" font-weight="bold">A</text>
-            <!-- Corpo B -->
-            <circle cx="350" cy="90" r="40" fill="#90cdf4" stroke="#2b6cb0" stroke-width="3"/>
-            <text x="350" y="95" text-anchor="middle" font-size="18" font-weight="bold">B</text>
-            <!-- Transferência -->
-            <line x1="150" y1="70" x2="300" y2="70" stroke="#2d3748" stroke-width="3" marker-end="url(#arrowPreto)"/>
-            <text x="225" y="60" text-anchor="middle" font-size="13">Q transfere</text>
-            <line x1="300" y1="110" x2="150" y2="110" stroke="#2d3748" stroke-width="3" marker-end="url(#arrowPreto)"/>
-            <text x="225" y="135" text-anchor="middle" font-size="13">Impulso oposto</text>
-        </svg>
-    </div>
+<div class="ilustracao">
+    <svg width="400" height="180" viewBox="0 0 400 180">
+        <!-- Parede -->
+        <rect x="280" y="30" width="80" height="120" fill="#cbd5e0" stroke="#2d3748" stroke-width="3"/>
+        <line x1="280" y1="60" x2="360" y2="60" stroke="#718096" stroke-width="2"/>
+        <line x1="280" y1="90" x2="360" y2="90" stroke="#718096" stroke-width="2"/>
+        <line x1="280" y1="120" x2="360" y2="120" stroke="#718096" stroke-width="2"/>
+        <!-- Pessoa -->
+        <circle cx="120" cy="60" r="25" fill="#90cdf4" stroke="#2b6cb0" stroke-width="2"/>
+        <rect x="105" y="85" width="30" height="50" fill="#90cdf4" stroke="#2b6cb0" stroke-width="2"/>
+        <rect x="135" y="90" width="45" height="10" fill="#90cdf4" stroke="#2b6cb0" stroke-width="2"/>
+        <!-- Força Ação -->
+        <path d="M 180 95 L 260 95" stroke="#e53e3e" stroke-width="4" marker-end="url(#setaVermelha)"/>
+        <text x="200" y="85" fill="#c53030" font-weight="bold">Ação →</text>
+        <!-- Força Reação -->
+        <path d="M 260 105 L 180 105" stroke="#38a169" stroke-width="4" marker-end="url(#setaVerde)"/>
+        <text x="130" y="125" fill="#2f855a" font-weight="bold">← Reação</text>
+        <!-- Definição setas -->
+        <defs>
+            <marker id="setaVermelha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                <polygon points="0,0 10,5 0,10" fill="#e53e3e"/>
+            </marker>
+            <marker id="setaVerde" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                <polygon points="0,0 10,5 0,10" fill="#38a169"/>
+            </marker>
+        </defs>
+    </svg>
+    <p><em>Figura 1: Ação e Reação atuam em corpos diferentes e não se anulam.</em></p>
 </div>
 
-<div class="section">
-    <h2>⚖️ Quantidade de Movimento Total do Sistema</h2>
-    <p>A ideia principal é que, durante uma colisão, as forças entre os corpos são internas ao sistema. Pela 3ª Lei de Newton, elas têm sentidos opostos e atuam durante o mesmo intervalo de tempo.</p>
-    <p>Por isso, os impulsos internos se cancelam quando consideramos o sistema como um todo.</p>
-
-    <h3>Para dois corpos:</h3>
-    <p><strong>Em palavras:</strong></p>
-    <ul>
-        <li>Antes da colisão: existe uma quantidade de movimento total.</li>
-        <li>Durante a colisão: os corpos trocam quantidade de movimento.</li>
-        <li>Depois da colisão: a quantidade de movimento total continua sendo a mesma.</li>
-    </ul>
-
-    <div class="highlight-box">
-        <strong>Conclusão:</strong> em um sistema isolado, a quantidade de movimento total se conserva, mesmo que a quantidade de movimento de cada corpo individualmente mude.
-    </div>
-
-    <p>Durante a colisão:</p>
-    <ul>
-        <li>O corpo A perde uma certa quantidade de movimento.</li>
-        <li>O corpo B ganha essa mesma quantidade de movimento.</li>
-        <li>Essa transferência acontece por meio dos impulsos das forças internas.</li>
-        <li>Como esses impulsos são iguais e opostos, eles se anulam quando analisamos o sistema completo.</li>
-        <li>O impulso das forças externas é desprezível, então o sistema pode ser considerado isolado.</li>
-    </ul>
-
-    <div class="formula-box">
-        Q<sub>antes</sub> = Q<sub>depois</sub>
-    </div>
-
-
-
-    
-<div class="section">
-    <h2>⚠️ Variação da Quantidade de Movimento do Sistema</h2>
-    <p>Quando há forças de atrito externas atuando sobre os blocos, elas exercem um impulso contrário ao movimento.</p>
-    <p>Se o intervalo de tempo Δt for significativo, esse impulso não pode ser desprezado. Portanto, o sistema não é mecanicamente isolado.</p>
-    <p>A consequência é:</p>
-
-    <div class="highlight-box">
-        Como o impulso do atrito é contrário ao movimento, a quantidade de movimento total diminui.
-    </div>
-
-    <div class="memory-box">
-        <strong>💡 Resumo para memorizar:</strong><br>
-        Atrito externo significativo → impulso externo não desprezível → sistema não isolado → quantidade de movimento total varia (diminui).
-    </div>
+<div class="aviso">
+    <strong>Importante:</strong> as duas forças atuam em <strong>corpos diferentes</strong>, por isso não se anulam.
 </div>
 
-<div class="section">
-    <h2>🔑 Conservação da Quantidade de Movimento</h2>
-    <p>A conservação da quantidade de movimento pode ser aplicada principalmente em colisões e explosões quando o impulso das forças externas é desprezível.</p>
-    <p>Nesse caso:</p>
-    <ul>
-        <li>O sistema pode ser considerado mecanicamente isolado.</li>
-        <li>As forças internas entre os corpos podem transferir quantidade de movimento entre eles.</li>
-        <li>Porém, a quantidade de movimento total do sistema permanece constante.</li>
-    </ul>
+<h2>🔄 Transferência da Quantidade de Movimento</h2>
+<p>Durante uma colisão, os dois corpos exercem forças um sobre o outro. Pela 3ª Lei de Newton, essas forças têm:</p>
+<ul>
+    <li>✅ Mesmo módulo (intensidade);</li>
+    <li>✅ Mesma direção;</li>
+    <li>✅ Sentidos opostos;</li>
+    <li>✅ Mesmo intervalo de tempo de atuação.</li>
+</ul>
 
-    <div class="memory-box">
-        <strong>💡 Para memorizar:</strong><br>
-        Impulso externo desprezível → sistema isolado → quantidade de movimento total conservada.
-    </div>
+<p>Como o impulso é responsável pela variação da quantidade de movimento, cada corpo recebe um impulso de mesmo módulo e sentido contrário. Assim, ocorre uma <strong>transferência de quantidade de movimento</strong> entre os corpos.</p>
 
-    <h3>💥 Em uma explosão:</h3>
-    <ul>
-        <li>O corpo se divide em vários fragmentos devido às forças internas.</li>
-        <li>Antes da explosão, existe uma quantidade de movimento inicial.</li>
-        <li>Depois da explosão, os fragmentos passam a se movimentar em diferentes direções.</li>
-        <li>A soma das quantidades de movimento dos fragmentos é igual à quantidade de movimento inicial do corpo.</li>
-        <li>Além disso, a energia interna armazenada é transformada em energia cinética, fazendo os fragmentos adquirirem movimento.</li>
-    </ul>
+<div class="resumo">
+    <strong>Resumo:</strong><br>
+    Ação e Reação → Impulsos iguais e opostos → Transferência de quantidade de movimento.
+</div>
 
-    <div class="summary-chain">
-        Resumo: Explosão → forças internas aceleram os fragmentos → quantidade de movimento total se conserva → energia interna transforma-se em energia cinética.
-    </div>
+<p>Durante uma interação, os impulsos de ação e reação têm o mesmo módulo e sentidos opostos. Como o impulso está relacionado à variação da quantidade de movimento, isso significa que:</p>
+<ul>
+    <li>um corpo recebe uma determinada quantidade de movimento;</li>
+    <li>o outro corpo sofre uma variação de mesma intensidade, mas em sentido contrário;</li>
+    <li>portanto, ocorre uma <strong>transferência de quantidade de movimento</strong> entre eles.</li>
+</ul>
 
-    <h3>💥 Em uma colisão:</h3>
-    <p>Em uma colisão, os corpos interagem durante um intervalo de tempo muito curto. Por isso, o impulso das forças externas pode ser considerado desprezível.</p>
-    <p>Assim, o sistema pode ser tratado como mecanicamente isolado.</p>
-    <p>Consequentemente, a quantidade de movimento total permanece constante:</p>
+<div class="destaque">
+    <strong>Para memorizar:</strong><br>
+    Impulso recebido = variação da quantidade de movimento.<br>
+    Impulsos de ação e reação = quantidade de movimento transferida entre os corpos.
+</div>
 
-    <div class="svg-container">
-        <svg width="650" height="250" viewBox="0 0 650 250" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <marker id="arrowVermelha3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-                    <polygon points="0,0 10,5 0,10" fill="#e53e3e"/>
-                </marker>
-            </defs>
-            <!-- Colisão -->
-            <text x="120" y="30" text-anchor="middle" font-size="15" font-weight="bold">Colisão</text>
-            <circle cx="60" cy="70" r="30" fill="#f6ad55" stroke="#ed8936" stroke-width="2"/>
-            <line x1="30" y1="70" x2="5" y2="70" stroke="#e53e3e" stroke-width="3" marker-end="url(#arrowVermelha3)"/>
-            <circle cx="180" cy="70" r="30" fill="#90cdf4" stroke="#2b6cb0" stroke-width="2"/>
-            <line x1="210" y1="70" x2="235" y2="70" stroke="#2b6cb0" stroke-width="3" marker-end="url(#arrowAzul2)"/>
+<h2>⚖️ Quantidade de Movimento Total do Sistema</h2>
+<p>A ideia principal é que, durante uma colisão, as forças entre os corpos são <strong>internas</strong> ao sistema. Pela 3ª Lei de Newton, elas têm sentidos opostos e atuam durante o mesmo intervalo de tempo. Por isso, os impulsos internos se cancelam quando consideramos o sistema como um todo.</p>
 
-            <!-- Seta -->
-            <path d="M260,70 L300,50 L340,70 L300,90 Z" fill="#4a5568"/>
+<div class="ilustracao">
+    <svg width="450" height="220" viewBox="0 0 450 220">
+        <!-- Antes -->
+        <text x="60" y="30" fill="#2b6cb0" font-weight="bold">Antes da colisão</text>
+        <circle cx="60" cy="70" r="28" fill="#90cdf4" stroke="#2b6cb0" stroke-width="3"/>
+        <text x="52" y="75" fill="#1a365d" font-size="12">A</text>
+        <path d="M 88 70 L 130 70" stroke="#e53e3e" stroke-width="3" marker-end="url(#setaVermelha)"/>
+        <circle cx="200" cy="70" r="28" fill="#9ae6b4" stroke="#2f855a" stroke-width="3"/>
+        <text x="192" y="75" fill="#22543d" font-size="12">B</text>
+        <path d="M 172 70 L 130 70" stroke="#e53e3e" stroke-width="3" marker-end="url(#setaVermelha)"/>
 
-            <!-- Depois -->
-            <text x="480" y="30" text-anchor="middle" font-size="15" font-weight="bold">Conservado</text>
-            <circle cx="400" cy="70" r="30" fill="#f6ad55" stroke="#ed8936" stroke-width="2"/>
-            <line x1="430" y1="60" x2="460" y2="60" stroke="#e53e3e" stroke-width="3" marker-end="url(#arrowVermelha3)"/>
-            <circle cx="560" cy="70" r="30" fill="#90cdf4" stroke="#2b6cb0" stroke-width="2"/>
-            <line x1="530" y1="80" x2="500" y2="80" stroke="#2b6cb0" stroke-width="3" marker-end="url(#arrowAzul2)"/>
+        <!-- Seta processo -->
+        <path d="M 250 110 L 250 130 L 380 130 L 380 110" stroke="#718096" stroke-width="2" stroke-dasharray="5,4" fill="none"/>
+        <text x="290" y="105" fill="#4a5568" font-size="12">Colisão</text>
 
-            <!-- Explosão -->
-            <text x="325" y="160" text-anchor="middle" font-size="15" font-weight="bold">Explosão</text>
-            <circle cx="325" cy="200" r="25" fill="#fed7d7" stroke="#e53e3e" stroke-width="2"/>
-            <text x="325" y="205" text-anchor="middle" font-size="14">Corpo</text>
-            <line x1="325" y1="175" x2="325" y2="145" stroke="#e53e3e" stroke-width="3" marker-end="url(#arrowVermelha3)"/>
-            <line x1="350" y1="190" x2="380" y2="170" stroke="#ed8936" stroke-width="3" marker-end="url(#arrowVermelha3)"/>
-            <line x1="300" y1="190" x2="270" y2="170" stroke="#ed8936" stroke-width="3" marker-end="url(#arrowVermelha3)"/>
-            <line x1="350" y1="210" x2="380" y2="230" stroke="#ed8936" stroke-width="3" marker-end="url(#arrowVermelha3)"/>
-            <line x1="300" y1="210" x2="270" y2="230" stroke="#ed8936" stroke-width="3" marker-end="url(#arrowVermelha3)"/>
-            <text x="325" y="245" text-anchor="middle" font-size="13" fill="#2f855a">Soma Q = Q inicial ✅</text>
-        </svg>
-    </div>
+        <!-- Depois -->
+        <text x="310" y="30" fill="#2b6cb0" font-weight="bold">Depois da colisão</text>
+        <circle cx="310" cy="70" r="28" fill="#9ae6b4" stroke="#2f855a" stroke-width="3"/>
+        <text x="302" y="75" fill="#22543d" font-size="12">A</text>
+        <path d="M 282 70 L 240 70" stroke="#38a169" stroke-width="3" marker-end="url(#setaVerde)"/>
+        <circle cx="400" cy="70" r="28" fill="#90cdf4" stroke="#2b6cb0" stroke-width="3"/>
+        <text x="392" y="75" fill="#1a365d" font-size="12">B</text>
+        <path d="M 428 70 L 460 70" stroke="#38a169" stroke-width="3" marker-end="url(#setaVerde)"/>
+
+        <!-- Equação -->
+        <text x="120" y="180" fill="#2d3748" font-size="14">Q<tspan baseline-shift="sub">antes</tspan> = Q<tspan baseline-shift="sub">depois</tspan> → Conservação!</text>
+    </svg>
+    <p><em>Figura 2: Quantidade de movimento é transferida, mas se conserva no sistema.</em></p>
+</div>
+
+<h3>Em palavras:</h3>
+<ul>
+    <li><strong>Antes da colisão:</strong> existe uma quantidade de movimento total.</li>
+    <li><strong>Durante a colisão:</strong> os corpos trocam quantidade de movimento.</li>
+    <li><strong>Depois da colisão:</strong> a quantidade de movimento total continua sendo a mesma.</li>
+</ul>
+
+<div class="destaque">
+    <strong>Conclusão:</strong> em um <strong>sistema isolado</strong>, a quantidade de movimento total se conserva, mesmo que a quantidade de movimento de cada corpo individualmente mude.
+</div>
+
+<p>Durante a colisão:</p>
+<ul>
+    <li>O corpo A <strong>perde</strong> uma certa quantidade de movimento.</li>
+    <li>O corpo B <strong>ganha</strong> essa mesma quantidade de movimento.</li>
+    <li>Essa transferência acontece por meio dos <strong>impulsos das forças internas</strong>.</li>
+    <li>Como esses impulsos são iguais e opostos, eles se anulam quando analisamos o sistema completo.</li>
+    <li>O impulso das forças externas é desprezível → sistema isolado.</li>
+</ul>
+
+<div class="formula">
+    Q<sub>antes</sub> = Q<sub>depois</sub>
+</div>
+
+<div class="resumo">
+    <strong>Resumo:</strong> a quantidade de movimento não desaparece; ela é transferida entre os corpos, mantendo constante a quantidade de movimento total do sistema.
+</div>
+
+<h2>⚠️ Variação da Quantidade de Movimento do Sistema</h2>
+<p>Quando há <strong>forças de atrito externas</strong> atuando sobre os corpos, elas exercem um impulso contrário ao movimento. Se o intervalo de tempo Δt for significativo, esse impulso não pode ser desprezado. Portanto, o sistema <strong>não é mecanicamente isolado</strong>.</p>
+
+<div class="aviso">
+    <strong>Consequência:</strong> como o impulso do atrito é contrário ao movimento, a quantidade de movimento total <strong>diminui</strong>.
+</div>
+
+<div class="destaque">
+    <strong>Resumo para memorizar:</strong><br>
+    Atrito externo significativo → impulso externo não desprezível → sistema não isolado → quantidade de movimento total varia (diminui).
+</div>
+
+<h2>🏛️ Sistema Mecânico Isolado</h2>
+<p>Um <strong>sistema mecânico isolado</strong> é um conjunto de corpos sobre o qual a <strong>força externa resultante é nula (ou desprezível)</strong>.</p>
+<p>Isso significa que as forças que os corpos exercem entre si podem existir, mas <strong>não alteram</strong> a quantidade de movimento total do sistema.</p>
+
+<div class="ilustracao">
+    <svg width="420" height="200" viewBox="0 0 420 200">
+        <!-- Caixa do sistema -->
+        <rect x="40" y="30" width="340" height="140" rx="12" fill="#f7fafc" stroke="#2b6cb0" stroke-width="3" stroke-dasharray="8,4"/>
+        <text x="170" y="22" fill="#2b6cb0" font-weight="bold">SISTEMA ISOLADO</text>
+
+        <!-- Corpo A -->
+        <circle cx="100" cy="90" r="30" fill="#90cdf4" stroke="#2b6cb0" stroke-width="3"/>
+        <text x="92" y="95" fill="#1a365d">A</text>
+        <!-- Corpo B -->
+        <circle cx="300" cy="90" r="30" fill="#9ae6b4" stroke="#2f855a" stroke-width="3"/>
+        <text x="292" y="95" fill="#22543d">B</text>
+
+        <!-- Forças internas -->
+        <path d="M 130 85 L 270 85" stroke="#e53e3e" stroke-width="3" marker-end="url(#setaVermelha)"/>
+        <path d="M 270 95 L 130 95" stroke="#38a169" stroke-width="3" marker-end="url(#setaVerde)"/>
+        <text x="185" y="75" fill="#c53030" font-size="11">Forças Internas</text>
+
+        <!-- Sem forças externas -->
+        <text x="140" y="160" fill="#4a5568" font-size="13">Forças externas: ≈ 0 → Q<tspan baseline-shift="sub">total</tspan> = constante</text>
+    </svg>
+    <p><em>Figura 3: Forças internas transferem movimento; forças externas são desprezíveis.</em></p>
+</div>
+
+<h3>Consequência principal:</h3>
+<div class="destaque">
+    Em um sistema isolado, a quantidade de movimento total <strong>se conserva</strong>.
+</div>
+
+<p><strong>Exemplo:</strong> duas bolas colidem em uma superfície idealmente sem forças externas relevantes. Elas trocam quantidade de movimento entre si, mas a quantidade de movimento total do sistema permanece constante.</p>
+
+<div class="resumo">
+    <strong>Resumindo:</strong><br>
+    Sistema isolado → Força externa resultante = 0 → Quantidade de movimento total conservada.
+</div>
+
+<h2>💥 Conservação da Quantidade de Movimento</h2>
+<p>A conservação da quantidade de movimento pode ser aplicada principalmente em <strong>colisões e explosões</strong> quando o impulso das forças externas é desprezível.</p>
+
+<div class="destaque">
+    <strong>Para memorizar:</strong><br>
+    Impulso externo desprezível → Sistema isolado → Quantidade de movimento total conservada.
+</div>
+
+<h3>Em uma explosão:</h3>
+<p>O corpo se divide em vários fragmentos devido às forças internas. Antes da explosão, existe uma quantidade de movimento inicial. Depois da explosão, os fragmentos se movimentam em direções diferentes, mas a soma das quantidades de movimento dos fragmentos é igual à quantidade de movimento inicial do corpo.</p>
+
+<div class="ilustracao">
+    <svg width="420" height="200" viewBox="0 0 420 200">
+        <!-- Antes -->
+        <text x="50" y="35" fill="#2b6cb0" font-weight="bold">Antes</text>
+        <circle cx="90" cy="100" r="35" fill="#fed7d7" stroke="#e53e3e" stroke-width="3"/>
+        <text x="78" y="105" fill="#742a2a">Corpo</text>
+
+        <!-- Seta -->
+        <path d="M 140 100 L 180 100" stroke="#718096" stroke-width="2" marker-end="url(#setaVermelha)"/>
+        <text x="150" y="85" fill="#e53e3e" font-size="12">Explosão</text>
+
+        <!-- Depois -->
+        <text x="260" y="35" fill="#2b6cb0" font-weight="bold">Depois</text>
+        <circle cx="250" cy="60" r="18" fill="#fef5e7" stroke="#ed8936" stroke-width="2"/>
+        <circle cx="340" cy="70" r="22" fill="#fef5e7" stroke="#ed8936" stroke-width="2"/>
+        <circle cx="260" cy="140" r="20" fill="#fef5e7" stroke="#ed8936" stroke-width="2"/>
+        <circle cx="330" cy="130" r="16" fill="#fef5e7" stroke="#ed8936" stroke-width="2"/>
+
+        <!-- Setas movimento -->
+        <path d="M 250 42 L 250 20" stroke="#38a169" stroke-width="2" marker-end="url(#setaVerde)"/>
+        <path d="M 340 48 L 360 30" stroke="#38a169" stroke-width="2" marker-end="url(#setaVerde)"/>
+        <path d="M 260 160 L 260 185" stroke="#38a169" stroke-width="2" marker-end="url(#setaVerde)"/>
+        <path d="M 330 146 L 355 165" stroke="#38a169" stroke-width="2" marker-end="url(#setaVerde)"/>
+
+        <text x="230" y="195" fill="#2f855a" font-size="12">Soma dos movimentos = movimento inicial</text>
+    </svg>
+    <p><em>Figura 4: Explosão — movimento se conserva; energia interna se transforma em movimento.</em></p>
+</div>
+
+<div class="resumo">
+    <strong>Resumo:</strong><br>
+    Explosão → Forças internas aceleram os fragmentos → Quantidade de movimento total se conserva → Energia interna transforma-se em energia cinética.
+</div>
+
+<h3>Em uma colisão:</h3>
+<p>Os corpos interagem durante um intervalo de tempo muito curto. Por isso, o impulso das forças externas pode ser considerado desprezível. Assim, o sistema pode ser tratado como mecanicamente isolado. Consequentemente, a quantidade de movimento total permanece constante.</p>
+
+<div class="destaque">
+    <strong>Para memorizar:</strong><br>
+    Colisão rápida → Impulso externo desprezível → Sistema isolado → Quantidade de movimento total conservada.
 </div>
 
 </body>
-</html>
-</p>
+</html> </p>
         </div>
 
 
 
 
-
-
-
-
         <div class="conteudo-aula" id="aula-5">
-            <h2>Aula 05</h2>
+            <h2>Aula 5: A terceira Lei de Newton e a conservação da quantidade de movimento</h2>
             <p><!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quantidade de Movimento e Impulso</title>
+    <title>Aula 5 - Terceira Lei de Newton e Conservação da Quantidade de Movimento</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            color: #2d3748;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2b6cb0, #2c5282);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #2b6cb0;
+            margin-bottom: 18px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #edf2f7;
+            font-size: 1.3rem;
+        }
+
+        .formula-box {
+            background-color: #ebf8ff;
+            border-left: 4px solid #3182ce;
+            padding: 18px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.1rem;
+        }
+
+        .formula {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #2c5282;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .svg-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .illustration {
+            background-color: #f7fafc;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .explanation {
+            margin: 12px 0;
+            padding-left: 15px;
+        }
+
+        .highlight {
+            background-color: #fef5e7;
+            border-left: 4px solid #ed8936;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .conclusion-box {
+            background-color: #f0fff4;
+            border-left: 4px solid #38a169;
+            padding: 18px;
+            margin-top: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Aula 5 — A Terceira Lei de Newton e a Conservação da Quantidade de Movimento</h1>
+        <p>Fundamentos da Dinâmica</p>
+    </header>
+
+    <!-- Seção: Quantidade de Movimento -->
+    <section class="section">
+        <h2>1. Quantidade de Movimento</h2>
+        <p>A <strong>quantidade de movimento</strong> indica o quanto um corpo está "em movimento". Ela depende tanto da massa quanto da velocidade do corpo.</p>
+
+        <div class="formula-box">
+            <div class="formula">Q = m · v</div>
+            <ul class="explanation">
+                <li><strong>Q</strong> = quantidade de movimento</li>
+                <li><strong>m</strong> = massa do corpo</li>
+                <li><strong>v</strong> = velocidade</li>
+            </ul>
+        </div>
+
+        <p>Quanto maior a massa ou maior a velocidade, <strong>maior</strong> será a quantidade de movimento.</p>
+
+        <div class="svg-container">
+            <div class="illustration">
+                <svg width="320" height="180" viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0" y="0" width="320" height="180" fill="#f7fafc" rx="8"/>
+                    <text x="160" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#2d3748">Comparação: mesma velocidade, massas diferentes</text>
+                    
+                    <!-- Bola de Tênis -->
+                    <circle cx="80" cy="90" r="30" fill="#facc15" stroke="#eab308" stroke-width="3"/>
+                    <text x="80" y="140" text-anchor="middle" font-size="13" fill="#374151">Bola de Tênis</text>
+                    <text x="80" y="158" text-anchor="middle" font-size="11" fill="#6b7280">m pequena → Q menor</text>
+                    
+                    <!-- Seta velocidade -->
+                    <path d="M110 85 L145 85 L140 80 M145 85 L140 90" stroke="#2563eb" stroke-width="3" fill="none"/>
+                    <text x="127" y="75" text-anchor="middle" font-size="11" fill="#2563eb">v</text>
+                    
+                    <!-- Bola de Boliche -->
+                    <circle cx="240" cy="90" r="45" fill="#3b82f6" stroke="#1d4ed8" stroke-width="3"/>
+                    <text x="240" y="155" text-anchor="middle" font-size="13" fill="#374151">Bola de Boliche</text>
+                    <text x="240" y="172" text-anchor="middle" font-size="11" fill="#6b7280">m maior → Q maior</text>
+                    
+                    <!-- Seta velocidade -->
+                    <path d="M285 85 L320 85 L315 80 M320 85 L315 90" stroke="#2563eb" stroke-width="3" fill="none"/>
+                    <text x="302" y="75" text-anchor="middle" font-size="11" fill="#2563eb">v</text>
+                </svg>
+            </div>
+        </div>
+
+        <p><strong>Exemplo:</strong> Uma bola de boliche e uma bola de tênis com a mesma velocidade. A bola de boliche tem maior massa, portanto possui <strong>maior quantidade de movimento</strong>.</p>
+    </section>
+
+    <!-- Seção: Teorema do Impulso -->
+    <section class="section">
+        <h2>2. Teorema do Impulso</h2>
+        <p>O <strong>impulso</strong> está relacionado à <em>mudança</em> na quantidade de movimento.</p>
+        
+        <div class="highlight">
+            <strong>Ideia principal:</strong><br>
+            Impulso = variação da quantidade de movimento
+        </div>
+
+        <p>Quando uma força age sobre um corpo durante certo tempo, ela pode <strong>aumentar, diminuir ou mudar a direção</strong> do movimento dele.</p>
+
+        <h3 style="margin:18px 0 10px; color:#2c5282;">Impulso de uma força constante</h3>
+        <div class="formula-box">
+            <div class="formula">I = F · Δt</div>
+            <ul class="explanation">
+                <li><strong>I</strong> = impulso</li>
+                <li><strong>F</strong> = força</li>
+                <li><strong>Δt</strong> = intervalo de tempo</li>
+            </ul>
+        </div>
+
+        <p>Uma força maior ou aplicada durante mais tempo produz um impulso maior.</p>
+
+        <div class="svg-container">
+            <div class="illustration">
+                <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0" y="0" width="300" height="200" fill="#f7fafc" rx="8"/>
+                    <text x="150" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#2d3748">Gráfico Força × Tempo</text>
+                    
+                    <!-- Eixos -->
+                    <line x1="40" y1="170" x2="280" y2="170" stroke="#374151" stroke-width="2"/>
+                    <line x1="40" y1="170" x2="40" y2="30" stroke="#374151" stroke-width="2"/>
+                    <text x="270" y="188" font-size="12" fill="#374151">Tempo (t)</text>
+                    <text x="15" y="45" font-size="12" transform="rotate(-90,15,45)" fill="#374151">Força (F)</text>
+                    
+                    <!-- Força constante -->
+                    <line x1="40" y1="70" x2="220" y2="70" stroke="#2563eb" stroke-width="3"/>
+                    <line x1="40" y1="70" x2="40" y2="170" stroke="#2563eb" stroke-width="2" stroke-dasharray="5,5"/>
+                    <line x1="220" y1="70" x2="220" y2="170" stroke="#2563eb" stroke-width="2" stroke-dasharray="5,5"/>
+                    
+                    <!-- Área -->
+                    <rect x="40" y="70" width="180" height="100" fill="#bfdbfe" opacity="0.5"/>
+                    <text x="130" y="135" text-anchor="middle" font-size="13" fill="#1e40af">Área = Impulso</text>
+                </svg>
+            </div>
+        </div>
+
+        <p>Se a força variar ao longo do tempo, o impulso é encontrado pela <strong>área abaixo do gráfico Força × Tempo</strong>.</p>
+    </section>
+
+    <!-- Seção: Conservação -->
+    <section class="section">
+        <h2>3. Conservação da Quantidade de Movimento</h2>
+        <p>Em um <strong>sistema isolado</strong> (sem forças externas atuando de maneira relevante), a quantidade de movimento total se conserva.</p>
+
+        <div class="formula-box">
+            <div class="formula">Q<sub>antes</sub> = Q<sub>depois</sub></div>
+        </div>
+
+        <p>Isso é muito importante nas <strong>colisões</strong>. A quantidade de movimento não desaparece — ela é <strong>transferida</strong> entre os corpos.</p>
+    </section>
+
+    <!-- Seção: Exemplo Prático -->
+    <section class="section">
+        <h2>4. Exemplo Prático: Impacto no Veículo</h2>
+        <p>Imagine que uma bola de tênis e uma bola de boliche são soltas de uma mesma altura e atingem o teto de um carro com a <strong>mesma velocidade</strong>.</p>
+
+        <div class="svg-container">
+            <div class="illustration">
+                <svg width="340" height="280" viewBox="0 0 340 280" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0" y="0" width="340" height="280" fill="#f7fafc" rx="8"/>
+                    <text x="170" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#2d3748">Comparação de Impacto</text>
+                    
+                    <!-- Carro -->
+                    <path d="M60 200 L280 200 L300 220 L300 240 L40 240 L40 220 Z" fill="#9ca3af" stroke="#4b5563" stroke-width="2"/>
+                    <rect x="80" y="180" width="180" height="25" fill="#60a5fa" stroke="#3b82f6" stroke-width="2" rx="3"/>
+                    <text x="170" y="198" text-anchor="middle" font-size="10" fill="#1e3a8a">Teto do veículo</text>
+                    
+                    <!-- Bola de Tênis -->
+                    <circle cx="100" cy="100" r="22" fill="#facc15" stroke="#eab308" stroke-width="2"/>
+                    <path d="M100 122 L100 175" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,3"/>
+                    <polygon points="100,175 95,165 105,165" fill="#ef4444"/>
+                    <text x="100" y="65" text-anchor="middle" font-size="12" fill="#374151">Bola de Tênis</text>
+                    <text x="100" y="260" text-anchor="middle" font-size="11" fill="#22c55e">Impacto menor</text>
+                    
+                    <!-- Bola de Boliche -->
+                    <circle cx="240" cy="80" r="35" fill="#3b82f6" stroke="#1d4ed8" stroke-width="2"/>
+                    <path d="M240 115 L240 175" stroke="#ef4444" stroke-width="3" stroke-dasharray="4,3"/>
+                    <polygon points="240,175 232,162 248,162" fill="#ef4444"/>
+                    <text x="240" y="45" text-anchor="middle" font-size="12" fill="#374151">Bola de Boliche</text>
+                    <text x="240" y="260" text-anchor="middle" font-size="11" fill="#ef4444">Impacto maior</text>
+                    
+                    <!-- Velocidade -->
+                    <text x="170" y="145" text-anchor="middle" font-size="12" font-weight="bold" fill="#2563eb">Mesma velocidade (v)</text>
+                </svg>
+            </div>
+        </div>
+
+        <p>A bola de tênis causaria um impacto <strong>menor</strong>, enquanto a bola de boliche causaria um impacto <strong>maior</strong>. Isso acontece porque, com a mesma velocidade, a bola de boliche tem <strong>maior massa</strong>.</p>
+
+        <div class="conclusion-box">
+            <strong>✅ Conclusão:</strong><br>
+            Mesma velocidade + maior massa = maior quantidade de movimento = impacto maior.<br><br>
+            Os efeitos dos impactos são diferentes porque a quantidade de movimento depende de <em>massa × velocidade</em>. A bola de boliche, mesmo com a mesma velocidade, possui maior quantidade de movimento e, portanto, provoca um impacto mais intenso no veículo.
+        </div>
+    </section>
+
+</body>
+</html> </p>
+        </div>
+
+
+
+
+        <div class="conteudo-aula" id="aula-6">
+            <h2>Aula 6 - Entre choques e conservação: tipos de colisões</h2>
+            <p><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 6 - Entre choques e conservação: tipos de colisões</title>
     <style>
         * {
             margin: 0;
@@ -1177,15 +1701,14 @@
             color: #2d3748;
             line-height: 1.6;
             padding: 20px;
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
         header {
-            text-align: center;
-            padding: 25px;
             background: linear-gradient(135deg, #2b6cb0, #2c5282);
             color: white;
+            padding: 30px;
             border-radius: 12px;
             margin-bottom: 30px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
@@ -1193,22 +1716,27 @@
 
         h1 {
             font-size: 1.8rem;
-            margin-bottom: 8px;
-        }
-
-        section {
-            background: white;
-            padding: 25px;
-            margin-bottom: 25px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 10px;
         }
 
         h2 {
             color: #2b6cb0;
-            margin-bottom: 18px;
-            border-bottom: 2px solid #edf2f7;
+            margin: 30px 0 15px;
+            border-bottom: 2px solid #e2e8f0;
             padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #2c5282;
+            margin: 20px 0 10px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
         .formula {
@@ -1216,22 +1744,10 @@
             border-left: 4px solid #3182ce;
             padding: 15px;
             margin: 15px 0;
-            border-radius: 6px;
-            font-size: 1.2rem;
-            font-weight: 600;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.1rem;
             text-align: center;
-        }
-
-        .explicacao {
-            margin: 12px 0;
-        }
-
-        .destaque {
-            background-color: #fef5e7;
-            border-left: 4px solid #ed8936;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 6px;
+            border-radius: 0 6px 6px 0;
         }
 
         .svg-container {
@@ -1240,580 +1756,288 @@
             margin: 20px 0;
         }
 
-        .comparacao {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 20px;
+        svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
             margin: 20px 0;
         }
 
-        .item-comparacao {
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #e2e8f0;
+            padding: 12px;
             text-align: center;
-            background-color: #f7fafc;
-            padding: 15px;
-            border-radius: 10px;
-            width: 220px;
         }
 
-        .resposta {
+        .comparison-table th {
+            background-color: #edf2f7;
+            color: #2d3748;
+        }
+
+        .elastic {
             background-color: #f0fff4;
-            border-left: 4px solid #48bb78;
+        }
+
+        .partial {
+            background-color: #fffbeb;
+        }
+
+        .inelastic {
+            background-color: #fff5f5;
+        }
+
+        .highlight-box {
+            background-color: #f7fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
             padding: 18px;
             margin-top: 15px;
-            border-radius: 6px;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Quantidade de Movimento e Impulso</h1>
-    <p>Física — Conceitos e Aplicações</p>
-</header>
+    <header>
+        <h1>Aula 6 — Entre choques e conservação: tipos de colisões</h1>
+        <p>Compreenda energia mecânica, conservação da quantidade de movimento e os diferentes tipos de colisões</p>
+    </header>
 
-<!-- Seção 1: Quantidade de Movimento -->
-<section>
-    <h2>📌 Quantidade de Movimento</h2>
-    <p>A <strong>quantidade de movimento</strong> indica o quanto um corpo está “em movimento”.</p>
+    <section class="card">
+        <h2>Energia Mecânica</h2>
+        <p><strong>Quais formas de energia compõem a energia mecânica?</strong></p>
+        <p>As formas de energia que compõem a energia mecânica são:</p>
+        <ul style="margin: 10px 0 20px 30px;">
+            <li><strong>Energia cinética:</strong> relacionada ao movimento do corpo.</li>
+            <li><strong>Energia potencial:</strong> relacionada à posição do corpo, como a altura.</li>
+        </ul>
 
-    <div class="formula">Q = m · v</div>
+        <div class="formula">Energia mecânica = Energia cinética + Energia potencial</div>
 
-    <div class="explicacao">
-        <p><strong>Q</strong> = quantidade de movimento<br>
-        <strong>m</strong> = massa do corpo<br>
-        <strong>v</strong> = velocidade</p>
-    </div>
+        <h3>Referencial: estrada</h3>
+        <p>Considerando a estrada como referencial, como calcular a energia mecânica do veículo?</p>
+        <p>A energia mecânica do veículo é a soma da energia cinética com a energia potencial gravitacional:</p>
+        <div class="formula">Em = Ec + Ep</div>
+        <p>Como a estrada é o referencial, se considerarmos o nível da estrada como h = 0, a energia potencial é zero. Então:</p>
+        <div class="formula">Em = ½ · m · v²</div>
+        <p>Ou seja, nesse caso, a energia mecânica do veículo é igual à sua energia cinética.</p>
 
-    <p>✅ Quanto maior a massa ou maior a velocidade, <strong>maior</strong> será a quantidade de movimento.</p>
-
-    <div class="destaque">
-        <strong>Exemplo:</strong> Uma bola de boliche e uma bola de tênis com a mesma velocidade. A bola de boliche tem maior massa, então possui <strong>maior quantidade de movimento</strong>.
-    </div>
-
-    <div class="svg-container">
-        <svg width="450" height="180" viewBox="0 0 450 180" xmlns="http://www.w3.org/2000/svg">
-            <!-- Bola de Tênis -->
-            <circle cx="100" cy="70" r="40" fill="#f4e842" stroke="#d4c800" stroke-width="3"/>
-            <path d="M70 50 Q100 30 130 50" stroke="#555" stroke-width="2" fill="none"/>
-            <path d="M80 90 Q100 110 120 90" stroke="#555" stroke-width="2" fill="none"/>
-            <text x="100" y="140" text-anchor="middle" font-size="14" font-weight="bold">Bola de Tênis</text>
-            <text x="100" y="160" text-anchor="middle" font-size="12">massa menor → Q menor</text>
-
-            <!-- Seta de velocidade -->
-            <line x1="145" y1="70" x2="185" y2="70" stroke="#333" stroke-width="3" marker-end="url(#seta)"/>
-            <text x="165" y="60" font-size="12">v</text>
-
-            <!-- Bola de Boliche -->
-            <circle cx="320" cy="70" r="55" fill="#2b6cb0" stroke="#1a365d" stroke-width="3"/>
-            <circle cx="300" cy="50" r="6" fill="white"/>
-            <circle cx="320" cy="65" r="6" fill="white"/>
-            <circle cx="340" cy="50" r="6" fill="white"/>
-            <text x="320" y="150" text-anchor="middle" font-size="14" font-weight="bold">Bola de Boliche</text>
-            <text x="320" y="170" text-anchor="middle" font-size="12">massa maior → Q maior</text>
-
-            <!-- Seta de velocidade -->
-            <line x1="375" y1="70" x2="415" y2="70" stroke="#333" stroke-width="3" marker-end="url(#seta)"/>
-            <text x="395" y="60" font-size="12">v</text>
-
-            <!-- Definição de seta -->
-            <defs>
-                <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-                    <polygon points="0,0 10,5 0,10" fill="#333"/>
-                </marker>
-            </defs>
-        </svg>
-    </div>
-</section>
-
-<!-- Seção 2: Teorema do Impulso -->
-<section>
-    <h2>📌 Teorema do Impulso</h2>
-    <p>O <strong>impulso</strong> está relacionado à <em>mudança</em> na quantidade de movimento.</p>
-
-    <div class="destaque">
-        <strong>Ideia principal:</strong><br>
-        Impulso = variação da quantidade de movimento
-    </div>
-
-    <p>Ou seja, quando uma força age sobre um corpo durante certo tempo, ela pode <strong>aumentar, diminuir ou mudar a direção</strong> do movimento dele.</p>
-
-    <h3 style="margin-top:20px; color:#2c5282;">Impulso de uma força constante</h3>
-    <div class="formula">I = F · Δt</div>
-    <p><strong>I</strong> = impulso<br>
-    <strong>F</strong> = força<br>
-    <strong>Δt</strong> = intervalo de tempo</p>
-
-    <p>✅ Uma força maior ou aplicada durante mais tempo produz um impulso maior.</p>
-
-    <p style="margin-top:15px;">📊 Se a força <strong>variar</strong> ao longo do tempo, o impulso pode ser encontrado pela <strong>área abaixo do gráfico Força × Tempo (F × t)</strong>.</p>
-
-    <div class="svg-container">
-        <svg width="350" height="220" viewBox="0 0 350 220" xmlns="http://www.w3.org/2000/svg">
-            <!-- Eixos -->
-            <line x1="40" y1="190" x2="320" y2="190" stroke="#333" stroke-width="2"/>
-            <line x1="40" y1="190" x2="40" y2="30" stroke="#333" stroke-width="2"/>
-            <text x="310" y="208" font-size="14">Tempo (t)</text>
-            <text x="12" y="45" font-size="14">Força (F)</text>
-
-            <!-- Gráfico Força constante -->
-            <line x1="40" y1="70" x2="260" y2="70" stroke="#2b6cb0" stroke-width="3"/>
-            <line x1="40" y1="70" x2="40" y2="190" stroke="#2b6cb0" stroke-width="2" stroke-dasharray="5,5"/>
-            <line x1="260" y1="70" x2="260" y2="190" stroke="#2b6cb0" stroke-width="2" stroke-dasharray="5,5"/>
-
-            <!-- Área em destaque -->
-            <rect x="40" y="70" width="220" height="120" fill="#90cdf4" opacity="0.4"/>
-            <text x="150" y="145" text-anchor="middle" font-size="14" fill="#2c5282" font-weight="bold">Área = Impulso</text>
-        </svg>
-    </div>
-</section>
-
-<!-- Seção 3: Conservação da Quantidade de Movimento -->
-<section>
-    <h2>📌 Conservação da Quantidade de Movimento</h2>
-    <p>Quando temos um <strong>sistema isolado</strong> — ou seja, sem forças externas atuando de maneira relevante —, a quantidade de movimento total se mantém constante.</p>
-
-    <div class="formula">Q<sub>antes</sub> = Q<sub>depois</sub></div>
-
-    <p>Isso é muito importante nas <strong>colisões</strong>.</p>
-    <p>✅ A quantidade de movimento <em>não desaparece</em>; ela é <strong>transferida</strong> entre os corpos.</p>
-
-    <div class="svg-container">
-        <svg width="400" height="180" viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
-            <!-- Antes -->
-            <text x="100" y="30" text-anchor="middle" font-size="14" font-weight="bold">Antes da Colisão</text>
-            <circle cx="70" cy="80" r="30" fill="#ed8936"/>
-            <circle cx="180" cy="80" r="30" fill="#48bb78"/>
-            <line x1="40" y1="70" x2="10" y2="70" stroke="#333" stroke-width="3" marker-end="url(#seta2)"/>
-            <text x="25" y="60" font-size="11">v₁</text>
-            <line x1="210" y1="90" x2="240" y2="90" stroke="#333" stroke-width="3" marker-end="url(#seta2)"/>
-            <text x="220" y="110" font-size="11">v₂ ≈ 0</text>
-
-            <!-- Seta -->
-            <path d="M260 80 L300 80 L300 75 M300 85 L300 80" stroke="#333" stroke-width="2" fill="none"/>
-
-            <!-- Depois -->
-            <text x="340" y="30" text-anchor="middle" font-size="14" font-weight="bold">Depois da Colisão</text>
-            <circle cx="300" cy="80" r="30" fill="#ed8936"/>
-            <circle cx="360" cy="80" r="30" fill="#48bb78"/>
-            <line x1="270" y1="70" x2="300" y2="70" stroke="#333" stroke-width="3" marker-end="url(#seta2)"/>
-            <text x="275" y="60" font-size="11">v₁'</text>
-            <line x1="390" y1="70" x2="420" y2="70" stroke="#333" stroke-width="3" marker-end="url(#seta2)"/>
-            <text x="400" y="60" font-size="11">v₂'</text>
-
-            <defs>
-                <marker id="seta2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-                    <polygon points="0,0 10,5 0,10" fill="#333"/>
-                </marker>
-            </defs>
-        </svg>
-    </div>
-</section>
-
-<!-- Seção 4: Exemplo Prático -->
-<section>
-    <h2>📌 Exemplo Prático: Impacto no Veículo</h2>
-    <p>Imagine que uma bola de tênis e uma bola de boliche são soltas de uma mesma altura e atingem o teto de um carro com a <strong>mesma velocidade</strong>.</p>
-
-    <div class="comparacao">
-        <div class="item-comparacao">
-            <svg width="120" height="110" viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="60" cy="35" r="25" fill="#f4e842" stroke="#d4c800" stroke-width="2"/>
-                <path d="M45 25 Q60 15 75 25" stroke="#555" stroke-width="1.5" fill="none"/>
-                <path d="M50 45 Q60 55 70 45" stroke="#555" stroke-width="1.5" fill="none"/>
-                <path d="M60 62 L60 85" stroke="#333" stroke-width="2" marker-end="url(#seta3)"/>
-                <path d="M20 90 L100 90 L95 100 L25 100 Z" fill="#718096"/>
-                <text x="60" y="108" text-anchor="middle" font-size="11">Impacto menor</text>
+        <div class="svg-container">
+            <svg width="450" height="200" viewBox="0 0 450 200" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0" y="150" width="450" height="30" fill="#808080"/>
+                <line x1="0" y1="150" x2="450" y2="150" stroke="#333" stroke-width="2"/>
+                <path d="M60,110 L100,110 L110,90 L140,90 L150,110 L190,110 L190,130 L60,130 Z" fill="#3182ce" stroke="#2b6cb0" stroke-width="2"/>
+                <circle cx="80" cy="130" r="12" fill="#2d3748"/>
+                <circle cx="170" cy="130" r="12" fill="#2d3748"/>
+                <line x1="200" y1="100" x2="270" y2="80" stroke="#e53e3e" stroke-width="3" marker-end="url(#arrow)"/>
+                <text x="280" y="85" fill="#e53e3e" font-size="16">v</text>
+                <text x="180" y="185" fill="#2d3748" font-size="14">Estrada (h = 0 → Ep = 0)</text>
                 <defs>
-                    <marker id="seta3" viewBox="0 0 10 10" refX="5" refY="9" markerWidth="5" markerHeight="5" orient="auto">
-                        <polygon points="5,0 0,10 10,10" fill="#333"/>
+                    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#e53e3e" />
                     </marker>
                 </defs>
             </svg>
-            <p><strong>Bola de Tênis</strong><br>massa menor → Q menor → impacto menor</p>
         </div>
+    </section>
 
-        <div class="item-comparacao">
-            <svg width="120" height="110" viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="60" cy="30" r="32" fill="#2b6cb0" stroke="#1a365d" stroke-width="2"/>
-                <circle cx="48" cy="22" r="4" fill="white"/>
-                <circle cx="60" cy="32" r="4" fill="white"/>
-                <circle cx="72" cy="22" r="4" fill="white"/>
-                <path d="M60 65 L60 85" stroke="#e53e3e" stroke-width="3" marker-end="url(#seta4)"/>
-                <path d="M15 90 L105 90 L98 105 L22 105 Z" fill="#e53e3e" opacity="0.7"/>
-                <text x="60" y="112" text-anchor="middle" font-size="11" fill="#c53030">Impacto maior</text>
+    <section class="card">
+        <h2>Colisões</h2>
+        <p>Uma colisão acontece quando dois corpos se aproximam, interagem por um curto período e mudam suas velocidades.</p>
+        <p>Durante a colisão, há uma troca de quantidade de movimento entre os corpos.</p>
+        <p>Como o tempo da colisão é muito pequeno, podemos desprezar as forças externas. Assim, a quantidade de movimento total se conserva:</p>
+        
+        <div class="formula">Q<sub>antes</sub> = Q<sub>depois</sub></div>
+        
+        <p>Ou seja, a quantidade de movimento antes da colisão é igual à quantidade de movimento depois da colisão.</p>
+        <p>A quantidade de movimento é calculada por:</p>
+        
+        <div class="formula">Q = m · v</div>
+        
+        <p>Portanto, mesmo que as velocidades dos corpos mudem durante a colisão, a quantidade de movimento total do sistema permanece a mesma, quando as forças externas podem ser desprezadas.</p>
+
+        <div class="svg-container">
+            <svg width="500" height="220" viewBox="0 0 500 220" xmlns="http://www.w3.org/2000/svg">
+                <text x="80" y="30" text-anchor="middle" font-size="14" font-weight="bold">Antes da Colisão</text>
+                <text x="400" y="30" text-anchor="middle" font-size="14" font-weight="bold">Depois da Colisão</text>
+                
+                <rect x="40" y="60" width="60" height="40" rx="5" fill="#48bb78" stroke="#2f855a" stroke-width="2"/>
+                <circle cx="55" cy="110" r="8" fill="#2d3748"/>
+                <circle cx="85" cy="110" r="8" fill="#2d3748"/>
+                <line x1="100" y1="50" x2="140" y2="50" stroke="#e53e3e" stroke-width="2" marker-end="url(#arrow2)"/>
+                <text x="115" y="45" fill="#e53e3e" font-size="12">v₁</text>
+
+                <rect x="280" y="60" width="60" height="40" rx="5" fill="#ed8936" stroke="#dd6b20" stroke-width="2"/>
+                <circle cx="295" cy="110" r="8" fill="#2d3748"/>
+                <circle cx="325" cy="110" r="8" fill="#2d3748"/>
+                <line x1="270" y1="70" x2="230" y2="70" stroke="#e53e3e" stroke-width="2" marker-end="url(#arrow2)"/>
+                <text x="240" y="65" fill="#e53e3e" font-size="12">v₂</text>
+
+                <path d="M 180 130 L 180 160" stroke="#2d3748" stroke-width="2" stroke-dasharray="5,5"/>
+                <text x="190" y="150" font-size="12">Q conserva-se</text>
+
+                <rect x="340" y="150" width="60" height="40" rx="5" fill="#48bb78" stroke="#2f855a" stroke-width="2"/>
+                <circle cx="355" cy="200" r="8" fill="#2d3748"/>
+                <circle cx="385" cy="200" r="8" fill="#2d3748"/>
+                <line x1="400" y1="140" x2="440" y2="140" stroke="#3182ce" stroke-width="2" marker-end="url(#arrow2)"/>
+                <text x="415" y="135" fill="#3182ce" font-size="12">v₁'</text>
+
+                <rect x="30" y="150" width="60" height="40" rx="5" fill="#ed8936" stroke="#dd6b20" stroke-width="2"/>
+                <circle cx="45" cy="200" r="8" fill="#2d3748"/>
+                <circle cx="75" cy="200" r="8" fill="#2d3748"/>
+                <line x1="20" y1="160" x2="-10" y2="160" stroke="#3182ce" stroke-width="2" marker-end="url(#arrow2)"/>
+                <text x="0" y="155" fill="#3182ce" font-size="12">v₂'</text>
+
                 <defs>
-                    <marker id="seta4" viewBox="0 0 10 10" refX="5" refY="9" markerWidth="6" markerHeight="6" orient="auto">
-                        <polygon points="5,0 0,10 10,10" fill="#e53e3e"/>
+                    <marker id="arrow2" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor" />
                     </marker>
                 </defs>
             </svg>
-            <p><strong>Bola de Boliche</strong><br>massa maior → Q maior → impacto maior</p>
         </div>
-    </div>
+    </section>
 
-    <div class="destaque">
-        <strong>Resumo:</strong> mesma velocidade + maior massa = maior quantidade de movimento = <strong>maior impacto</strong>
-    </div>
+    <section class="card">
+        <h2>Tipos de Colisão</h2>
+        <p>As colisões mecânicas podem ser classificadas em três tipos principais:</p>
 
-    <h3 style="margin-top:25px; color:#2c5282;">❓ Pergunta: Como explicar os efeitos diferentes dos impactos?</h3>
-    <div class="resposta">
-        <strong>Resposta:</strong> Os impactos são diferentes porque a bola de boliche tem uma <strong>massa maior</strong> que a bola de tênis. Como a quantidade de movimento é dada por <em>Q = m · v</em>, mesmo tendo a mesma velocidade, a bola de boliche possui <strong>maior quantidade de movimento</strong> e, consequentemente, provoca um impacto maior no veículo.
-    </div>
-</section>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Característica</th>
+                    <th class="elastic">Colisão Elástica</th>
+                    <th class="partial">Parcialmente Elástica</th>
+                    <th class="inelastic">Totalmente Inelástica</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Quantidade de movimento</td>
+                    <td class="elastic">✅ Conserva</td>
+                    <td class="partial">✅ Conserva</td>
+                    <td class="inelastic">✅ Conserva</td>
+                </tr>
+                <tr>
+                    <td>Energia mecânica</td>
+                    <td class="elastic">✅ Conserva</td>
+                    <td class="partial">❌ Não conserva</td>
+                    <td class="inelastic">❌ Não conserva (maior perda)</td>
+                </tr>
+                <tr>
+                    <td>Após a colisão</td>
+                    <td class="elastic">Seguem separados</td>
+                    <td class="partial">Seguem separados</td>
+                    <td class="inelastic">Ficam unidos</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 style="color:#2f855a;">🔹 Colisão Elástica</h3>
+        <p>Em uma colisão elástica, são conservadas:</p>
+        <ul style="margin: 10px 0 10px 30px;">
+            <li>A quantidade de movimento</li>
+            <li>A energia mecânica (cinética)</li>
+        </ul>
+        <p>Quando as duas partículas têm massas iguais, a velocidade de uma partícula após a colisão pode ser igual à velocidade que a outra tinha antes da colisão.</p>
+        <p><em>Em resumo: na colisão elástica, não há perda de energia mecânica.</em></p>
+
+        <h3 style="color:#d69e2e;">🔹 Colisão Parcialmente Elástica</h3>
+        <ul style="margin: 10px 0 10px 30px;">
+            <li>A quantidade de movimento se conserva.</li>
+            <li>A energia mecânica não se conserva.</li>
+        </ul>
+        <p>Parte da energia mecânica é transformada em energia térmica, sonora e outras formas de energia.</p>
+        <p>Por isso, a energia mecânica depois da colisão é menor que antes.</p>
+        <p><em>Em resumo: é o tipo de colisão mais comum no dia a dia, pois sempre ocorre alguma perda de energia mecânica.</em></p>
+
+        <h3 style="color:#c53030;">🔹 Colisão Totalmente Inelástica</h3>
+        <ul style="margin: 10px 0 10px 30px;">
+            <li>A quantidade de movimento se conserva.</li>
+            <li>A energia mecânica não se conserva.</li>
+        </ul>
+        <p>É o tipo de colisão com maior transformação de energia mecânica em outras formas, como calor e som.</p>
+        <p>Depois da colisão, os corpos ficam unidos e passam a se mover juntos, com a mesma velocidade.</p>
+        <p><em>Em resumo: os corpos batem, ficam unidos e seguem como um único corpo.</em></p>
+
+        <div class="svg-container">
+            <svg width="650" height="280" viewBox="0 0 650 280" xmlns="http://www.w3.org/2000/svg">
+                <text x="100" y="30" text-anchor="middle" font-size="13" font-weight="bold">Elástica</text>
+                <rect x="30" y="50" width="50" height="35" rx="4" fill="#48bb78" stroke="#2f855a" stroke-width="2"/>
+                <line x1="80" y1="45" x2="110" y2="45" stroke="#e53e3e" stroke-width="2" marker-end="url(#arr)"/>
+                <rect x="130" y="50" width="50" height="35" rx="4" fill="#48bb78" stroke="#2f855a" stroke-width="2"/>
+                <line x1="120" y1="55" x2="90" y2="55" stroke="#e53e3e" stroke-width="2" marker-end="url(#arr)"/>
+                <path d="M 105 85 L 105 100" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+                <rect x="30" y="105" width="50" height="35" rx="4" fill="#48bb78" stroke="#2f855a" stroke-width="2"/>
+                <line x1="20" y1="120" x2="-10" y2="120" stroke="#3182ce" stroke-width="2" marker-end="url(#arr)"/>
+                <rect x="130" y="105" width="50" height="35" rx="4" fill="#48bb78" stroke="#2f855a" stroke-width="2"/>
+                <line x1="180" y1="110" x2="210" y2="110" stroke="#3182ce" stroke-width="2" marker-end="url(#arr)"/>
+
+                <text x="290" y="30" text-anchor="middle" font-size="13" font-weight="bold">Parcialmente Elástica</text>
+                <rect x="220" y="50" width="50" height="35" rx="4" fill="#ed8936" stroke="#dd6b20" stroke-width="2"/>
+                <line x1="270" y1="45" x2="300" y2="45" stroke="#e53e3e" stroke-width="2" marker-end="url(#arr)"/>
+                <rect x="320" y="50" width="50" height="35" rx="4" fill="#ed8936" stroke="#dd6b20" stroke-width="2"/>
+                <line x1="310" y1="55" x2="285" y2="55" stroke="#e53e3e" stroke-width="2" marker-end="url(#arr)"/>
+                <path d="M 295 85 L 295 100" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+                <rect x="220" y="105" width="50" height="35" rx="4" fill="#ed8936" stroke="#dd6b20" stroke-width="2"/>
+                <line x1="250" y1="100" x2="270" y2="90" stroke="#3182ce" stroke-width="2" marker-end="url(#arr)"/>
+                <rect x="320" y="105" width="50" height="35" rx="4" fill="#ed8936" stroke="#dd6b20" stroke-width="2"/>
+                <line x1="330" y1="100" x2="350" y2="95" stroke="#3182ce" stroke-width="2" marker-end="url(#arr)"/>
+                <text x="295" y="160" fill="#e53e3e" font-size="11">Energia perdida 🔊♨️</text>
+
+                <text x="500" y="30" text-anchor="middle" font-size="13" font-weight="bold">Totalmente Inelástica</text>
+                <rect x="420" y="50" width="50" height="35" rx="4" fill="#e53e3e" stroke="#c53030" stroke-width="2"/>
+                <line x1="470" y1="45" x2="500" y2="45" stroke="#e53e3e" stroke-width="2" marker-end="url(#arr)"/>
+                <rect x="520" y="50" width="50" height="35" rx="4" fill="#e53e3e" stroke="#c53030" stroke-width="2"/>
+                <line x1="510" y1="55" x2="480" y2="55" stroke="#e53e3e" stroke-width="2" marker-end="url(#arr)"/>
+                <path d="M 495 85 L 495 100" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+                <rect x="445" y="105" width="100" height="35" rx="4" fill="#e53e3e" stroke="#c53030" stroke-width="2"/>
+                <line x1="545" y1="120" x2="575" y2="120" stroke="#3182ce" stroke-width="2" marker-end="url(#arr)"/>
+                <text x="500" y="160" fill="#c53030" font-size="11">Movimento unido</text>
+
+                <defs>
+                    <marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor" />
+                    </marker>
+                </defs>
+            </svg>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Atividade de Fixação</h2>
+        <p>Observe a imagem, em que dois carros colidiram e sofreram deformações. Com base nos conceitos estudados sobre colisões mecânicas:</p>
+
+        <div class="svg-container">
+            <svg width="350" height="180" viewBox="0 0 350 180" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0" y="140" width="350" height="25" fill="#808080"/>
+                <path d="M50,100 L90,100 L95,85 L120,85 L125,100 L145,100 L145,120 L50,120 Z" fill="#4299e1" stroke="#2b6cb0" stroke-width="2"/>
+                <path d="M140,95 L160,88 L180,95 L180,120 L140,120 Z" fill="#e53e3e" stroke="#c53030" stroke-width="2" stroke-dasharray="4,2"/>
+                <path d="M205,100 L245,100 L250,85 L275,85 L280,100 L300,100 L300,120 L205,120 Z" fill="#ed8936" stroke="#dd6b20" stroke-width="2"/>
+                <path d="M195,95 L175,88 L155,95 L155,120 L195,120 Z" fill="#e53e3e" stroke="#c53030" stroke-width="2" stroke-dasharray="4,2"/>
+                <circle cx="65" cy="120" r="10" fill="#2d3748"/>
+                <circle cx="130" cy="120" r="10" fill="#2d3748"/>
+                <circle cx="220" cy="120" r="10" fill="#2d3748"/>
+                <circle cx="290" cy="120" r="10" fill="#2d3748"/>
+                <text x="175" y="170" text-anchor="middle" font-size="13">Colisão com deformação</text>
+                <path d="M150,75 L145,65 M155,78 L158,65 M160,80 L168,68" stroke="#e53e3e" stroke-width="2"/>
+            </svg>
+        </div>
+
+        <div class="highlight-box">
+            <p><strong>Por que a colisão representada na imagem não pode ser considerada uma colisão elástica?</strong></p>
+            <p>Porque os carros sofreram deformações. Isso mostra que parte da energia mecânica foi transformada em outras formas de energia, como energia térmica, sonora e energia associada às deformações. Portanto, a energia mecânica não foi conservada.</p>
+            <br>
+            <p><strong>O que ocorreu com a energia cinética do sistema após a colisão?</strong></p>
+            <p>A energia cinética do sistema diminuiu, pois parte dela foi transformada em outras formas de energia. A quantidade de movimento, porém, pode ser conservada se as forças externas forem desprezíveis.</p>
+        </div>
+    </section>
 
 </body>
-</html></p>
+</html> </p>
         </div>
-
-
-
-
-
-
-
-
-        <div class="conteudo-aula" id="aula-6">
-            <h2>Aula 06</h2>
-            <p><!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Energia Mecânica e Colisões</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        body {
-            background-color: #f0f8ff;
-            color: #333;
-            line-height: 1.6;
-            padding: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding: 20px;
-            background: linear-gradient(135deg, #2c3e50, #3498db);
-            color: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-        section {
-            background: white;
-            padding: 25px;
-            margin-bottom: 25px;
-            border-radius: 12px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #2c3e50;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 8px;
-            margin-bottom: 20px;
-        }
-        h3 {
-            color: #2980b9;
-            margin: 18px 0 10px;
-        }
-        p {
-            margin-bottom: 12px;
-        }
-        ul {
-            margin-left: 25px;
-            margin-bottom: 15px;
-        }
-        .formula {
-            background-color: #e8f4fc;
-            padding: 12px 18px;
-            border-radius: 8px;
-            font-size: 1.15rem;
-            font-weight: 500;
-            text-align: center;
-            margin: 15px 0;
-            border-left: 4px solid #2980b9;
-        }
-        .svg-container {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-        }
-        .destaque {
-            background-color: #fff9c4;
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 4px solid #fbc02d;
-            margin: 15px 0;
-        }
-        .pergunta {
-            background-color: #e3f2fd;
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 4px solid #1976d2;
-            margin: 12px 0;
-        }
-        .resposta {
-            background-color: #e8f5e9;
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 4px solid #388e3c;
-            margin: 12px 0 20px;
-        }
-        .tipos-colisao {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 15px;
-            margin-top: 15px;
-        }
-        @media (min-width:768px) {
-            .tipos-colisao {
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-        }
-        .tipo-card {
-            padding: 15px;
-            border-radius: 10px;
-            border: 2px solid #e0e0e0;
-            background: #fafafa;
-        }
-        .tipo-card h4 {
-            text-align: center;
-            margin-bottom: 10px;
-            color: #2c3e50;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>Energia Mecânica e Colisões</h1>
-    <p>Conceitos, fórmulas e ilustrações visuais</p>
-</header>
-
-<section>
-    <h2>Energia Mecânica</h2>
-    <h3>Quais formas de energia compõem a energia mecânica?</h3>
-    <p>As formas de energia que compõem a energia mecânica são:</p>
-    <ul>
-        <li><strong>Energia cinética:</strong> relacionada ao movimento do corpo.</li>
-        <li><strong>Energia potencial:</strong> relacionada à posição do corpo, como a altura.</li>
-    </ul>
-
-    <div class="formula">
-        Em = Ec + Ep
-    </div>
-
-    <div class="svg-container">
-        <svg width="420" height="220" viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg">
-            <rect x="10" y="10" width="400" height="200" rx="12" fill="#f0f8ff" stroke="#2980b9" stroke-width="2"/>
-            <text x="210" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#2c3e50">Energia Mecânica</text>
-            
-            <!-- Caixa Ec -->
-            <rect x="40" y="60" width="140" height="100" rx="8" fill="#bbdefb" stroke="#1976d2" stroke-width="2"/>
-            <text x="110" y="90" text-anchor="middle" font-size="16" font-weight="bold" fill="#1976d2">Energia Cinética</text>
-            <path d="M70 110 L100 100 L130 110 L100 120 Z" fill="#1976d2"/>
-            <text x="110" y="145" text-anchor="middle" font-size="12" fill="#333">Movimento</text>
-
-            <!-- Sinal de mais -->
-            <text x="200" y="120" text-anchor="middle" font-size="30" font-weight="bold" fill="#2c3e50">+</text>
-
-            <!-- Caixa Ep -->
-            <rect x="240" y="60" width="140" height="100" rx="8" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
-            <text x="310" y="90" text-anchor="middle" font-size="16" font-weight="bold" fill="#388e3c">Energia Potencial</text>
-            <path d="M310 105 L310 130 M295 118 L310 105 L325 118" stroke="#388e3c" stroke-width="3" fill="none"/>
-            <text x="310" y="145" text-anchor="middle" font-size="12" fill="#333">Posição / Altura</text>
-        </svg>
-    </div>
-
-    <h3>Como calcular a energia mecânica de um veículo (referencial: estrada)</h3>
-    <p>Considerando a estrada como referencial, a energia mecânica do veículo é a soma da energia cinética com a energia potencial gravitacional:</p>
-    <div class="formula">Em = Ec + Ep</div>
-    <p>Como a estrada é o referencial, se considerarmos o nível da estrada como <strong>h = 0</strong>, a energia potencial é zero. Então:</p>
-    <div class="formula">Em = ½ · m · v²</div>
-    <p>Ou seja, nesse caso, a energia mecânica do veículo é igual à sua energia cinética.</p>
-
-    <div class="svg-container">
-        <svg width="420" height="200" viewBox="0 0 420 200" xmlns="http://www.w3.org/2000/svg">
-            <rect x="10" y="10" width="400" height="180" rx="12" fill="#f9fbe7" stroke="#f57f17" stroke-width="2"/>
-            <text x="210" y="38" text-anchor="middle" font-size="17" font-weight="bold" fill="#f57f17">Veículo na Estrada (h = 0)</text>
-            
-            <!-- Estrada -->
-            <line x1="40" y1="150" x2="380" y2="150" stroke="#424242" stroke-width="5"/>
-            <text x="210" y="175" text-anchor="middle" font-size="13" fill="#616161">Estrada (h = 0 → Ep = 0)</text>
-            
-            <!-- Carro -->
-            <g transform="translate(170, 110)">
-                <rect x="0" y="10" width="80" height="25" rx="6" fill="#f44336"/>
-                <rect x="15" y="0" width="50" height="20" rx="4" fill="#ef5350"/>
-                <circle cx="20" cy="35" r="10" fill="#212121"/>
-                <circle cx="60" cy="35" r="10" fill="#212121"/>
-            </g>
-
-            <!-- Vetor velocidade -->
-            <path d="M250 122 L330 122 L325 112 L330 122 L325 132" stroke="#1565c0" stroke-width="4" fill="none"/>
-            <text x="340" y="127" font-size="15" font-weight="bold" fill="#1565c0">v</text>
-
-            <text x="210" y="75" text-anchor="middle" font-size="15" fill="#2e7d32">Em = Ec = ½·m·v²</text>
-        </svg>
-    </div>
-</section>
-
-<section>
-    <h2>Colisões</h2>
-    <p>Uma colisão acontece quando dois corpos se aproximam, interagem por um curto período e mudam suas velocidades.</p>
-    <p>Durante a colisão, há uma troca de quantidade de movimento entre os corpos.</p>
-    <p>Como o tempo da colisão é muito pequeno, podemos desprezar as forças externas. Assim, a quantidade de movimento total se conserva:</p>
-    
-    <div class="formula">Qantes = Qdepois</div>
-    
-    <p>A quantidade de movimento é calculada por:</p>
-    <div class="formula">Q = m · v</div>
-    
-    <p>Portanto, mesmo que as velocidades dos corpos mudem durante a colisão, a quantidade de movimento total do sistema permanece a mesma, quando as forças externas podem ser desprezadas.</p>
-
-    <div class="svg-container">
-        <svg width="420" height="230" viewBox="0 0 420 230" xmlns="http://www.w3.org/2000/svg">
-            <rect x="10" y="10" width="400" height="210" rx="12" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
-            <text x="210" y="38" text-anchor="middle" font-size="17" font-weight="bold" fill="#7b1fa2">Princípio da Conservação</text>
-
-            <!-- Antes -->
-            <g transform="translate(40, 70)">
-                <rect x="0" y="10" width="50" height="25" rx="5" fill="#2196f3"/>
-                <circle cx="12" cy="35" r="8" fill="#333"/>
-                <circle cx="38" cy="35" r="8" fill="#333"/>
-                <path d="M55 22 L95 22 L90 12 L95 22 L90 32" stroke="#333" stroke-width="3" fill="none"/>
-                <text x="70" y="45" font-size="12">v₁</text>
-            </g>
-            <g transform="translate(270, 70)">
-                <rect x="0" y="10" width="50" height="25" rx="5" fill="#ff9800"/>
-                <circle cx="12" cy="35" r="8" fill="#333"/>
-                <circle cx="38" cy="35" r="8" fill="#333"/>
-                <path d="M-5 22 L-45 22 L-40 12 L-45 22 L-40 32" stroke="#333" stroke-width="3" fill="none"/>
-                <text x="-30" y="45" font-size="12">v₂</text>
-            </g>
-
-            <text x="210" y="115" text-anchor="middle" font-size="16" font-weight="bold" fill="#7b1fa2">COLISÃO</text>
-
-            <path d="M100 140 L170 140 M250 140 L320 140" stroke="#333" stroke-width="2" stroke-dasharray="5,4"/>
-            <polygon points="170,140 160,133 160,147" fill="#333"/>
-            <polygon points="250,140 260,133 260,147" fill="#333"/>
-
-            <text x="210" y="170" text-anchor="middle" font-size="15" fill="#4a148c">Q<tspan baseline-shift="sub">antes</tspan> = Q<tspan baseline-shift="sub">depois</tspan></text>
-            <text x="210" y="195" text-anchor="middle" font-size="12" fill="#6a1b9a">Quantidade de movimento total se conserva</text>
-        </svg>
-    </div>
-
-    <h3>Tipos de colisão</h3>
-    <p>As colisões mecânicas podem ser classificadas em:</p>
-    <ul>
-        <li>Elástica;</li>
-        <li>Parcialmente elástica;</li>
-        <li>Totalmente inelástica.</li>
-    </ul>
-
-    <div class="tipos-colisao">
-        <div class="tipo-card">
-            <h4>Colisão Elástica</h4>
-            <p>✅ Quantidade de movimento se conserva</p>
-            <p>✅ Energia mecânica se conserva</p>
-            <p style="font-size:0.9rem; color:#555;">Não há perda de energia.</p>
-        </div>
-        <div class="tipo-card">
-            <h4>Parcialmente Elástica</h4>
-            <p>✅ Quantidade de movimento se conserva</p>
-            <p>❌ Energia mecânica NÃO se conserva</p>
-            <p style="font-size:0.9rem; color:#555;">Parte da energia vira calor, som... (mais comum no dia a dia)</p>
-        </div>
-        <div class="tipo-card">
-            <h4>Totalmente Inelástica</h4>
-            <p>✅ Quantidade de movimento se conserva</p>
-            <p>❌ Energia mecânica NÃO se conserva</p>
-            <p style="font-size:0.9rem; color:#555;">Maior perda; corpos ficam unidos após a colisão</p>
-        </div>
-    </div>
-
-    <div class="svg-container">
-        <svg width="420" height="260" viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg">
-            <rect x="10" y="10" width="400" height="240" rx="12" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
-            <text x="210" y="38" text-anchor="middle" font-size="17" font-weight="bold" fill="#e65100">Comparação dos Tipos de Colisão</text>
-
-            <!-- Elástica -->
-            <rect x="25" y="55" width="100" height="75" rx="8" fill="#c8e6c9" stroke="#2e7d32" stroke-width="2"/>
-            <text x="75" y="75" text-anchor="middle" font-size="13" font-weight="bold" fill="#2e7d32">Elástica</text>
-            <circle cx="50" cy="100" r="12" fill="#4caf50"/>
-            <circle cx="100" cy="100" r="12" fill="#ffeb3b"/>
-            <text x="75" y="130" text-anchor="middle" font-size="10">Sem deformação</text>
-
-            <!-- Parcialmente -->
-            <rect x="160" y="55" width="100" height="75" rx="8" fill="#fff9c4" stroke="#f57f17" stroke-width="2"/>
-            <text x="210" y="75" text-anchor="middle" font-size="13" font-weight="bold" fill="#f57f17">Parcialmente</text>
-            <path d="M185 95 L195 88 L205 98 L215 90 L225 100 L215 110 L195 105 Z" fill="#ffc107" stroke="#f57f17" stroke-width="1"/>
-            <path d="M235 95 L245 88 L255 98 L245 108 L230 105 Z" fill="#ff9800" stroke="#e65100" stroke-width="1"/>
-            <text x="210" y="130" text-anchor="middle" font-size="10">Deformação parcial</text>
-
-            <!-- Inelástica -->
-            <rect x="295" y="55" width="100" height="75" rx="8" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
-            <text x="345" y="75" text-anchor="middle" font-size="13" font-weight="bold" fill="#7b1fa2">Totalmente</text>
-            <path d="M310 92 L325 85 L340 92 L355 86 L370 95 L360 108 L320 108 Z" fill="#9c27b0" stroke="#7b1fa2" stroke-width="1"/>
-            <text x="345" y="130" text-anchor="middle" font-size="10">Corpos unidos</text>
-
-          
-    </div>
-
-    <h3>Análise de uma colisão com deformação</h3>
-    <div class="pergunta">
-        <strong>Pergunta:</strong> Observe a imagem, em que dois carros colidiram e sofreram deformações. Por que a colisão representada não pode ser considerada uma colisão elástica?
-    </div>
-    <div class="resposta">
-        <strong>Resposta:</strong> Porque os carros sofreram deformações. Isso mostra que parte da energia mecânica foi transformada em outras formas de energia, como energia térmica, sonora e energia associada às deformações. Portanto, a energia mecânica não foi conservada.
-    </div>
-
-    <div class="pergunta">
-        <strong>Pergunta:</strong> O que ocorreu com a energia cinética do sistema após a colisão?
-    </div>
-    <div class="resposta">
-        <strong>Resposta:</strong> A energia cinética do sistema diminuiu, pois parte dela foi transformada em outras formas de energia. A quantidade de movimento, porém, pode ser conservada se as forças externas forem desprezíveis.
-    </div>
-
-    <div class="svg-container">
-        <svg width="420" height="220" viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg">
-            <rect x="10" y="10" width="400" height="200" rx="12" fill="#ffebee" stroke="#c62828" stroke-width="2"/>
-            <text x="210" y="38" text-anchor="middle" font-size="17" font-weight="bold" fill="#c62828">Colisão com Deformação</text>
-
-            <!-- Carro 1 deformado -->
-            <path d="M60 100 L80 85 L110 90 L140 88 L160 100 L155 125 L70 122 Z" fill="#f44336" stroke="#d32f2f" stroke-width="2"/>
-            <circle cx="85" cy="135" r="12" fill="#333"/>
-            <circle cx="135" cy="135" r="12" fill="#333"/>
-
-            <!-- Carro 2 deformado -->
-            <path d="M260 100 L280 88 L310 90 L340 85 L360 100 L355 125 L270 122 Z" fill="#2196f3" stroke="#1976d2" stroke-width="2"/>
-            <circle cx="285" cy="135" r="12" fill="#333"/>
-            <circle cx="335" cy="135" r="12" fill="#333"/>
-
-            <!-- Deformação / raios -->
-            <path d="M185 95 L200 80 L215 95 L200 110 Z" fill="#ffeb3b" stroke="#fbc02d" stroke-width="2"/>
-            <text x="210" y="155" text-anchor="middle" font-size="14" font-weight="bold" fill="#c62828">Energia perdida (deformação, calor, som)</text>
-            <text x="210" y="180" text-anchor="middle" font-size="12" fill="#555">→ Colisão NÃO é elástica: Ec diminui</text>
-        </svg>
-    </div>
-</section>
-
-</body>
-</html></p>
-        </div>
-
-
-
 
 
 
@@ -1848,7 +2072,7 @@
         </div>
         <div class="conteudo-aula" id="aula-14">
             <h2>Aula 14 — Conclusão</h2>
-            <p>Conteúdo da última aula. Coloque aqui resumos, avaliações finais e materiais complementares.</p>
+            <p>Conteúdo da Aula 14…</p>
         </div>
     </div>
 
@@ -1879,33 +2103,9 @@
 
 
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seções de Aulas</title>
-    <style>
-        section {
-            margin: 20px 0;
-            padding: 15px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-        }
-    </style>
-</head>
-<body>
-
-   
 
 
 
-
-
-
-
-    
-    
 </main>
 
 <footer>
